@@ -18,7 +18,7 @@ const createInitialState = state => ({
   ...state,
 });
 
-const reset = ({ setState, initialState }) => () => setState({ ...initialState, type: 'reset' });
+const reset = ({ setState }) => () => setState({ type: 'reset' });
 const setSelector = ({ setState }) => selector => setState({ selector });
 const setEditor = ({ setState }) => editor => setState({
   editor: editor && Object.assign(editor, {
@@ -49,7 +49,13 @@ const handlers = { openSelector, setImage, setSelector, setEditor, setScale, onU
 
 const mergeState = (state, { type, ...action } = {}) => {
   if (type === 'reset') {
-    const { selector, editor } = action;
+    const { selector, editor } = state;
+    if (selector && selector.reset) {
+      selector.reset();
+    }
+    if (editor && editor.reset) {
+      editor.reset();
+    }
     return createInitialState({ ...action, selector, editor });
   }
   if (typeof action === 'object') {
