@@ -155,8 +155,9 @@
   "keywords": [
     "react",
     "reactjs",
-    "boilerplate",
-    "starter-kit",
+    "components",
+    "clarity",
+    "material-ui",
     "storybook"
   ],
   "license": "MIT",

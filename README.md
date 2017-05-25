@@ -1,9 +1,6 @@
 [![Build Status](https://travis-ci.org/Claritymovement/clarity-components.svg?branch=master)](https://travis-ci.org/Claritymovement/clarity-components) [![bitHound Score](https://www.bithound.io/github/Claritymovement/clarity-components/badges/score.svg)](https://www.bithound.io/github/Claritymovement/clarity-components) [![codecov](https://codecov.io/gh/Claritymovement/clarity-components/branch/master/graph/badge.svg)](https://codecov.io/gh/Claritymovement/clarity-components) [![Greenkeeper badge](https://badges.greenkeeper.io/claritymovement/clarity-components.svg)](https://greenkeeper.io/) [![Dependency Status](https://david-dm.org/Claritymovement/clarity-components.svg)](https://david-dm.org/Claritymovement/clarity-components) [![devDependencies Status](https://david-dm.org/Claritymovement/clarity-components/dev-status.svg)](https://david-dm.org/Claritymovement/clarity-components?type=dev)
 
 # clarity-components - Starter for React.js components
-> This is forked from [react-component-boilerplate](https://github.com/survivejs/react-component-boilerplate)
-
-This is a stupid starter makes it stupid enough to develop and test React components and small projects.
 With [storybook](https://github.com/storybooks/storybook) integrated, components can be tested on [gh-pages](https://claritymovement.github.io/clarity-components/storybook) by non-developers directly.
 
 ## Installation
