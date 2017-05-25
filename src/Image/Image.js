@@ -55,7 +55,7 @@ const Image = ({
   failed,
 }) => (
   <Card style={styles.root}>
-    <CardText expandable={!cropping} style={styles.content}>
+    <CardText expandable={image && !cropping} style={styles.content}>
       {uploading ? <LinearProgress style={styles.loader} /> : null}
       <Dropzone
         {...defaultProps.selector}
