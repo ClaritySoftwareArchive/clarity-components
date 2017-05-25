@@ -7,6 +7,7 @@
   "scripts": {
     "start": "webpack-dev-server --env dev",
     "test": "jest",
+    "test:update": "npm run test -- -u",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch",
     "lint:js": "eslint . --ignore-path .gitignore --ignore-pattern dist --cache",
@@ -143,7 +144,13 @@
       "node_modules",
       "packages"
     ],
-    "testMatch": [ "**/__tests__/**/(!\\.)*.js?(x)", "**/?(*.)(spec|test).js?(x)" ]
+    "testMatch": [
+      "**/__tests__/**/(!\\.)*.js?(x)",
+      "**/?(*.)(spec|test).js?(x)"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/__tests__/__mocks__/fileMock.js"
+    }
   },
   "keywords": [
     "react",
