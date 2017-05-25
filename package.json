@@ -1,9 +1,9 @@
 {
-  "name": "stupid-rc-starter",
-  "description": "Boilerplate for React.js components with storybook",
+  "name": "clarity-components",
+  "description": "React Components lib of Clarity Movement",
   "author": "Stupid Sun",
-  "user": "stupidism",
-  "version": "0.0.2",
+  "user": "claritymovement",
+  "version": "0.0.1",
   "scripts": {
     "start": "webpack-dev-server --env dev",
     "test": "jest",
@@ -124,11 +124,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Stupidism/stupid-rc-starter.git"
+    "url": "https://github.com/Claritymovement/clarity-components.git"
   },
-  "homepage": "https://stupidism.github.io/stupid-rc-starter/",
+  "homepage": "https://claritymovement.github.io/clarity-components/",
   "bugs": {
-    "url": "https://github.com/Stupidism/stupid-rc-starter/issues"
+    "url": "https://github.com/Claritymovement/clarity-components/issues"
   },
   "jest": {
     "collectCoverage": true,
