@@ -54,9 +54,14 @@
   "module": "src",
   "jsnext:main": "src",
   "dependencies": {
+    "material-ui": "^0.18.1",
     "prop-types": "^15.5.10",
     "react": "^15.5.4",
+    "react-avatar-editor": "^9.1.1",
     "react-dom": "^15.5.4",
+    "react-dropzone": "^3.13.1",
+    "react-image": "^1.0.1",
+    "react-tap-event-plugin": "^2.0.1",
     "recompose": "^0.23.4"
   },
   "devDependencies": {
