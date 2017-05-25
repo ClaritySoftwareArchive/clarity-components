@@ -22,8 +22,9 @@
     "gh-pages:stats": "webpack --env ghPages --profile --json > stats.json",
     "dist": "webpack --env dist",
     "dist:min": "webpack --env distMin",
-    "dist:modules": "rimraf ./dist-modules && babel ./src --out-dir ./dist-modules",
-    "preversion": "npm run test && npm run dist && npm run dist:min && git commit --allow-empty -am \"Update dist\"",
+    "dist:meta": "babel-node ./scripts/copy-files",
+    "dist:modules": "rimraf dist-modules && babel src -d dist-modules && npm run dist:meta dist-modules",
+    "publish:modules": "npm run dist:modules && (cd dist-modules && npm publish)",
     "prepublish": "npm run dist:modules",
     "postpublish": "npm run gh-pages && npm run gh-pages:deploy",
     "postinstall": "node lib/post_install.js",
@@ -87,14 +88,15 @@
     "editorconfig-tools": "^0.1.1",
     "enzyme": "^2.8.2",
     "eslint": "^3.19.0",
-    "eslint-config-airbnb": "^14.1.0",
+    "eslint-config-airbnb": "^15.0.1",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-import": "^2.2.0",
-    "eslint-plugin-jsx-a11y": "^4.0.0",
-    "eslint-plugin-react": "^6.9.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
     "extract-text-webpack-plugin": "^2.1.0",
     "file-loader": "^0.11.1",
-    "gh-pages": "^0.12.0",
+    "fs-extra": "^3.0.1",
+    "gh-pages": "^1.0.0",
     "git-prepush-hook": "^1.0.2",
     "html-webpack-plugin": "^2.28.0",
     "html-webpack-template": "^6.0.1",
@@ -109,7 +111,7 @@
     "react-github-corner": "^0.3.0",
     "react-test-renderer": "^15.5.4",
     "rimraf": "^2.6.1",
-    "style-loader": "^0.17.0",
+    "style-loader": "^0.18.1",
     "stylefmt": "^5.3.2",
     "stylelint": "^7.10.1",
     "sync-exec": "^0.6.2",
@@ -118,9 +120,6 @@
     "webpack": "^2.5.1",
     "webpack-dev-server": "^2.4.5",
     "webpack-merge": "^4.1.0"
-  },
-  "peerDependencies": {
-    "react": ">= 0.11.2 < 16.0.0"
   },
   "repository": {
     "type": "git",
@@ -144,13 +143,13 @@
       "node_modules",
       "packages"
     ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/__tests__/__mocks__/fileMock.js"
+    },
     "testMatch": [
       "**/__tests__/**/(!\\.)*.js?(x)",
       "**/?(*.)(spec|test).js?(x)"
-    ],
-    "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif)$": "<rootDir>/__tests__/__mocks__/fileMock.js"
-    }
+    ]
   },
   "keywords": [
     "react",
