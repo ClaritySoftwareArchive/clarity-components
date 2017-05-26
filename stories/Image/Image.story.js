@@ -24,13 +24,19 @@ const url = defaultImage;
 
 storiesOf('Image', module)
   .addDecorator(story => <MuiThemeProvider>{story()}</MuiThemeProvider>)
-  .add('default', () => (
+  .add('with uploadImage', () => (
     <Image uploadImage={uploadImage} />
   ))
   .add('with image', () => (
     <Image
       uploadImage={uploadImage}
-      initialState={{ image }}
+      image={image}
+    />
+  ))
+  .add('with url', () => (
+    <Image
+      uploadImage={uploadImage}
+      url={url}
     />
   ))
   .add('uploading', () => (

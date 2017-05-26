@@ -4,12 +4,14 @@ import withHandlers from 'recompose/withHandlers';
 import setDisplayName from 'recompose/setDisplayName';
 import mapProps from 'recompose/mapProps';
 import pure from 'recompose/pure';
+import flattenProp from 'recompose/flattenProp';
+import omit from 'lodash.omit';
+
+const omitProps = keys => mapProps(props => omit(props, keys));
 
 const defaultState = {
   scale: 1,
   uploading: false,
-  cropping: false,
-  uploaded: false,
   failed: false,
 };
 
@@ -18,7 +20,7 @@ const createInitialState = state => ({
   ...state,
 });
 
-const reset = ({ setState }) => () => setState({ type: 'reset' });
+const reset = ({ setState, ...props }) => () => setState({ type: 'reset', props });
 const setSelector = ({ setState }) => selector => setState({ selector });
 const setEditor = ({ setState }) => editor => setState({
   editor: editor && Object.assign(editor, {
@@ -47,13 +49,13 @@ const onUpload = ({
 
 const handlers = { openSelector, setImage, setSelector, setEditor, setScale, onUpload, reset };
 
-const mergeState = (state, { type, ...action } = {}) => {
+const mergeState = (state, { type, props, ...action } = {}) => {
   if (type === 'reset') {
     const { selector, editor } = state;
-    if (selector && selector.reset) {
+    if (!props.image && selector && selector.reset) {
       selector.reset();
     }
-    if (editor && editor.reset) {
+    if (!props.image && editor && editor.reset) {
       editor.reset();
     }
     return createInitialState({ ...action, selector, editor });
@@ -64,21 +66,25 @@ const mergeState = (state, { type, ...action } = {}) => {
   return state;
 };
 
-const propsMapper = ({ state: { scale, image, uploading, uploaded, url, failed }, ...rest }) => ({
+const propsMapper = ({
+  url,
+  uploaded = !!url,
+  image = (url ? { preview: url } : undefined),
+  ...rest
+}) => ({
   ...rest,
-  scale,
-  uploading,
+  url,
   uploaded,
   image,
   cropping: !!image && !uploaded,
-  url,
-  failed,
 });
 
 export default Component => compose(
   setDisplayName(Component.name),
   withReducer('state', 'setState', mergeState, ({ initialState }) => createInitialState(initialState)),
   withHandlers(handlers),
+  flattenProp('state'),
+  omitProps(['selector', 'editor']),
   mapProps(propsMapper),
   pure,
 )(Component);
