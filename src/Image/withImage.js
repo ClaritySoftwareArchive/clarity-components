@@ -39,12 +39,12 @@ const onUpload = ({
 }) => () => {
   if (!uploadImage) return;
 
-  const canvas = editor.getImageScaledToCanvas();
+  const dataUrl = editor.getImageScaledToCanvas().toDataURL();
   const finalState = { uploading: false };
   setState({ uploading: true, uploaded: false, failed: false });
   const onUploadSuccess = ({ url }) => setState({ url, uploaded: true, ...finalState });
   const onUploadFailed = () => setState({ failed: true, ...finalState });
-  uploadImage(canvas).then(onUploadSuccess, onUploadFailed);
+  uploadImage(dataUrl).then(onUploadSuccess, onUploadFailed);
 };
 
 const handlers = { openSelector, setImage, setSelector, setEditor, setScale, onUpload, reset };

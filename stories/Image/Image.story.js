@@ -11,10 +11,10 @@ import Image from '../../src/Image';
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 
-const uploadImage = canvas => new Promise((resolve, reject) => {
-  action('upload image')(canvas.toDataURL());
+const uploadImage = dataUrl => new Promise((resolve, reject) => {
+  action('upload image')(dataUrl);
   const upload = () => (Math.random() < 0.5
-    ? resolve({ url: canvas.toDataURL() })
+    ? resolve({ url: dataUrl })
     : reject(new Error('failed')));
   setTimeout(upload, 1000);
 });
