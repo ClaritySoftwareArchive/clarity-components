@@ -1,3 +1,4 @@
+/* eslint-env jest */
 import initStoryshots from '@storybook/addon-storyshots';
 
 jest.mock('material-ui/LinearProgress');
