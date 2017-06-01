@@ -45,7 +45,9 @@ back into your own project by running:
 $ git checkout master
 $ git fetch starter master
 $ git merge starter/master
-$ yarn install
+$ rm yarn.lock && yarn install
+$ npm test && npm run lint
+$ git commit --no-verify # because pre-commit will break merge progress
 ```
 
 ## Tasks
@@ -109,4 +111,4 @@ The starter includes a [GitHub Pages](https://pages.github.com/) specific portio
 
 ## License
 
-Copyright © 2017, [Stupidism](https://github.com/stupidism). Released under the [MIT license](LICENSE).
+Copyright © 2017, [Stupidism](https://github.com/stupidism). Released under the [MIT license](../LICENSE).
