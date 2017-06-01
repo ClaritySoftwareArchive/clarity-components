@@ -2380,9 +2380,9 @@ exports[`Storyshots RenderCounter Counter 1`] = `
         style={
           Object {
             "border": "solid 1px grey",
-            "height": 400,
+            "minHeight": 100,
             "padding": 10,
-            "width": 600,
+            "width": "50%",
           }
         }
       >
@@ -2403,42 +2403,6 @@ exports[`Storyshots RenderCounter Counter 1`] = `
           }
         >
           1
-        </div>
-        <div
-          style={
-            Object {
-              "backgroundColor": "#f95",
-              "borderRadius": "8px",
-              "color": "white",
-              "display": "inline-block",
-              "float": "right",
-              "fontSize": "8pt",
-              "fontWeight": "bold",
-              "padding": "1px 5px",
-              "textAlign": "center",
-              "top": "2px",
-            }
-          }
-        >
-          2
-        </div>
-        <div
-          style={
-            Object {
-              "backgroundColor": "#f95",
-              "borderRadius": "8px",
-              "color": "white",
-              "display": "inline-block",
-              "float": "right",
-              "fontSize": "8pt",
-              "fontWeight": "bold",
-              "padding": "1px 5px",
-              "textAlign": "center",
-              "top": "2px",
-            }
-          }
-        >
-          3
         </div>
       </div>
     </div>
@@ -2538,16 +2502,17 @@ exports[`Storyshots RenderCounter Counter 1`] = `
                             width
                           </span>
                           : 
-                          <span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
                               }
-                            >
-                              600
-                            </span>
+                            }
+                          >
+                            "
+                            50%
+                            "
                           </span>
                           , 
                           <span
@@ -2557,7 +2522,7 @@ exports[`Storyshots RenderCounter Counter 1`] = `
                               }
                             }
                           >
-                            height
+                            minHeight
                           </span>
                           : 
                           <span>
@@ -2568,7 +2533,7 @@ exports[`Storyshots RenderCounter Counter 1`] = `
                                 }
                               }
                             >
-                              400
+                              100
                             </span>
                           </span>
                           , 
@@ -2654,120 +2619,6 @@ exports[`Storyshots RenderCounter Counter 1`] = `
                           }
                         >
                           1
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                   
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 33,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                Counter
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    count
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#a11",
-                            }
-                          }
-                        >
-                          2
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                   
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 33,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                Counter
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    count
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#a11",
-                            }
-                          }
-                        >
-                          3
                         </span>
                       </span>
                     </span>
@@ -2947,9 +2798,9 @@ exports[`Storyshots RenderCounter RenderCounter 1`] = `
         style={
           Object {
             "border": "solid 1px grey",
-            "height": 400,
+            "minHeight": 100,
             "padding": 10,
-            "width": 600,
+            "width": "50%",
           }
         }
       >
@@ -2970,42 +2821,6 @@ exports[`Storyshots RenderCounter RenderCounter 1`] = `
           }
         >
           1
-        </div>
-        <div
-          style={
-            Object {
-              "backgroundColor": "#f95",
-              "borderRadius": "8px",
-              "color": "white",
-              "display": "inline-block",
-              "float": "right",
-              "fontSize": "8pt",
-              "fontWeight": "bold",
-              "padding": "1px 5px",
-              "textAlign": "center",
-              "top": "2px",
-            }
-          }
-        >
-          1
-        </div>
-        <div
-          style={
-            Object {
-              "backgroundColor": "#f95",
-              "borderRadius": "8px",
-              "color": "white",
-              "display": "inline-block",
-              "float": "right",
-              "fontSize": "8pt",
-              "fontWeight": "bold",
-              "padding": "1px 5px",
-              "textAlign": "center",
-              "top": "2px",
-            }
-          }
-        >
-          2
         </div>
       </div>
     </div>
@@ -3063,7 +2878,8 @@ exports[`Storyshots RenderCounter RenderCounter 1`] = `
             }
           }
         >
-          NOTICE: You may see them render an extra time. That’s a bug of storybook when you enter this page directly.
+          NOTICE: You may see them render some extra times. That’s a bug of storybook when you enter this page directly.
+          Click another menu and re-enter this page to see real render times.
         </p>
       </div>
       <div>
@@ -3142,16 +2958,17 @@ exports[`Storyshots RenderCounter RenderCounter 1`] = `
                             width
                           </span>
                           : 
-                          <span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
                               }
-                            >
-                              600
-                            </span>
+                            }
+                          >
+                            "
+                            50%
+                            "
                           </span>
                           , 
                           <span
@@ -3161,7 +2978,7 @@ exports[`Storyshots RenderCounter RenderCounter 1`] = `
                               }
                             }
                           >
-                            height
+                            minHeight
                           </span>
                           : 
                           <span>
@@ -3172,7 +2989,7 @@ exports[`Storyshots RenderCounter RenderCounter 1`] = `
                                 }
                               }
                             >
-                              400
+                              100
                             </span>
                           </span>
                           , 
@@ -3237,92 +3054,6 @@ exports[`Storyshots RenderCounter RenderCounter 1`] = `
                 RenderCounter
               </span>
               <span />
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 33,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                RenderCounter
-              </span>
-              <span />
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 33,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                RenderCounter
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    initialCount
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#a11",
-                            }
-                          }
-                        >
-                          2
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                   
-                </span>
-              </span>
               <span
                 style={
                   Object {
@@ -3505,48 +3236,12 @@ exports[`Storyshots RenderCounter StatelessRenderCounter 1`] = `
         style={
           Object {
             "border": "solid 1px grey",
-            "height": 400,
+            "minHeight": 100,
             "padding": 10,
-            "width": 600,
+            "width": "50%",
           }
         }
       >
-        <div
-          style={
-            Object {
-              "backgroundColor": "#f95",
-              "borderRadius": "8px",
-              "color": "white",
-              "display": "inline-block",
-              "float": "right",
-              "fontSize": "8pt",
-              "fontWeight": "bold",
-              "padding": "1px 5px",
-              "textAlign": "center",
-              "top": "2px",
-            }
-          }
-        >
-          1
-        </div>
-        <div
-          style={
-            Object {
-              "backgroundColor": "#f95",
-              "borderRadius": "8px",
-              "color": "white",
-              "display": "inline-block",
-              "float": "right",
-              "fontSize": "8pt",
-              "fontWeight": "bold",
-              "padding": "1px 5px",
-              "textAlign": "center",
-              "top": "2px",
-            }
-          }
-        >
-          1
-        </div>
         <div
           style={
             Object {
@@ -3685,16 +3380,17 @@ exports[`Storyshots RenderCounter StatelessRenderCounter 1`] = `
                             width
                           </span>
                           : 
-                          <span>
-                            <span
-                              style={
-                                Object {
-                                  "color": "#a11",
-                                }
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
                               }
-                            >
-                              600
-                            </span>
+                            }
+                          >
+                            "
+                            50%
+                            "
                           </span>
                           , 
                           <span
@@ -3704,7 +3400,7 @@ exports[`Storyshots RenderCounter StatelessRenderCounter 1`] = `
                               }
                             }
                           >
-                            height
+                            minHeight
                           </span>
                           : 
                           <span>
@@ -3715,7 +3411,7 @@ exports[`Storyshots RenderCounter StatelessRenderCounter 1`] = `
                                 }
                               }
                             >
-                              400
+                              100
                             </span>
                           </span>
                           , 
@@ -3759,64 +3455,6 @@ exports[`Storyshots RenderCounter StatelessRenderCounter 1`] = `
                 }
               >
                 &gt;
-              </span>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 33,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                withRenderCount(Counter)
-              </span>
-              <span />
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 33,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                withRenderCount(Counter)
-              </span>
-              <span />
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
               </span>
             </div>
             <div
@@ -4019,114 +3657,35 @@ exports[`Storyshots RenderCounter inside DivRefreshable 1`] = `
       <div
         style={
           Object {
-            "width": 600,
+            "border": "solid 1px grey",
+            "minHeight": 100,
+            "padding": 10,
+            "width": "50%",
           }
         }
       >
-        <h4>
-          Normal Counter won't re-render unless it's updated, e.g. hot module reload
-        </h4>
+        <button
+          onClick={[Function]}
+        >
+          Refresh in 50% possibility and Clone Child
+        </button>
         <div
           style={
             Object {
-              "border": "1px solid black",
-              "padding": 10,
+              "backgroundColor": "#f95",
+              "borderRadius": "8px",
+              "color": "white",
+              "display": "inline-block",
+              "float": "right",
+              "fontSize": "8pt",
+              "fontWeight": "bold",
+              "padding": "1px 5px",
+              "textAlign": "center",
+              "top": "2px",
             }
           }
         >
-          <button
-            onClick={[Function]}
-          >
-            Refresh
-          </button>
-          <div
-            style={
-              Object {
-                "backgroundColor": "#f95",
-                "borderRadius": "8px",
-                "color": "white",
-                "display": "inline-block",
-                "float": "right",
-                "fontSize": "8pt",
-                "fontWeight": "bold",
-                "padding": "1px 5px",
-                "textAlign": "center",
-                "top": "2px",
-              }
-            }
-          >
-            1
-          </div>
-        </div>
-        <h4>
-          This div will update its child
-        </h4>
-        <div
-          style={
-            Object {
-              "border": "1px solid black",
-              "padding": 10,
-            }
-          }
-        >
-          <button
-            onClick={[Function]}
-          >
-            Refresh and Clone Child
-          </button>
-          <div
-            style={
-              Object {
-                "backgroundColor": "#f95",
-                "borderRadius": "8px",
-                "color": "white",
-                "display": "inline-block",
-                "float": "right",
-                "fontSize": "8pt",
-                "fontWeight": "bold",
-                "padding": "1px 5px",
-                "textAlign": "center",
-                "top": "2px",
-              }
-            }
-          >
-            1
-          </div>
-        </div>
-        <h4>
-          onRefresh can be decide to trigger or not
-        </h4>
-        <div
-          style={
-            Object {
-              "border": "1px solid black",
-              "padding": 10,
-            }
-          }
-        >
-          <button
-            onClick={[Function]}
-          >
-            Refresh in 50% possibility and Clone Child
-          </button>
-          <div
-            style={
-              Object {
-                "backgroundColor": "#f95",
-                "borderRadius": "8px",
-                "color": "white",
-                "display": "inline-block",
-                "float": "right",
-                "fontSize": "8pt",
-                "fontWeight": "bold",
-                "padding": "1px 5px",
-                "textAlign": "center",
-                "top": "2px",
-              }
-            }
-          >
-            1
-          </div>
+          1
         </div>
       </div>
     </div>
@@ -4214,11 +3773,14 @@ exports[`Storyshots RenderCounter inside DivRefreshable 1`] = `
                 }
               >
                 &lt;
-                div
+                DivRefreshable
               </span>
               <span>
                 <span>
-                   
+                  <span>
+                    <br />
+                      
+                  </span>
                   <span
                     style={Object {}}
                   >
@@ -4248,6 +3810,29 @@ exports[`Storyshots RenderCounter inside DivRefreshable 1`] = `
                             width
                           </span>
                           : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
+                              }
+                            }
+                          >
+                            "
+                            50%
+                            "
+                          </span>
+                          , 
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            minHeight
+                          </span>
+                          : 
                           <span>
                             <span
                               style={
@@ -4256,15 +3841,117 @@ exports[`Storyshots RenderCounter inside DivRefreshable 1`] = `
                                 }
                               }
                             >
-                              600
+                              100
                             </span>
                           </span>
+                          , 
+                          <span
+                            style={
+                              Object {
+                                "color": "#666",
+                              }
+                            }
+                          >
+                            border
+                          </span>
+                          : 
+                          <span
+                            style={
+                              Object {
+                                "color": "#22a",
+                                "wordBreak": "break-word",
+                              }
+                            }
+                          >
+                            "
+                            solid 1px grey
+                            "
+                          </span>
+                          , 
+                          …
                           }
                         </span>
                       </span>
                     </span>
                   </span>
-                  
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    label
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Refresh in 50% possibility and Clone Child
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    cloneChild
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    onRefresh
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          function (context) {
+                              if (Math.random() &lt; possibility) {
+                                context.next();
+                                log('hit', context.props);
+                              } else {
+                                log('miss', context.props);
+                              }
+                            }()
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                  <br />
                 </span>
               </span>
               <span
@@ -4277,552 +3964,34 @@ exports[`Storyshots RenderCounter inside DivRefreshable 1`] = `
                 &gt;
               </span>
             </div>
-            <div>
-              <div
+            <div
+              style={
+                Object {
+                  "paddingLeft": 33,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
                 style={
                   Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  h4
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
+                &lt;
+                RenderCounter
+              </span>
+              <span />
+              <span
                 style={
                   Object {
-                    "paddingLeft": 48,
-                    "paddingRight": 3,
+                    "color": "#777",
                   }
                 }
               >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  Normal Counter won't re-render unless it's updated, e.g. hot module reload
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  h4
-                  &gt;
-                </span>
-              </div>
-            </div>
-            <div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  DivRefreshable
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 48,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  RenderCounter
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  /&gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  DivRefreshable
-                  &gt;
-                </span>
-              </div>
-            </div>
-            <div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  h4
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 48,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  This div will update its child
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  h4
-                  &gt;
-                </span>
-              </div>
-            </div>
-            <div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  DivRefreshable
-                </span>
-                <span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      label
-                    </span>
-                    <span>
-                      =
-                      <span
-                        style={Object {}}
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          "
-                          Refresh and Clone Child
-                          "
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      cloneChild
-                    </span>
-                    
-                  </span>
-                </span>
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 48,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  RenderCounter
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  /&gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  DivRefreshable
-                  &gt;
-                </span>
-              </div>
-            </div>
-            <div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  h4
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 48,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  onRefresh can be decide to trigger or not
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  h4
-                  &gt;
-                </span>
-              </div>
-            </div>
-            <div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  DivRefreshable
-                </span>
-                <span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      label
-                    </span>
-                    <span>
-                      =
-                      <span
-                        style={Object {}}
-                      >
-                        <span
-                          style={
-                            Object {
-                              "color": "#22a",
-                              "wordBreak": "break-word",
-                            }
-                          }
-                        >
-                          "
-                          Refresh in 50% possibility and Clone Child
-                          "
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      cloneChild
-                    </span>
-                  </span>
-                  <span>
-                     
-                    <span
-                      style={Object {}}
-                    >
-                      onRefresh
-                    </span>
-                    <span>
-                      =
-                      <span
-                        style={Object {}}
-                      >
-                        <span>
-                          <span
-                            style={
-                              Object {
-                                "color": "#170",
-                              }
-                            }
-                          >
-                            onRefresh()
-                          </span>
-                        </span>
-                      </span>
-                    </span>
-                    
-                  </span>
-                </span>
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 48,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  RenderCounter
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  /&gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  DivRefreshable
-                  &gt;
-                </span>
-              </div>
+                /&gt;
+              </span>
             </div>
             <div
               style={
@@ -4840,7 +4009,7 @@ exports[`Storyshots RenderCounter inside DivRefreshable 1`] = `
                 }
               >
                 &lt;/
-                div
+                DivRefreshable
                 &gt;
               </span>
             </div>
