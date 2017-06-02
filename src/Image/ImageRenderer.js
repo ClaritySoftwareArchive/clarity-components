@@ -1,5 +1,6 @@
 import React from 'react';
 import T from 'prop-types';
+import noop from 'lodash.noop';
 
 import Card from 'material-ui/Card/Card';
 import CardActions from 'material-ui/Card/CardActions';
@@ -37,20 +38,20 @@ const defaultProps = {
 
 const ImageRenderer = ({
   image,
-  uploading,
-  cropping,
-  uploaded,
   scale,
+  url,
+  cropping,
+  failed,
+  uploaded,
+  uploading,
+  onUpload,
+  openEditor,
+  openSelector,
+  reset,
+  setEditor,
+  setImage,
   setScale,
   setSelector,
-  setEditor,
-  openSelector,
-  setImage,
-  onUpload,
-  setState,
-  reset,
-  url,
-  failed,
 }) => (
   <Card style={styles.root}>
     <CardText expandable={image && !cropping} style={styles.content}>
@@ -90,11 +91,11 @@ const ImageRenderer = ({
     <CardActions>
       {image && !uploaded ? (
         <RaisedButton secondary disabled={uploading} label={failed ? 'Retry' : 'Upload'} onTouchTap={onUpload} />
-        ) : null}
+      ) : null}
       <RaisedButton
         primary
         label={image ? 'Change' : 'Select Image'}
-        onTouchTap={uploaded ? () => setState({ uploaded: false }) : openSelector}
+        onTouchTap={uploaded ? openEditor : openSelector}
       />
       <FlatButton style={styles.cancelButton} disabled={!image} label="Reset" onTouchTap={reset} />
     </CardActions>
@@ -105,25 +106,38 @@ ImageRenderer.propTypes = {
   image: T.shape({
     preview: T.string.isRequired,
   }),
+  scale: T.number,
   url: T.string,
-  scale: T.number.isRequired,
-  uploading: T.bool.isRequired,
-  uploaded: T.bool.isRequired,
-  cropping: T.bool.isRequired,
-  failed: T.bool.isRequired,
-  setImage: T.func.isRequired,
-  setScale: T.func.isRequired,
-  onUpload: T.func.isRequired,
-  setState: T.func.isRequired,
-  reset: T.func.isRequired,
-  setSelector: T.func.isRequired,
-  openSelector: T.func.isRequired,
-  setEditor: T.func.isRequired,
+  cropping: T.bool,
+  failed: T.bool,
+  uploaded: T.bool,
+  uploading: T.bool,
+  onUpload: T.func,
+  openEditor: T.func,
+  openSelector: T.func,
+  reset: T.func,
+  setEditor: T.func,
+  setImage: T.func,
+  setScale: T.func,
+  setSelector: T.func,
 };
 
 ImageRenderer.defaultProps = {
   image: undefined,
+  scale: 1,
   url: undefined,
+  cropping: undefined,
+  failed: undefined,
+  uploaded: undefined,
+  uploading: undefined,
+  onUpload: noop,
+  openEditor: noop,
+  openSelector: noop,
+  reset: noop,
+  setEditor: noop,
+  setImage: noop,
+  setScale: noop,
+  setSelector: noop,
 };
 
 export default ImageRenderer;

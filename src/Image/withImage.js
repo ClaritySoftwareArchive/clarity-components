@@ -1,13 +1,15 @@
+import T from 'prop-types';
 import compose from 'recompose/compose';
 import withReducer from 'recompose/withReducer';
 import withHandlers from 'recompose/withHandlers';
-import setDisplayName from 'recompose/setDisplayName';
 import mapProps from 'recompose/mapProps';
 import pure from 'recompose/pure';
 import flattenProp from 'recompose/flattenProp';
-import omit from 'lodash.omit';
 
-const omitProps = keys => mapProps(props => omit(props, keys));
+import omitProps from '../hocs/omitProps';
+import omitPropTypes from '../hocs/omitPropTypes';
+import extendStatics from '../hocs/extendStatics';
+import copyStatics from '../hocs/copyStatics';
 
 const defaultState = {
   scale: 1,
@@ -20,6 +22,20 @@ const createInitialState = state => ({
   ...state,
 });
 
+const onUpload = ({
+  editor,
+  uploadImage,
+  onUploadFail,
+  onUploadStart,
+  onUploadSucceed,
+}) => () => {
+  if (!uploadImage) return;
+
+  const dataUrl = editor.getDataUrl();
+  onUploadStart();
+  uploadImage(dataUrl).then(onUploadSucceed, onUploadFail);
+};
+
 const reset = ({ setState, ...props }) => () => setState({ type: 'reset', props });
 const setSelector = ({ setState }) => selector => setState({ selector });
 const setEditor = ({ setState }) => editor => setState({
@@ -27,27 +43,32 @@ const setEditor = ({ setState }) => editor => setState({
     reset: () => {
       editor.state.image = {}; // eslint-disable-line no-param-reassign
     },
+    getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
   }),
 });
-const openSelector = ({ state: { selector } }) => () => selector && selector.open();
+const openSelector = ({ selector }) => () => selector && selector.open();
+const openEditor = ({ setState }) => () => setState({ uploaded: false });
 const setImage = ({ setState }) => image => setState({ image });
 const setScale = ({ setState }) => scale => setState({ scale });
-const onUpload = ({
-  setState,
-  state: { editor },
-  uploadImage,
-}) => () => {
-  if (!uploadImage) return;
-
-  const dataUrl = editor.getImageScaledToCanvas().toDataURL();
-  const finalState = { uploading: false };
+const onUploadSucceed = ({ setState }) => ({ url }) =>
+  setState({ url, uploaded: true, uploading: false });
+const onUploadFail = ({ setState }) => () =>
+  setState({ failed: true, uploading: false });
+const onUploadStart = ({ setState }) => () =>
   setState({ uploading: true, uploaded: false, failed: false });
-  const onUploadSuccess = ({ url }) => setState({ url, uploaded: true, ...finalState });
-  const onUploadFailed = () => setState({ failed: true, ...finalState });
-  uploadImage(dataUrl).then(onUploadSuccess, onUploadFailed);
-};
 
-const handlers = { openSelector, setImage, setSelector, setEditor, setScale, onUpload, reset };
+const handlers = {
+  openEditor,
+  openSelector,
+  setEditor,
+  setImage,
+  setScale,
+  setSelector,
+  onUploadFail,
+  onUploadStart,
+  onUploadSucceed,
+  reset,
+};
 
 const mergeState = (state, { type, props, ...action } = {}) => {
   if (type === 'reset') {
@@ -80,11 +101,28 @@ const propsMapper = ({
 });
 
 export default Component => compose(
-  setDisplayName(Component.name),
+  omitPropTypes(['onUpload']),
+  extendStatics({
+    displayName: 'withImage',
+    propTypes: {
+      initialState: T.shape({
+        url: T.string,
+      }),
+      onUploadFail: T.func,
+      onUploadStart: T.func,
+      onUploadSucceed: T.func,
+      uploadImage: T.func,
+    },
+    defaultProps: {
+      initialState: defaultState,
+    },
+  }),
+  copyStatics(Component),
   withReducer('state', 'setState', mergeState, ({ initialState }) => createInitialState(initialState)),
-  withHandlers(handlers),
   flattenProp('state'),
-  omitProps(['selector', 'editor']),
+  withHandlers(handlers),
+  withHandlers({ onUpload }),
+  omitProps(['selector', 'editor', 'state', 'setState']),
   mapProps(propsMapper),
   pure,
 )(Component);

@@ -58,6 +58,7 @@
   "module": "src",
   "jsnext:main": "src",
   "dependencies": {
+    "lodash.noop": "^3.0.1",
     "lodash.omit": "^4.5.0",
     "material-ui": "^0.18.1",
     "prop-types": "^15.5.10",
