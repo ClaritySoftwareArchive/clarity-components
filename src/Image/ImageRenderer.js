@@ -15,16 +15,20 @@ import Dropzone from 'react-dropzone';
 import AvatarEditor from 'react-avatar-editor';
 
 const styles = {
-  root: { maxWidth: 332 },
-  content: { maxHeight: 310, paddingBottom: 0 },
-  cancelButton: { marginRight: 0 },
+  root: { maxWidth: 300 },
+  content: { maxHeight: 300, paddingBottom: 0 },
+  cancelButton: { marginRight: 0, minWidth: 85 },
   loader: { marginBottom: 5 },
   selector: {
     boxSizing: 'border-box',
-    maxWidth: 298,
+    maxWidth: 268,
     maxHeight: 300,
     border: '1px solid #ededed',
     borderRadius: 2,
+  },
+  selectorContent: {
+    width: '100%',
+    height: 268,
   },
   slider: { margin: '5px 0' },
 };
@@ -33,6 +37,12 @@ const defaultProps = {
   selector: {
     accept: 'image/*',
     multiple: false,
+  },
+  cropper: {
+    crossOrigin: 'anonymous',
+    border: 34,
+    color: [222, 222, 222, 0.6],
+    rotate: 0,
   },
 };
 
@@ -54,49 +64,57 @@ const ImageRenderer = ({
   setSelector,
 }) => (
   <Card style={styles.root}>
-    <CardText expandable={image && !cropping} style={styles.content}>
+    <CardText style={styles.content}>
       {uploading ? <LinearProgress style={styles.loader} /> : null}
-      <Dropzone
-        {...defaultProps.selector}
-        style={styles.selector}
-        ref={setSelector}
-        disableClick={!!image}
-        onDrop={([imgFile]) => imgFile && setImage(imgFile)}
-      >
-        <AvatarEditor
-          image={image && image.preview}
-          crossOrigin="anonymous"
-          ref={setEditor}
-          border={34}
-          scale={scale}
-          color={image ? [222, 222, 222, 0.6] : [255, 255, 255, 0.6]}
-          rotate={0}
-        />
-      </Dropzone>
-      <Slider
-        value={scale}
-        min={1}
-        max={2}
-        sliderStyle={styles.slider}
-        disabled={!cropping}
-        onChange={(e, val) => {
-          e.stopPropagation();
-          setScale(val);
-        }}
-      />
-    </CardText>
-    <CardText expandable={!uploaded}>
-      <Img width="100%" height="100%" src={url} />
+      {!image || cropping ? (
+        <Dropzone
+          {...defaultProps.selector}
+          style={styles.selector}
+          ref={setSelector}
+          disableClick={!!image}
+          onDrop={([imgFile]) => imgFile && setImage(imgFile)}
+        >
+          {cropping ? (
+            <div>
+              <AvatarEditor
+                {...defaultProps.cropper}
+                image={image && image.preview}
+                ref={setEditor}
+                scale={scale}
+              />
+              <Slider
+                value={scale}
+                min={1}
+                max={2}
+                sliderStyle={styles.slider}
+                onChange={(e, val) => {
+                  e.stopPropagation();
+                  setScale(val);
+                }}
+              />
+            </div>
+          ) : <div style={styles.selectorContent} />}
+        </Dropzone>
+      ) : null}
+      {uploaded ? (
+        <Img width="100%" height="100%" src={url} />
+      ) : null}
     </CardText>
     <CardActions>
       {image && !uploaded ? (
-        <RaisedButton secondary disabled={uploading} label={failed ? 'Retry' : 'Upload'} onTouchTap={onUpload} />
+        <RaisedButton
+          name="Upload"
+          secondary
+          disabled={uploading}
+          label={failed ? 'Retry' : 'Upload'}
+          onTouchTap={onUpload}
+        />
       ) : null}
-      <RaisedButton
-        primary
-        label={image ? 'Change' : 'Select Image'}
-        onTouchTap={uploaded ? openEditor : openSelector}
-      />
+      {uploaded ? (
+        <RaisedButton name="Crop" primary label="Crop" onTouchTap={openEditor} />
+      ) : (
+        <RaisedButton name="Select" primary label={image ? 'Change' : 'Select Image'} onTouchTap={openSelector} />
+      )}
       <FlatButton style={styles.cancelButton} disabled={!image} label="Reset" onTouchTap={reset} />
     </CardActions>
   </Card>
