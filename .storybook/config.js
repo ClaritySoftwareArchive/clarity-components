@@ -3,20 +3,11 @@ import infoAddon from '@storybook/addon-info';
 import { setOptions } from '@storybook/addon-options';
 import { withKnobs } from '@storybook/addon-knobs';
 
-import pkg from '../starter/config/minimal-package';
+import options from './options';
 
 // addon-options
 setAddon(infoAddon);
-setOptions({
-  name: pkg.name,
-  url: pkg.repository.url,
-  goFullScreen: false,
-  showLeftPanel: true,
-  showDownPanel: true,
-  showSearchBox: false,
-  downPanelInRight: true,
-  sortStoriesByKind: false,
-});
+setOptions(options);
 
 // addon-knobs
 // Add the `withKnobs` decorator to add knobs support to your stories.
