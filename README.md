@@ -12,7 +12,7 @@
    -->
 </blockquote>
 
-[![Build Status](https://travis-ci.org/Claritymovement/clarity-components.svg?branch=master)](https://travis-ci.org/Claritymovement/clarity-components) 
+[![Build Status](https://travis-ci.org/ClarityMovement/clarity-components.svg?branch=master)](https://travis-ci.org/Claritymovement/clarity-components) 
 [![bitHound Score](https://www.bithound.io/github/Claritymovement/clarity-components/badges/score.svg)](https://www.bithound.io/github/Claritymovement/clarity-components) 
 [![codecov](https://codecov.io/gh/Claritymovement/clarity-components/branch/master/graph/badge.svg)](https://codecov.io/gh/Claritymovement/clarity-components) 
 [![Greenkeeper badge](https://badges.greenkeeper.io/claritymovement/clarity-components.svg)](https://greenkeeper.io/) 
@@ -20,7 +20,7 @@
 [![devDependencies Status](https://david-dm.org/Claritymovement/clarity-components/dev-status.svg)](https://david-dm.org/Claritymovement/clarity-components?type=dev)
 
 # clarity-components - A set of components and hocs from ClarityMovement
-With [storybook](https://github.com/storybooks/storybook) integrated, components can be tested on [gh-pages](https://claritymovement.github.io/clarity-components/storybook) by non-developers directly.
+With [storybook](https://github.com/storybooks/storybook) integrated, components can be tested on [gh-pages](https://claritymovement.github.io/clarity-components) by non-developers directly.
 
 ## Installation
 ```
@@ -29,10 +29,6 @@ yarn add clarity-components
 or
 ```
 npm install --save clarity-components
-```
-
-## Usage
-```js
 ```
 
 ## Usage
