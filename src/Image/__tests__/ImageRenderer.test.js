@@ -9,6 +9,7 @@ import Dropzone from 'react-dropzone';
 import AvatarEditor from 'react-avatar-editor';
 
 import ImageRenderer from '../ImageRenderer';
+import testExpectedProps from './testExpectedProps';
 
 const onUpload = jest.fn();
 const openEditor = jest.fn();
@@ -128,7 +129,7 @@ const defaultProps = {
   openSelector,
 };
 
-describe('ImageRenderer[props => entities tree]', () => {
+describe('ImageRenderer(props): [entities tree]', () => {
   const testRenderMode = ({ desc, props, entitiesWithProps }) => describe(desc, () => {
     const wrapper = shallow(<ImageRenderer {...defaultProps} {...props} />);
 
@@ -145,14 +146,7 @@ describe('ImageRenderer[props => entities tree]', () => {
           const expectedEntityProps = { ...staticProps, ...expectedProps };
           const entityProps = selectedEntities.at(entityIndex).props();
 
-          const testExpectedEntityProp = (expectedValue, propKey) => {
-            const propValue = entityProps[propKey];
-            it(`should have expected prop ${propKey}`, () => {
-              expect(propValue).toEqual(expectedValue);
-            });
-          };
-
-          _.forEach(expectedEntityProps, testExpectedEntityProp);
+          testExpectedProps(entityProps, expectedEntityProps);
         });
 
       _.forEach(expectedEntities, testExpectedEntity);
