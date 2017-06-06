@@ -1,7 +1,6 @@
 import T from 'prop-types';
 import compose from 'recompose/compose';
 import withReducer from 'recompose/withReducer';
-import withHandlers from 'recompose/withHandlers';
 import mapProps from 'recompose/mapProps';
 import pure from 'recompose/pure';
 import flattenProp from 'recompose/flattenProp';
@@ -10,6 +9,7 @@ import omitProps from '../hocs/omitProps';
 import omitPropTypes from '../hocs/omitPropTypes';
 import extendStatics from '../hocs/extendStatics';
 import copyStatics from '../hocs/copyStatics';
+import embedHandlers from '../hocs/embedHandlers';
 
 const defaultState = {
   scale: 1,
@@ -50,7 +50,7 @@ const onUploadFail = ({ setState }) => () =>
 const onUploadStart = ({ setState }) => () =>
   setState({ uploading: true, uploaded: false, failed: false });
 
-const handlers = {
+export const handlers = [{
   openEditor,
   openSelector,
   setEditor,
@@ -61,7 +61,9 @@ const handlers = {
   onUploadStart,
   onUploadSucceed,
   reset,
-};
+}, {
+  onUpload,
+}];
 
 const mergeState = (state, { type, props, ...action } = {}) => {
   if (type === 'reset') {
@@ -113,8 +115,8 @@ export default Component => compose(
   copyStatics(Component),
   withReducer('state', 'setState', mergeState, ({ initialState }) => createInitialState(initialState)),
   flattenProp('state'),
-  withHandlers(handlers),
-  withHandlers({ onUpload }),
+  omitProps('initialState'),
+  embedHandlers(handlers),
   omitProps(['selector', 'editor', 'state', 'setState']),
   mapProps(propsMapper),
   pure,

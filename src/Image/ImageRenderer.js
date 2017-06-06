@@ -1,6 +1,5 @@
 import React from 'react';
 import T from 'prop-types';
-import noop from 'lodash.noop';
 
 import Card from 'material-ui/Card/Card';
 import CardActions from 'material-ui/Card/CardActions';
@@ -159,14 +158,14 @@ ImageRenderer.defaultProps = {
   failed: undefined,
   uploaded: undefined,
   uploading: undefined,
-  onUpload: noop,
-  openEditor: noop,
-  openSelector: noop,
-  reset: noop,
-  setEditor: noop,
-  setImage: noop,
-  setScale: noop,
-  setSelector: noop,
+  onUpload: undefined,
+  openEditor: undefined,
+  openSelector: undefined,
+  reset: undefined,
+  setEditor: undefined,
+  setImage: undefined,
+  setScale: undefined,
+  setSelector: undefined,
 };
 
 export default ImageRenderer;
