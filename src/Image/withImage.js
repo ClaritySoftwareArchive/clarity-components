@@ -1,7 +1,6 @@
 import T from 'prop-types';
 import compose from 'recompose/compose';
 import withReducer from 'recompose/withReducer';
-import withHandlers from 'recompose/withHandlers';
 import mapProps from 'recompose/mapProps';
 import pure from 'recompose/pure';
 import flattenProp from 'recompose/flattenProp';
@@ -10,17 +9,29 @@ import omitProps from '../hocs/omitProps';
 import omitPropTypes from '../hocs/omitPropTypes';
 import extendStatics from '../hocs/extendStatics';
 import copyStatics from '../hocs/copyStatics';
+import embedHandlers from '../hocs/embedHandlers';
 
 const defaultState = {
   scale: 1,
   uploading: false,
   failed: false,
+  editor: undefined,
 };
 
-const createInitialState = state => ({
-  ...defaultState,
-  ...state,
-});
+const createInitialState = ({ initialState, ...props }) => {
+  const state = {
+    ...defaultState,
+    ...initialState,
+  };
+
+  Object.keys(defaultState).forEach((key) => {
+    if (typeof props[key] !== 'undefined') {
+      state[key] = props[key];
+    }
+  });
+
+  return state;
+};
 
 const onUpload = ({
   editor,
@@ -38,14 +49,7 @@ const onUpload = ({
 
 const reset = ({ setState, ...props }) => () => setState({ type: 'reset', props });
 const setSelector = ({ setState }) => selector => setState({ selector });
-const setEditor = ({ setState }) => editor => setState({
-  editor: editor && Object.assign(editor, {
-    reset: () => {
-      editor.state.image = {}; // eslint-disable-line no-param-reassign
-    },
-    getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
-  }),
-});
+const setEditor = ({ setState }) => editor => setState({ editor });
 const openSelector = ({ selector }) => () => selector && selector.open();
 const openEditor = ({ setState }) => () => setState({ uploaded: false });
 const setImage = ({ setState }) => image => setState({ image });
@@ -57,7 +61,7 @@ const onUploadFail = ({ setState }) => () =>
 const onUploadStart = ({ setState }) => () =>
   setState({ uploading: true, uploaded: false, failed: false });
 
-const handlers = {
+export const handlers = [{
   openEditor,
   openSelector,
   setEditor,
@@ -68,23 +72,19 @@ const handlers = {
   onUploadStart,
   onUploadSucceed,
   reset,
-};
+}, {
+  onUpload,
+}];
 
-const mergeState = (state, { type, props, ...action } = {}) => {
+const mergeState = (state, { type, props, ...action }) => {
   if (type === 'reset') {
     const { selector, editor } = state;
-    if (!props.image && selector && selector.reset) {
-      selector.reset();
-    }
     if (!props.image && editor && editor.reset) {
       editor.reset();
     }
-    return createInitialState({ ...action, selector, editor });
+    return createInitialState({ ...props, selector, editor });
   }
-  if (typeof action === 'object') {
-    return { ...state, ...action };
-  }
-  return state;
+  return { ...state, ...action };
 };
 
 const propsMapper = ({
@@ -100,28 +100,32 @@ const propsMapper = ({
   cropping: !!image && !uploaded,
 });
 
+export const propTypes = {
+  initialState: T.shape({
+    url: T.string,
+  }),
+  onUploadFail: T.func,
+  onUploadStart: T.func,
+  onUploadSucceed: T.func,
+  uploadImage: T.func,
+};
+
+export const defaultProps = {
+  initialState: defaultState,
+};
+
 export default Component => compose(
   omitPropTypes(['onUpload']),
   extendStatics({
     displayName: 'withImage',
-    propTypes: {
-      initialState: T.shape({
-        url: T.string,
-      }),
-      onUploadFail: T.func,
-      onUploadStart: T.func,
-      onUploadSucceed: T.func,
-      uploadImage: T.func,
-    },
-    defaultProps: {
-      initialState: defaultState,
-    },
+    propTypes,
+    defaultProps,
   }),
   copyStatics(Component),
-  withReducer('state', 'setState', mergeState, ({ initialState }) => createInitialState(initialState)),
+  withReducer('state', 'setState', mergeState, createInitialState),
   flattenProp('state'),
-  withHandlers(handlers),
-  withHandlers({ onUpload }),
+  omitProps('initialState'),
+  embedHandlers(handlers),
   omitProps(['selector', 'editor', 'state', 'setState']),
   mapProps(propsMapper),
   pure,

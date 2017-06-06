@@ -648,17 +648,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   no
                 </td>
                 <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#170",
-                        }
-                      }
-                    >
-                      noop()
-                    </span>
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -718,17 +708,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   no
                 </td>
                 <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#170",
-                        }
-                      }
-                    >
-                      noop()
-                    </span>
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -773,17 +753,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   no
                 </td>
                 <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#170",
-                        }
-                      }
-                    >
-                      noop()
-                    </span>
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -798,17 +768,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   no
                 </td>
                 <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#170",
-                        }
-                      }
-                    >
-                      noop()
-                    </span>
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -848,17 +808,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   no
                 </td>
                 <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#170",
-                        }
-                      }
-                    >
-                      noop()
-                    </span>
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -888,17 +838,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   no
                 </td>
                 <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#170",
-                        }
-                      }
-                    >
-                      noop()
-                    </span>
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -913,17 +853,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   no
                 </td>
                 <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#170",
-                        }
-                      }
-                    >
-                      noop()
-                    </span>
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -1012,6 +942,8 @@ exports[`Storyshots Image Controlled 1`] = `
                           false
                         </span>
                       </span>
+                      , 
+                      …
                       }
                     </span>
                   </span>
