@@ -58,9 +58,11 @@
   "module": "src",
   "jsnext:main": "src",
   "dependencies": {
-    "lodash.noop": "^3.0.1",
+    "attr-accept": "^1.1.0",
     "lodash.clonedeep": "^4.5.0",
+    "lodash.find": "^4.6.0",
     "lodash.mapvalues": "^4.6.0",
+    "lodash.noop": "^3.0.1",
     "lodash.omit": "^4.5.0",
     "material-ui": "^0.18.1",
     "prop-types": "^15.5.10",

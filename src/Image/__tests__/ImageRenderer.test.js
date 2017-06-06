@@ -1,6 +1,6 @@
 /* eslint-env jest */
 import _ from 'lodash';
-import { refEditor, onScaleChange, onImageDrop } from '../ImageRenderer';
+import { refEditor, onScaleChange, onImageSelect } from '../ImageRenderer';
 
 describe('refEditor(setEditor)(editor): { reset, getDataUrl }', () => {
   let editor;
@@ -57,17 +57,39 @@ describe('onScaleChange(setScale)(event, scale){...}', () => {
 
 describe('onImageDrop(setImage)([imgFile]){...}', () => {
   const setImage = jest.fn();
-  const imgFile = _.stubObject();
+  const imgFile = { type: 'image/jpg' };
+  const txtFile = { type: 'text/plain' };
   beforeEach(() => setImage.mockClear());
 
-  test('setImage gets called with imgFile', () => {
-    onImageDrop(setImage)([imgFile]);
+  test('setImage gets called if event has only a img file', () => {
+    const event = { target: { files: [imgFile] } };
+    onImageSelect(setImage)(event);
     expect(setImage).toHaveBeenCalledTimes(1);
     expect(setImage).toHaveBeenCalledWith(imgFile);
   });
 
-  test('does nothing if imgFile is undefined', () => {
-    onImageDrop(setImage)([]);
+  test('setImage gets called if event has both txt and img files', () => {
+    const event = { target: { files: [txtFile, imgFile] } };
+    onImageSelect(setImage)(event);
+    expect(setImage).toHaveBeenCalledTimes(1);
+    expect(setImage).toHaveBeenCalledWith(imgFile);
+  });
+
+  test('setImage gets called with first img if event has multiple img files', () => {
+    const pngFile = { type: 'image/png' };
+    const event = { target: { files: [pngFile, imgFile] } };
+    onImageSelect(setImage)(event);
+    expect(setImage).toHaveBeenCalledTimes(1);
+    expect(setImage).toHaveBeenCalledWith(pngFile);
+  });
+
+  test('does nothing if event has only a txt file', () => {
+    onImageSelect(setImage)({ target: { files: [txtFile] } });
+    expect(setImage).toHaveBeenCalledTimes(0);
+  });
+
+  test('does nothing if event is blank', () => {
+    onImageSelect(setImage)({ target: { files: [] } });
     expect(setImage).toHaveBeenCalledTimes(0);
   });
 });

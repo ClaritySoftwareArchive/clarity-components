@@ -1,5 +1,6 @@
 import React from 'react';
 import T from 'prop-types';
+import find from 'lodash.find';
 
 import Card from 'material-ui/Card/Card';
 import CardActions from 'material-ui/Card/CardActions';
@@ -12,6 +13,9 @@ import LinearProgress from 'material-ui/LinearProgress';
 import Img from 'react-image';
 import Dropzone from 'react-dropzone';
 import AvatarEditor from 'react-avatar-editor';
+import accepts from 'attr-accept';
+
+import createObjectURL from './createObjectURL';
 
 const styles = {
   root: { maxWidth: 300 },
@@ -58,6 +62,15 @@ export const onScaleChange = setScale => (e, scale) => {
 };
 
 export const onImageDrop = setImage => ([imgFile]) => imgFile && setImage(imgFile);
+
+export const onImageSelect = setImage => (event) => {
+  const imgFile = find(event.target.files, file => accepts(file, defaultProps.selector.accept));
+
+  if (imgFile) {
+    imgFile.preview = createObjectURL(imgFile);
+    setImage(imgFile);
+  }
+};
 
 const ImageRenderer = ({
   image,
