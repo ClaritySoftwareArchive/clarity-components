@@ -46,6 +46,20 @@ const defaultProps = {
   },
 };
 
+export const refEditor = setEditor => editor => setEditor(editor && Object.assign(editor, {
+  reset: () => {
+    editor.state.image = {}; // eslint-disable-line no-param-reassign
+  },
+  getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
+}));
+
+export const onScaleChange = setScale => (e, scale) => {
+  e.stopPropagation();
+  setScale(scale);
+};
+
+export const onImageDrop = setImage => ([imgFile]) => imgFile && setImage(imgFile);
+
 const ImageRenderer = ({
   image,
   scale,
@@ -72,14 +86,14 @@ const ImageRenderer = ({
           style={styles.selector}
           ref={setSelector}
           disableClick={!!image}
-          onDrop={([imgFile]) => imgFile && setImage(imgFile)}
+          onDrop={onImageDrop(setImage)}
         >
           {cropping ? (
             <div>
               <AvatarEditor
                 {...defaultProps.cropper}
                 image={image && image.preview}
-                ref={setEditor}
+                ref={refEditor(setEditor)}
                 scale={scale}
               />
               <Slider
@@ -87,10 +101,7 @@ const ImageRenderer = ({
                 min={1}
                 max={2}
                 sliderStyle={styles.slider}
-                onChange={(e, val) => {
-                  e.stopPropagation();
-                  setScale(val);
-                }}
+                onChange={onScaleChange(setScale)}
               />
             </div>
           ) : <div style={styles.selectorContent} />}

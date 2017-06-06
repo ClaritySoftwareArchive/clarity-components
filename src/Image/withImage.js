@@ -38,14 +38,7 @@ const onUpload = ({
 
 const reset = ({ setState, ...props }) => () => setState({ type: 'reset', props });
 const setSelector = ({ setState }) => selector => setState({ selector });
-const setEditor = ({ setState }) => editor => setState({
-  editor: editor && Object.assign(editor, {
-    reset: () => {
-      editor.state.image = {}; // eslint-disable-line no-param-reassign
-    },
-    getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
-  }),
-});
+const setEditor = ({ setState }) => editor => setState({ editor });
 const openSelector = ({ selector }) => () => selector && selector.open();
 const openEditor = ({ setState }) => () => setState({ uploaded: false });
 const setImage = ({ setState }) => image => setState({ image });
