@@ -5,7 +5,6 @@ import { shallow } from 'enzyme';
 
 import { LinearProgress, Slider } from 'material-ui';
 import Img from 'react-image';
-import Dropzone from 'react-dropzone';
 import AvatarEditor from 'react-avatar-editor';
 
 import ImageRenderer from '../ImageRenderer';
@@ -14,11 +13,11 @@ import testExpectedProps from './testExpectedProps';
 const onUpload = jest.fn();
 const openEditor = jest.fn();
 const reset = jest.fn();
-const openSelector = jest.fn();
 
 const entityOptions = {
   Selector: {
-    selector: Dropzone,
+    selector: 'input',
+    staticProps: { type: 'file', accept: 'image/*', multiple: false },
   },
   Cropper: {
     selector: AvatarEditor,
@@ -37,7 +36,7 @@ const entityOptions = {
   },
   SelectButton: {
     selector: 'RaisedButton[name="Select"]',
-    staticProps: { primary: true, onTouchTap: openSelector },
+    staticProps: { primary: true },
   },
   CropButton: {
     selector: 'RaisedButton[name="Crop"]',
@@ -56,7 +55,7 @@ const renderModes = [{
   desc: 'with default props',
   props: {},
   entitiesWithProps: {
-    Selector: [{ disableClick: false }],
+    Selector: [{ }],
     SelectButton: [{ label: 'Select Image' }],
     ResetButton: [{ disabled: true }],
   },
@@ -68,7 +67,7 @@ const renderModes = [{
     scale: 2,
   },
   entitiesWithProps: {
-    Selector: [{ disableClick: true }],
+    Selector: [{ }],
     SelectButton: [{ label: 'Change' }],
     ResetButton: [{ disabled: false }],
     Cropper: [{ image: 'https://pics.example.com/200/100', scale: 2 }],
@@ -84,7 +83,7 @@ const renderModes = [{
     uploading: true,
   },
   entitiesWithProps: {
-    Selector: [{ disableClick: true }],
+    Selector: [{ }],
     SelectButton: [{}],
     ResetButton: [{ disabled: false }],
     Cropper: [{ image: 'https://pics.example.com/200/100', scale: 2 }],
@@ -113,7 +112,7 @@ const renderModes = [{
     failed: true,
   },
   entitiesWithProps: {
-    Selector: [{ disableClick: true }],
+    Selector: [{ }],
     SelectButton: [{}],
     ResetButton: [{ disabled: false }],
     Cropper: [{ image: 'https://pics.example.com/200/100', scale: 2 }],
@@ -126,7 +125,6 @@ const defaultProps = {
   onUpload,
   openEditor,
   reset,
-  openSelector,
 };
 
 describe('ImageRenderer(props): [entities tree]', () => {
