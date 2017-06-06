@@ -95,22 +95,26 @@ const propsMapper = ({
   cropping: !!image && !uploaded,
 });
 
+export const propTypes = {
+  initialState: T.shape({
+    url: T.string,
+  }),
+  onUploadFail: T.func,
+  onUploadStart: T.func,
+  onUploadSucceed: T.func,
+  uploadImage: T.func,
+};
+
+export const defaultProps = {
+  initialState: defaultState,
+};
+
 export default Component => compose(
   omitPropTypes(['onUpload']),
   extendStatics({
     displayName: 'withImage',
-    propTypes: {
-      initialState: T.shape({
-        url: T.string,
-      }),
-      onUploadFail: T.func,
-      onUploadStart: T.func,
-      onUploadSucceed: T.func,
-      uploadImage: T.func,
-    },
-    defaultProps: {
-      initialState: defaultState,
-    },
+    propTypes,
+    defaultProps,
   }),
   copyStatics(Component),
   withReducer('state', 'setState', mergeState, ({ initialState }) => createInitialState(initialState)),
