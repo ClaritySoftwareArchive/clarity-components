@@ -14,9 +14,6 @@ const editor = {
   reset: jest.fn(),
   getDataUrl: () => url,
 };
-const selector = {
-  open: jest.fn(),
-};
 
 const defaultMapMode = {
   inputProps: {},
@@ -35,11 +32,9 @@ const defaultMapMode = {
 
 const handlerMirror = _.mapKeys([
   'openEditor',
-  'openSelector',
   'setEditor',
   'setImage',
   'setScale',
-  'setSelector',
   'reset',
 ]/* , _.identity*/);
 
@@ -88,15 +83,6 @@ const mapModes = [{
   postValidate: () => {
     test('editor.reset should be called', () => {
       expect(editor.reset).toHaveBeenCalledTimes(1);
-    });
-  },
-}, {
-  desc: 'when openSelector is called',
-  handlersShouldCall: { openSelector: [] },
-  inputProps: { selector },
-  postValidate: () => {
-    test('selector.open should be called', () => {
-      expect(selector.open).toHaveBeenCalledTimes(1);
     });
   },
 }];

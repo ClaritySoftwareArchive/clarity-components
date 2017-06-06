@@ -48,9 +48,7 @@ const onUpload = ({
 };
 
 const reset = ({ setState, ...props }) => () => setState({ type: 'reset', props });
-const setSelector = ({ setState }) => selector => setState({ selector });
 const setEditor = ({ setState }) => editor => setState({ editor });
-const openSelector = ({ selector }) => () => selector && selector.open();
 const openEditor = ({ setState }) => () => setState({ uploaded: false });
 const setImage = ({ setState }) => image => setState({ image });
 const setScale = ({ setState }) => scale => setState({ scale });
@@ -63,11 +61,9 @@ const onUploadStart = ({ setState }) => () =>
 
 export const handlers = [{
   openEditor,
-  openSelector,
   setEditor,
   setImage,
   setScale,
-  setSelector,
   onUploadFail,
   onUploadStart,
   onUploadSucceed,
@@ -78,11 +74,11 @@ export const handlers = [{
 
 const mergeState = (state, { type, props, ...action }) => {
   if (type === 'reset') {
-    const { selector, editor } = state;
+    const { editor } = state;
     if (!props.image && editor && editor.reset) {
       editor.reset();
     }
-    return createInitialState({ ...props, selector, editor });
+    return createInitialState({ ...props, editor });
   }
   return { ...state, ...action };
 };
@@ -126,7 +122,7 @@ export default Component => compose(
   flattenProp('state'),
   omitProps('initialState'),
   embedHandlers(handlers),
-  omitProps(['selector', 'editor', 'state', 'setState']),
+  omitProps(['editor', 'state', 'setState']),
   mapProps(propsMapper),
   pure,
 )(Component);
