@@ -15,12 +15,23 @@ const defaultState = {
   scale: 1,
   uploading: false,
   failed: false,
+  editor: undefined,
 };
 
-const createInitialState = state => ({
-  ...defaultState,
-  ...state,
-});
+const createInitialState = ({ initialState, ...props }) => {
+  const state = {
+    ...defaultState,
+    ...initialState,
+  };
+
+  Object.keys(defaultState).forEach((key) => {
+    if (typeof props[key] !== 'undefined') {
+      state[key] = props[key];
+    }
+  });
+
+  return state;
+};
 
 const onUpload = ({
   editor,
@@ -65,21 +76,15 @@ export const handlers = [{
   onUpload,
 }];
 
-const mergeState = (state, { type, props, ...action } = {}) => {
+const mergeState = (state, { type, props, ...action }) => {
   if (type === 'reset') {
     const { selector, editor } = state;
-    if (!props.image && selector && selector.reset) {
-      selector.reset();
-    }
     if (!props.image && editor && editor.reset) {
       editor.reset();
     }
-    return createInitialState({ ...action, selector, editor });
+    return createInitialState({ ...props, selector, editor });
   }
-  if (typeof action === 'object') {
-    return { ...state, ...action };
-  }
-  return state;
+  return { ...state, ...action };
 };
 
 const propsMapper = ({
@@ -117,7 +122,7 @@ export default Component => compose(
     defaultProps,
   }),
   copyStatics(Component),
-  withReducer('state', 'setState', mergeState, ({ initialState }) => createInitialState(initialState)),
+  withReducer('state', 'setState', mergeState, createInitialState),
   flattenProp('state'),
   omitProps('initialState'),
   embedHandlers(handlers),
