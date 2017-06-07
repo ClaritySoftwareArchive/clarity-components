@@ -125,6 +125,7 @@ const ImageRenderer = ({
           name="Select"
           primary
           label={image ? 'Change' : 'Select Image'}
+          labelPosition="before"
           containerElement="label"
         >
           <input

@@ -192,24 +192,6 @@ exports[`Storyshots Image Controlled 1`] = `
                         }
                       }
                     >
-                      <input
-                        accept="image/*"
-                        multiple={false}
-                        onChange={[Function]}
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "cursor": "pointer",
-                            "left": 0,
-                            "opacity": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                        type="file"
-                      />
                       <span
                         style={
                           Object {
@@ -230,6 +212,24 @@ exports[`Storyshots Image Controlled 1`] = `
                       >
                         Select Image
                       </span>
+                      <input
+                        accept="image/*"
+                        multiple={false}
+                        onChange={[Function]}
+                        style={
+                          Object {
+                            "bottom": 0,
+                            "cursor": "pointer",
+                            "left": 0,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
+                        }
+                        type="file"
+                      />
                     </div>
                   </div>
                 </label>
@@ -1325,24 +1325,6 @@ exports[`Storyshots Image with initialState 1`] = `
                 }
               }
             >
-              <input
-                accept="image/*"
-                multiple={false}
-                onChange={[Function]}
-                style={
-                  Object {
-                    "bottom": 0,
-                    "cursor": "pointer",
-                    "left": 0,
-                    "opacity": 0,
-                    "position": "absolute",
-                    "right": 0,
-                    "top": 0,
-                    "width": "100%",
-                  }
-                }
-                type="file"
-              />
               <span
                 style={
                   Object {
@@ -1363,6 +1345,24 @@ exports[`Storyshots Image with initialState 1`] = `
               >
                 Change
               </span>
+              <input
+                accept="image/*"
+                multiple={false}
+                onChange={[Function]}
+                style={
+                  Object {
+                    "bottom": 0,
+                    "cursor": "pointer",
+                    "left": 0,
+                    "opacity": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+                type="file"
+              />
             </div>
           </div>
         </label>

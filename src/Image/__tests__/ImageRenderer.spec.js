@@ -36,7 +36,7 @@ const entityOptions = {
   },
   SelectButton: {
     selector: 'RaisedButton[name="Select"]',
-    staticProps: { primary: true },
+    staticProps: { primary: true, labelPosition: 'before', containerElement: 'label' },
   },
   CropButton: {
     selector: 'RaisedButton[name="Crop"]',
