@@ -3,28 +3,40 @@ import React from 'react';
 import _ from 'lodash';
 import { shallow } from 'enzyme';
 
-import { LinearProgress, Slider } from 'material-ui';
+import { LinearProgress } from 'material-ui';
 import Img from 'react-image';
-import AvatarEditor from 'react-avatar-editor';
 
 import ImageRenderer from '../ImageRenderer';
+import ImageCropper from '../ImageCropper';
+import ImageSelector from '../ImageSelector';
 import testExpectedProps from './testExpectedProps';
 
+const url = 'https://pics.example.com/200/100';
+const image = { preview: url };
 const onUpload = jest.fn();
 const openEditor = jest.fn();
 const reset = jest.fn();
+const setImage = jest.fn();
+const setScale = jest.fn();
+const setEditor = jest.fn();
+
+const defaultProps = {
+  onUpload,
+  openEditor,
+  reset,
+  setImage,
+  setScale,
+  setEditor,
+};
 
 const entityOptions = {
   Selector: {
-    selector: 'input',
-    staticProps: { type: 'file', accept: 'image/*', multiple: false },
+    selector: ImageSelector,
+    staticProps: { setImage },
   },
   Cropper: {
-    selector: AvatarEditor,
-  },
-  CropSlider: {
-    selector: Slider,
-    staticProps: { min: 1, max: 2 },
+    selector: ImageCropper,
+    staticProps: { scale: 1, image, setScale, setEditor },
   },
   Previewer: {
     selector: Img,
@@ -62,7 +74,7 @@ const renderModes = [{
 }, {
   desc: 'with cropping props after selected an image',
   props: {
-    image: { preview: 'https://pics.example.com/200/100' },
+    image,
     cropping: true,
     scale: 2,
   },
@@ -70,14 +82,13 @@ const renderModes = [{
     Selector: [{ }],
     SelectButton: [{ label: 'Change' }],
     ResetButton: [{ disabled: false }],
-    Cropper: [{ image: 'https://pics.example.com/200/100', scale: 2 }],
-    CropSlider: [{ value: 2 }],
+    Cropper: [{ image, scale: 2 }],
     UploadButton: [{ disabled: false, label: 'Upload' }],
   },
 }, {
   desc: 'with uploading props',
   props: {
-    image: { preview: 'https://pics.example.com/200/100' },
+    image,
     cropping: true,
     scale: 2,
     uploading: true,
@@ -86,16 +97,15 @@ const renderModes = [{
     Selector: [{ }],
     SelectButton: [{}],
     ResetButton: [{ disabled: false }],
-    Cropper: [{ image: 'https://pics.example.com/200/100', scale: 2 }],
-    CropSlider: [{ value: 2 }],
+    Cropper: [{ image, scale: 2 }],
     UploadButton: [{ disabled: true, label: 'Upload' }],
     Loader: [{}],
   },
 }, {
   desc: 'with uploaded props',
   props: {
-    image: { preview: 'https://pics.example.com/200/100' },
-    url: 'https://pics.example.com/200/100',
+    image,
+    url,
     uploaded: true,
   },
   entitiesWithProps: {
@@ -106,7 +116,7 @@ const renderModes = [{
 }, {
   desc: 'with failed (to upload) props',
   props: {
-    image: { preview: 'https://pics.example.com/200/100' },
+    image,
     cropping: true,
     scale: 2,
     failed: true,
@@ -115,17 +125,24 @@ const renderModes = [{
     Selector: [{ }],
     SelectButton: [{}],
     ResetButton: [{ disabled: false }],
-    Cropper: [{ image: 'https://pics.example.com/200/100', scale: 2 }],
-    CropSlider: [{ value: 2 }],
+    Cropper: [{ image, scale: 2 }],
     UploadButton: [{ disabled: false, label: 'Retry' }],
   },
+}, {
+  desc: 'crop after upload succeed',
+  props: {
+    image,
+    url,
+    cropping: true,
+  },
+  entitiesWithProps: {
+    Selector: [{ }],
+    SelectButton: [{ label: 'Change' }],
+    Cropper: [{ image, scale: 1 }],
+    UploadButton: [{ disabled: false, label: 'Upload' }],
+    ResetButton: [{ disabled: false }],
+  },
 }];
-
-const defaultProps = {
-  onUpload,
-  openEditor,
-  reset,
-};
 
 describe('ImageRenderer(props): [entities tree]', () => {
   const testRenderMode = ({ desc, props, entitiesWithProps }) => describe(desc, () => {
