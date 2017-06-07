@@ -59,6 +59,10 @@ const mapModes = [{
   inputProps: { image, failed: true },
   outputProps: { image, cropping: true, failed: true },
 }, {
+  desc: 'crop with url prop',
+  inputProps: { url, uploaded: false },
+  outputProps: { image, url, cropping: true },
+}, {
   desc: 'if upload will succeed',
   handlersShouldCall: {
     onUpload: ['onUploadStart', 'uploadImage', 'onUploadSucceed'],

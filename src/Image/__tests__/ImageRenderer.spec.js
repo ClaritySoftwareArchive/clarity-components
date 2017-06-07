@@ -128,6 +128,20 @@ const renderModes = [{
     Cropper: [{ image, scale: 2 }],
     UploadButton: [{ disabled: false, label: 'Retry' }],
   },
+}, {
+  desc: 'crop after upload succeed',
+  props: {
+    image,
+    url,
+    cropping: true,
+  },
+  entitiesWithProps: {
+    Selector: [{ }],
+    SelectButton: [{ label: 'Change' }],
+    Cropper: [{ image, scale: 1 }],
+    UploadButton: [{ disabled: false, label: 'Upload' }],
+    ResetButton: [{ disabled: false }],
+  },
 }];
 
 describe('ImageRenderer(props): [entities tree]', () => {
