@@ -1,6 +1,7 @@
 /* eslint-env jest */
 import React from 'react';
 import { shallow } from 'enzyme';
+import enzymeToJson from 'enzyme-to-json';
 
 import ImageRenderer from '../ImageRenderer';
 
@@ -25,7 +26,7 @@ const defaultProps = {
 describe('<ImageRenderer {...props} />: elements tree', () => {
   test('with default props', () => {
     const wrapper = shallow(<ImageRenderer {...defaultProps} />);
-    expect(wrapper).toMatchSnapshot();
+    expect(enzymeToJson(wrapper)).toMatchSnapshot();
   });
   test('with cropping props after selected an image', () => {
     const props = {
@@ -34,7 +35,7 @@ describe('<ImageRenderer {...props} />: elements tree', () => {
       scale: 2,
     };
     const wrapper = shallow(<ImageRenderer {...defaultProps} {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    expect(enzymeToJson(wrapper)).toMatchSnapshot();
   });
   test('with uploading props', () => {
     const props = {
@@ -44,7 +45,7 @@ describe('<ImageRenderer {...props} />: elements tree', () => {
       uploading: true,
     };
     const wrapper = shallow(<ImageRenderer {...defaultProps} {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    expect(enzymeToJson(wrapper)).toMatchSnapshot();
   });
   test('with uploaded props', () => {
     const props = {
@@ -53,7 +54,7 @@ describe('<ImageRenderer {...props} />: elements tree', () => {
       uploaded: true,
     };
     const wrapper = shallow(<ImageRenderer {...defaultProps} {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    expect(enzymeToJson(wrapper)).toMatchSnapshot();
   });
   test('with failed (to upload) props', () => {
     const props = {
@@ -63,7 +64,7 @@ describe('<ImageRenderer {...props} />: elements tree', () => {
       failed: true,
     };
     const wrapper = shallow(<ImageRenderer {...defaultProps} {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    expect(enzymeToJson(wrapper)).toMatchSnapshot();
   });
   test('crop after upload succeed', () => {
     const props = {
@@ -72,6 +73,6 @@ describe('<ImageRenderer {...props} />: elements tree', () => {
       cropping: true,
     };
     const wrapper = shallow(<ImageRenderer {...defaultProps} {...props} />);
-    expect(wrapper).toMatchSnapshot();
+    expect(enzymeToJson(wrapper)).toMatchSnapshot();
   });
 });

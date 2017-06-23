@@ -1,2387 +1,448 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <Card
-    expandable={false}
-    expanded={null}
-    initiallyExpanded={false}
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "maxWidth": 300,
+    }
+  }
+>
+  <CardText
     style={
-        Object {
-            "maxWidth": 300,
-          }
-    }
->
-    <CardText
-        style={
-            Object {
-                "maxHeight": 300,
-                "paddingBottom": 0,
-              }
-        }
-    >
-        <withHandlers(ImageCropper)
-            image={
-                Object {
-                    "preview": "https://pics.example.com/200/100",
-                  }
-            }
-            scale={1}
-            setEditor={[Function]}
-            setScale={[Function]}
-        />
-    </CardText>
-    <CardActions>
-        <RaisedButton
-            disabled={false}
-            fullWidth={false}
-            label="Upload"
-            labelPosition="after"
-            name="Upload"
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={true}
-        />
-        <RaisedButton
-            containerElement="label"
-            disabled={false}
-            fullWidth={false}
-            label="Change"
-            labelPosition="before"
-            name="Select"
-            primary={true}
-            secondary={false}
-        >
-            <withHandlers(ImageSelector)
-                setImage={[Function]}
-            />
-        </RaisedButton>
-        <FlatButton
-            disabled={false}
-            fullWidth={false}
-            label="Reset"
-            labelPosition="after"
-            labelStyle={Object {}}
-            onKeyboardFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={false}
-            style={
-                Object {
-                    "marginRight": 0,
-                    "minWidth": 85,
-                  }
-            }
-        />
-    </CardActions>
-</Card>,
-  "nodes": Array [
-    <Card
-      expandable={false}
-      expanded={null}
-      initiallyExpanded={false}
-      style={
-            Object {
-                  "maxWidth": 300,
-                }
+      Object {
+        "maxHeight": 300,
+        "paddingBottom": 0,
       }
->
-      <CardText
-            style={
-                  Object {
-                        "maxHeight": 300,
-                        "paddingBottom": 0,
-                      }
-            }
-      >
-            <withHandlers(ImageCropper)
-                  image={
-                        Object {
-                              "preview": "https://pics.example.com/200/100",
-                            }
-                  }
-                  scale={1}
-                  setEditor={[Function]}
-                  setScale={[Function]}
-            />
-      </CardText>
-      <CardActions>
-            <RaisedButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Upload"
-                  labelPosition="after"
-                  name="Upload"
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={true}
-            />
-            <RaisedButton
-                  containerElement="label"
-                  disabled={false}
-                  fullWidth={false}
-                  label="Change"
-                  labelPosition="before"
-                  name="Select"
-                  primary={true}
-                  secondary={false}
-            >
-                  <withHandlers(ImageSelector)
-                        setImage={[Function]}
-                  />
-            </RaisedButton>
-            <FlatButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Reset"
-                  labelPosition="after"
-                  labelStyle={Object {}}
-                  onKeyboardFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={false}
-                  style={
-                        Object {
-                              "marginRight": 0,
-                              "minWidth": 85,
-                            }
-                  }
-            />
-      </CardActions>
-</Card>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <ImageRenderer
-        cropping={true}
-        failed={undefined}
-        image={
-                Object {
-                        "preview": "https://pics.example.com/200/100",
-                      }
-        }
-        onUpload={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={undefined}
-        uploading={undefined}
-        url="https://pics.example.com/200/100"
-/>,
-      "_debugID": 11,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "cropping": true,
-          "failed": undefined,
-          "image": Object {
-            "preview": "https://pics.example.com/200/100",
-          },
-          "onUpload": [Function],
-          "openEditor": [Function],
-          "reset": [Function],
-          "scale": 1,
-          "setEditor": [Function],
-          "setImage": [Function],
-          "setScale": [Function],
-          "uploaded": undefined,
-          "uploading": undefined,
-          "url": "https://pics.example.com/200/100",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 6,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={1}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Upload"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-        "_debugID": 12,
-        "_renderedOutput": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={1}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Upload"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ImageRenderer
-    cropping={true}
-    failed={undefined}
-    image={
-        Object {
-            "preview": "https://pics.example.com/200/100",
-          }
     }
-    onUpload={[Function]}
-    openEditor={[Function]}
-    reset={[Function]}
-    scale={1}
-    setEditor={[Function]}
-    setImage={[Function]}
-    setScale={[Function]}
-    uploaded={undefined}
-    uploading={undefined}
-    url="https://pics.example.com/200/100"
-/>,
-}
+  >
+    <withHandlers(ImageCropper)
+      image={
+        Object {
+          "preview": "https://pics.example.com/200/100",
+        }
+      }
+      scale={1}
+      setEditor={[Function]}
+      setScale={[Function]}
+    />
+  </CardText>
+  <CardActions>
+    <RaisedButton
+      disabled={false}
+      fullWidth={false}
+      label="Upload"
+      labelPosition="after"
+      name="Upload"
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={true}
+    />
+    <RaisedButton
+      containerElement="label"
+      disabled={false}
+      fullWidth={false}
+      label="Change"
+      labelPosition="before"
+      name="Select"
+      primary={true}
+      secondary={false}
+    >
+      <withHandlers(ImageSelector)
+        setImage={[Function]}
+      />
+    </RaisedButton>
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Reset"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={false}
+      style={
+        Object {
+          "marginRight": 0,
+          "minWidth": 85,
+        }
+      }
+    />
+  </CardActions>
+</Card>
 `;
 
 exports[`<ImageRenderer {...props} />: elements tree with cropping props after selected an image 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <Card
-    expandable={false}
-    expanded={null}
-    initiallyExpanded={false}
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "maxWidth": 300,
+    }
+  }
+>
+  <CardText
     style={
-        Object {
-            "maxWidth": 300,
-          }
-    }
->
-    <CardText
-        style={
-            Object {
-                "maxHeight": 300,
-                "paddingBottom": 0,
-              }
-        }
-    >
-        <withHandlers(ImageCropper)
-            image={
-                Object {
-                    "preview": "https://pics.example.com/200/100",
-                  }
-            }
-            scale={2}
-            setEditor={[Function]}
-            setScale={[Function]}
-        />
-    </CardText>
-    <CardActions>
-        <RaisedButton
-            disabled={false}
-            fullWidth={false}
-            label="Upload"
-            labelPosition="after"
-            name="Upload"
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={true}
-        />
-        <RaisedButton
-            containerElement="label"
-            disabled={false}
-            fullWidth={false}
-            label="Change"
-            labelPosition="before"
-            name="Select"
-            primary={true}
-            secondary={false}
-        >
-            <withHandlers(ImageSelector)
-                setImage={[Function]}
-            />
-        </RaisedButton>
-        <FlatButton
-            disabled={false}
-            fullWidth={false}
-            label="Reset"
-            labelPosition="after"
-            labelStyle={Object {}}
-            onKeyboardFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={false}
-            style={
-                Object {
-                    "marginRight": 0,
-                    "minWidth": 85,
-                  }
-            }
-        />
-    </CardActions>
-</Card>,
-  "nodes": Array [
-    <Card
-      expandable={false}
-      expanded={null}
-      initiallyExpanded={false}
-      style={
-            Object {
-                  "maxWidth": 300,
-                }
+      Object {
+        "maxHeight": 300,
+        "paddingBottom": 0,
       }
->
-      <CardText
-            style={
-                  Object {
-                        "maxHeight": 300,
-                        "paddingBottom": 0,
-                      }
-            }
-      >
-            <withHandlers(ImageCropper)
-                  image={
-                        Object {
-                              "preview": "https://pics.example.com/200/100",
-                            }
-                  }
-                  scale={2}
-                  setEditor={[Function]}
-                  setScale={[Function]}
-            />
-      </CardText>
-      <CardActions>
-            <RaisedButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Upload"
-                  labelPosition="after"
-                  name="Upload"
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={true}
-            />
-            <RaisedButton
-                  containerElement="label"
-                  disabled={false}
-                  fullWidth={false}
-                  label="Change"
-                  labelPosition="before"
-                  name="Select"
-                  primary={true}
-                  secondary={false}
-            >
-                  <withHandlers(ImageSelector)
-                        setImage={[Function]}
-                  />
-            </RaisedButton>
-            <FlatButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Reset"
-                  labelPosition="after"
-                  labelStyle={Object {}}
-                  onKeyboardFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={false}
-                  style={
-                        Object {
-                              "marginRight": 0,
-                              "minWidth": 85,
-                            }
-                  }
-            />
-      </CardActions>
-</Card>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <ImageRenderer
-        cropping={true}
-        failed={undefined}
-        image={
-                Object {
-                        "preview": "https://pics.example.com/200/100",
-                      }
-        }
-        onUpload={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={2}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={undefined}
-        uploading={undefined}
-        url={undefined}
-/>,
-      "_debugID": 3,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "cropping": true,
-          "failed": undefined,
-          "image": Object {
-            "preview": "https://pics.example.com/200/100",
-          },
-          "onUpload": [Function],
-          "openEditor": [Function],
-          "reset": [Function],
-          "scale": 2,
-          "setEditor": [Function],
-          "setImage": [Function],
-          "setScale": [Function],
-          "uploaded": undefined,
-          "uploading": undefined,
-          "url": undefined,
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 2,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={2}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Upload"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-        "_debugID": 4,
-        "_renderedOutput": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={2}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Upload"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ImageRenderer
-    cropping={true}
-    failed={undefined}
-    image={
-        Object {
-            "preview": "https://pics.example.com/200/100",
-          }
     }
-    onUpload={[Function]}
-    openEditor={[Function]}
-    reset={[Function]}
-    scale={2}
-    setEditor={[Function]}
-    setImage={[Function]}
-    setScale={[Function]}
-    uploaded={undefined}
-    uploading={undefined}
-    url={undefined}
-/>,
-}
+  >
+    <withHandlers(ImageCropper)
+      image={
+        Object {
+          "preview": "https://pics.example.com/200/100",
+        }
+      }
+      scale={2}
+      setEditor={[Function]}
+      setScale={[Function]}
+    />
+  </CardText>
+  <CardActions>
+    <RaisedButton
+      disabled={false}
+      fullWidth={false}
+      label="Upload"
+      labelPosition="after"
+      name="Upload"
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={true}
+    />
+    <RaisedButton
+      containerElement="label"
+      disabled={false}
+      fullWidth={false}
+      label="Change"
+      labelPosition="before"
+      name="Select"
+      primary={true}
+      secondary={false}
+    >
+      <withHandlers(ImageSelector)
+        setImage={[Function]}
+      />
+    </RaisedButton>
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Reset"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={false}
+      style={
+        Object {
+          "marginRight": 0,
+          "minWidth": 85,
+        }
+      }
+    />
+  </CardActions>
+</Card>
 `;
 
 exports[`<ImageRenderer {...props} />: elements tree with default props 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <Card
-    expandable={false}
-    expanded={null}
-    initiallyExpanded={false}
-    style={
-        Object {
-            "maxWidth": 300,
-          }
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "maxWidth": 300,
     }
+  }
 >
-    <CardText
-        style={
-            Object {
-                "maxHeight": 300,
-                "paddingBottom": 0,
-              }
-        }
-    >
-        
-    </CardText>
-    <CardActions>
-        <RaisedButton
-            containerElement="label"
-            disabled={false}
-            fullWidth={false}
-            label="Select Image"
-            labelPosition="before"
-            name="Select"
-            primary={true}
-            secondary={false}
-        >
-            <withHandlers(ImageSelector)
-                setImage={[Function]}
-            />
-        </RaisedButton>
-        <FlatButton
-            disabled={true}
-            fullWidth={false}
-            label="Reset"
-            labelPosition="after"
-            labelStyle={Object {}}
-            onKeyboardFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={false}
-            style={
-                Object {
-                    "marginRight": 0,
-                    "minWidth": 85,
-                  }
-            }
-        />
-    </CardActions>
-</Card>,
-  "nodes": Array [
-    <Card
-      expandable={false}
-      expanded={null}
-      initiallyExpanded={false}
-      style={
-            Object {
-                  "maxWidth": 300,
-                }
+  <CardText
+    style={
+      Object {
+        "maxHeight": 300,
+        "paddingBottom": 0,
       }
->
-      <CardText
-            style={
-                  Object {
-                        "maxHeight": 300,
-                        "paddingBottom": 0,
-                      }
-            }
-      >
-            
-      </CardText>
-      <CardActions>
-            <RaisedButton
-                  containerElement="label"
-                  disabled={false}
-                  fullWidth={false}
-                  label="Select Image"
-                  labelPosition="before"
-                  name="Select"
-                  primary={true}
-                  secondary={false}
-            >
-                  <withHandlers(ImageSelector)
-                        setImage={[Function]}
-                  />
-            </RaisedButton>
-            <FlatButton
-                  disabled={true}
-                  fullWidth={false}
-                  label="Reset"
-                  labelPosition="after"
-                  labelStyle={Object {}}
-                  onKeyboardFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={false}
-                  style={
-                        Object {
-                              "marginRight": 0,
-                              "minWidth": 85,
-                            }
-                  }
-            />
-      </CardActions>
-</Card>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <ImageRenderer
-        cropping={undefined}
-        failed={undefined}
-        image={undefined}
-        onUpload={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
+    }
+  />
+  <CardActions>
+    <RaisedButton
+      containerElement="label"
+      disabled={false}
+      fullWidth={false}
+      label="Select Image"
+      labelPosition="before"
+      name="Select"
+      primary={true}
+      secondary={false}
+    >
+      <withHandlers(ImageSelector)
         setImage={[Function]}
-        setScale={[Function]}
-        uploaded={undefined}
-        uploading={undefined}
-        url={undefined}
-/>,
-      "_debugID": 1,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "cropping": undefined,
-          "failed": undefined,
-          "image": undefined,
-          "onUpload": [Function],
-          "openEditor": [Function],
-          "reset": [Function],
-          "scale": 1,
-          "setEditor": [Function],
-          "setImage": [Function],
-          "setScale": [Function],
-          "uploaded": undefined,
-          "uploading": undefined,
-          "url": undefined,
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 1,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Select Image"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={true}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-        "_debugID": 2,
-        "_renderedOutput": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Select Image"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={true}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ImageRenderer
-    cropping={undefined}
-    failed={undefined}
-    image={undefined}
-    onUpload={[Function]}
-    openEditor={[Function]}
-    reset={[Function]}
-    scale={1}
-    setEditor={[Function]}
-    setImage={[Function]}
-    setScale={[Function]}
-    uploaded={undefined}
-    uploading={undefined}
-    url={undefined}
-/>,
-}
+      />
+    </RaisedButton>
+    <FlatButton
+      disabled={true}
+      fullWidth={false}
+      label="Reset"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={false}
+      style={
+        Object {
+          "marginRight": 0,
+          "minWidth": 85,
+        }
+      }
+    />
+  </CardActions>
+</Card>
 `;
 
 exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) props 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <Card
-    expandable={false}
-    expanded={null}
-    initiallyExpanded={false}
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "maxWidth": 300,
+    }
+  }
+>
+  <CardText
     style={
-        Object {
-            "maxWidth": 300,
-          }
-    }
->
-    <CardText
-        style={
-            Object {
-                "maxHeight": 300,
-                "paddingBottom": 0,
-              }
-        }
-    >
-        <withHandlers(ImageCropper)
-            image={
-                Object {
-                    "preview": "https://pics.example.com/200/100",
-                  }
-            }
-            scale={2}
-            setEditor={[Function]}
-            setScale={[Function]}
-        />
-    </CardText>
-    <CardActions>
-        <RaisedButton
-            disabled={false}
-            fullWidth={false}
-            label="Retry"
-            labelPosition="after"
-            name="Upload"
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={true}
-        />
-        <RaisedButton
-            containerElement="label"
-            disabled={false}
-            fullWidth={false}
-            label="Change"
-            labelPosition="before"
-            name="Select"
-            primary={true}
-            secondary={false}
-        >
-            <withHandlers(ImageSelector)
-                setImage={[Function]}
-            />
-        </RaisedButton>
-        <FlatButton
-            disabled={false}
-            fullWidth={false}
-            label="Reset"
-            labelPosition="after"
-            labelStyle={Object {}}
-            onKeyboardFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={false}
-            style={
-                Object {
-                    "marginRight": 0,
-                    "minWidth": 85,
-                  }
-            }
-        />
-    </CardActions>
-</Card>,
-  "nodes": Array [
-    <Card
-      expandable={false}
-      expanded={null}
-      initiallyExpanded={false}
-      style={
-            Object {
-                  "maxWidth": 300,
-                }
+      Object {
+        "maxHeight": 300,
+        "paddingBottom": 0,
       }
->
-      <CardText
-            style={
-                  Object {
-                        "maxHeight": 300,
-                        "paddingBottom": 0,
-                      }
-            }
-      >
-            <withHandlers(ImageCropper)
-                  image={
-                        Object {
-                              "preview": "https://pics.example.com/200/100",
-                            }
-                  }
-                  scale={2}
-                  setEditor={[Function]}
-                  setScale={[Function]}
-            />
-      </CardText>
-      <CardActions>
-            <RaisedButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Retry"
-                  labelPosition="after"
-                  name="Upload"
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={true}
-            />
-            <RaisedButton
-                  containerElement="label"
-                  disabled={false}
-                  fullWidth={false}
-                  label="Change"
-                  labelPosition="before"
-                  name="Select"
-                  primary={true}
-                  secondary={false}
-            >
-                  <withHandlers(ImageSelector)
-                        setImage={[Function]}
-                  />
-            </RaisedButton>
-            <FlatButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Reset"
-                  labelPosition="after"
-                  labelStyle={Object {}}
-                  onKeyboardFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={false}
-                  style={
-                        Object {
-                              "marginRight": 0,
-                              "minWidth": 85,
-                            }
-                  }
-            />
-      </CardActions>
-</Card>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <ImageRenderer
-        cropping={true}
-        failed={true}
-        image={
-                Object {
-                        "preview": "https://pics.example.com/200/100",
-                      }
-        }
-        onUpload={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={2}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={undefined}
-        uploading={undefined}
-        url={undefined}
-/>,
-      "_debugID": 9,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "cropping": true,
-          "failed": true,
-          "image": Object {
-            "preview": "https://pics.example.com/200/100",
-          },
-          "onUpload": [Function],
-          "openEditor": [Function],
-          "reset": [Function],
-          "scale": 2,
-          "setEditor": [Function],
-          "setImage": [Function],
-          "setScale": [Function],
-          "uploaded": undefined,
-          "uploading": undefined,
-          "url": undefined,
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 5,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={2}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Retry"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-        "_debugID": 10,
-        "_renderedOutput": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={2}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Retry"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ImageRenderer
-    cropping={true}
-    failed={true}
-    image={
-        Object {
-            "preview": "https://pics.example.com/200/100",
-          }
     }
-    onUpload={[Function]}
-    openEditor={[Function]}
-    reset={[Function]}
-    scale={2}
-    setEditor={[Function]}
-    setImage={[Function]}
-    setScale={[Function]}
-    uploaded={undefined}
-    uploading={undefined}
-    url={undefined}
-/>,
-}
+  >
+    <withHandlers(ImageCropper)
+      image={
+        Object {
+          "preview": "https://pics.example.com/200/100",
+        }
+      }
+      scale={2}
+      setEditor={[Function]}
+      setScale={[Function]}
+    />
+  </CardText>
+  <CardActions>
+    <RaisedButton
+      disabled={false}
+      fullWidth={false}
+      label="Retry"
+      labelPosition="after"
+      name="Upload"
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={true}
+    />
+    <RaisedButton
+      containerElement="label"
+      disabled={false}
+      fullWidth={false}
+      label="Change"
+      labelPosition="before"
+      name="Select"
+      primary={true}
+      secondary={false}
+    >
+      <withHandlers(ImageSelector)
+        setImage={[Function]}
+      />
+    </RaisedButton>
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Reset"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={false}
+      style={
+        Object {
+          "marginRight": 0,
+          "minWidth": 85,
+        }
+      }
+    />
+  </CardActions>
+</Card>
 `;
 
 exports[`<ImageRenderer {...props} />: elements tree with uploaded props 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <Card
-    expandable={false}
-    expanded={null}
-    initiallyExpanded={false}
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "maxWidth": 300,
+    }
+  }
+>
+  <CardText
     style={
-        Object {
-            "maxWidth": 300,
-          }
-    }
->
-    <CardText
-        style={
-            Object {
-                "maxHeight": 300,
-                "paddingBottom": 0,
-              }
-        }
-    >
-        <Img
-            height="100%"
-            loader={false}
-            src="https://pics.example.com/200/100"
-            unloader={false}
-            width="100%"
-        />
-    </CardText>
-    <CardActions>
-        <RaisedButton
-            disabled={false}
-            fullWidth={false}
-            label="Crop"
-            labelPosition="after"
-            name="Crop"
-            onTouchTap={[Function]}
-            primary={true}
-            secondary={false}
-        />
-        <FlatButton
-            disabled={false}
-            fullWidth={false}
-            label="Reset"
-            labelPosition="after"
-            labelStyle={Object {}}
-            onKeyboardFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={false}
-            style={
-                Object {
-                    "marginRight": 0,
-                    "minWidth": 85,
-                  }
-            }
-        />
-    </CardActions>
-</Card>,
-  "nodes": Array [
-    <Card
-      expandable={false}
-      expanded={null}
-      initiallyExpanded={false}
-      style={
-            Object {
-                  "maxWidth": 300,
-                }
+      Object {
+        "maxHeight": 300,
+        "paddingBottom": 0,
       }
->
-      <CardText
-            style={
-                  Object {
-                        "maxHeight": 300,
-                        "paddingBottom": 0,
-                      }
-            }
-      >
-            <Img
-                  height="100%"
-                  loader={false}
-                  src="https://pics.example.com/200/100"
-                  unloader={false}
-                  width="100%"
-            />
-      </CardText>
-      <CardActions>
-            <RaisedButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Crop"
-                  labelPosition="after"
-                  name="Crop"
-                  onTouchTap={[Function]}
-                  primary={true}
-                  secondary={false}
-            />
-            <FlatButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Reset"
-                  labelPosition="after"
-                  labelStyle={Object {}}
-                  onKeyboardFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={false}
-                  style={
-                        Object {
-                              "marginRight": 0,
-                              "minWidth": 85,
-                            }
-                  }
-            />
-      </CardActions>
-</Card>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <ImageRenderer
-        cropping={undefined}
-        failed={undefined}
-        image={
-                Object {
-                        "preview": "https://pics.example.com/200/100",
-                      }
-        }
-        onUpload={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={true}
-        uploading={undefined}
-        url="https://pics.example.com/200/100"
-/>,
-      "_debugID": 7,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "cropping": undefined,
-          "failed": undefined,
-          "image": Object {
-            "preview": "https://pics.example.com/200/100",
-          },
-          "onUpload": [Function],
-          "openEditor": [Function],
-          "reset": [Function],
-          "scale": 1,
-          "setEditor": [Function],
-          "setImage": [Function],
-          "setScale": [Function],
-          "uploaded": true,
-          "uploading": undefined,
-          "url": "https://pics.example.com/200/100",
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 4,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <Img
-                              height="100%"
-                              loader={false}
-                              src="https://pics.example.com/200/100"
-                              unloader={false}
-                              width="100%"
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Crop"
-                              labelPosition="after"
-                              name="Crop"
-                              onTouchTap={[Function]}
-                              primary={true}
-                              secondary={false}
-                    />
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-        "_debugID": 8,
-        "_renderedOutput": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <Img
-                              height="100%"
-                              loader={false}
-                              src="https://pics.example.com/200/100"
-                              unloader={false}
-                              width="100%"
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Crop"
-                              labelPosition="after"
-                              name="Crop"
-                              onTouchTap={[Function]}
-                              primary={true}
-                              secondary={false}
-                    />
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ImageRenderer
-    cropping={undefined}
-    failed={undefined}
-    image={
-        Object {
-            "preview": "https://pics.example.com/200/100",
-          }
     }
-    onUpload={[Function]}
-    openEditor={[Function]}
-    reset={[Function]}
-    scale={1}
-    setEditor={[Function]}
-    setImage={[Function]}
-    setScale={[Function]}
-    uploaded={true}
-    uploading={undefined}
-    url="https://pics.example.com/200/100"
-/>,
-}
+  >
+    <Img
+      height="100%"
+      loader={false}
+      src="https://pics.example.com/200/100"
+      unloader={false}
+      width="100%"
+    />
+  </CardText>
+  <CardActions>
+    <RaisedButton
+      disabled={false}
+      fullWidth={false}
+      label="Crop"
+      labelPosition="after"
+      name="Crop"
+      onTouchTap={[Function]}
+      primary={true}
+      secondary={false}
+    />
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Reset"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={false}
+      style={
+        Object {
+          "marginRight": 0,
+          "minWidth": 85,
+        }
+      }
+    />
+  </CardActions>
+</Card>
 `;
 
 exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = `
-ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
-  "length": 1,
-  "node": <Card
-    expandable={false}
-    expanded={null}
-    initiallyExpanded={false}
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "maxWidth": 300,
+    }
+  }
+>
+  <CardText
     style={
-        Object {
-            "maxWidth": 300,
-          }
-    }
->
-    <CardText
-        style={
-            Object {
-                "maxHeight": 300,
-                "paddingBottom": 0,
-              }
-        }
-    >
-        <LinearProgress
-            max={100}
-            min={0}
-            mode="indeterminate"
-            style={
-                Object {
-                    "marginBottom": 5,
-                  }
-            }
-            value={0}
-        />
-        <withHandlers(ImageCropper)
-            image={
-                Object {
-                    "preview": "https://pics.example.com/200/100",
-                  }
-            }
-            scale={2}
-            setEditor={[Function]}
-            setScale={[Function]}
-        />
-    </CardText>
-    <CardActions>
-        <RaisedButton
-            disabled={true}
-            fullWidth={false}
-            label="Upload"
-            labelPosition="after"
-            name="Upload"
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={true}
-        />
-        <RaisedButton
-            containerElement="label"
-            disabled={false}
-            fullWidth={false}
-            label="Change"
-            labelPosition="before"
-            name="Select"
-            primary={true}
-            secondary={false}
-        >
-            <withHandlers(ImageSelector)
-                setImage={[Function]}
-            />
-        </RaisedButton>
-        <FlatButton
-            disabled={false}
-            fullWidth={false}
-            label="Reset"
-            labelPosition="after"
-            labelStyle={Object {}}
-            onKeyboardFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-            onTouchStart={[Function]}
-            onTouchTap={[Function]}
-            primary={false}
-            secondary={false}
-            style={
-                Object {
-                    "marginRight": 0,
-                    "minWidth": 85,
-                  }
-            }
-        />
-    </CardActions>
-</Card>,
-  "nodes": Array [
-    <Card
-      expandable={false}
-      expanded={null}
-      initiallyExpanded={false}
-      style={
-            Object {
-                  "maxWidth": 300,
-                }
+      Object {
+        "maxHeight": 300,
+        "paddingBottom": 0,
       }
->
-      <CardText
-            style={
-                  Object {
-                        "maxHeight": 300,
-                        "paddingBottom": 0,
-                      }
-            }
-      >
-            <LinearProgress
-                  max={100}
-                  min={0}
-                  mode="indeterminate"
-                  style={
-                        Object {
-                              "marginBottom": 5,
-                            }
-                  }
-                  value={0}
-            />
-            <withHandlers(ImageCropper)
-                  image={
-                        Object {
-                              "preview": "https://pics.example.com/200/100",
-                            }
-                  }
-                  scale={2}
-                  setEditor={[Function]}
-                  setScale={[Function]}
-            />
-      </CardText>
-      <CardActions>
-            <RaisedButton
-                  disabled={true}
-                  fullWidth={false}
-                  label="Upload"
-                  labelPosition="after"
-                  name="Upload"
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={true}
-            />
-            <RaisedButton
-                  containerElement="label"
-                  disabled={false}
-                  fullWidth={false}
-                  label="Change"
-                  labelPosition="before"
-                  name="Select"
-                  primary={true}
-                  secondary={false}
-            >
-                  <withHandlers(ImageSelector)
-                        setImage={[Function]}
-                  />
-            </RaisedButton>
-            <FlatButton
-                  disabled={false}
-                  fullWidth={false}
-                  label="Reset"
-                  labelPosition="after"
-                  labelStyle={Object {}}
-                  onKeyboardFocus={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  primary={false}
-                  secondary={false}
-                  style={
-                        Object {
-                              "marginRight": 0,
-                              "minWidth": 85,
-                            }
-                  }
-            />
-      </CardActions>
-</Card>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_instance": ShallowComponentWrapper {
-      "_calledComponentWillUnmount": false,
-      "_compositeType": 2,
-      "_context": Object {},
-      "_currentElement": <ImageRenderer
-        cropping={true}
-        failed={undefined}
-        image={
-                Object {
-                        "preview": "https://pics.example.com/200/100",
-                      }
-        }
-        onUpload={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={2}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={undefined}
-        uploading={true}
-        url={undefined}
-/>,
-      "_debugID": 5,
-      "_hostContainerInfo": null,
-      "_hostParent": null,
-      "_instance": StatelessComponent {
-        "_reactInternalInstance": [Circular],
-        "context": Object {},
-        "props": Object {
-          "cropping": true,
-          "failed": undefined,
-          "image": Object {
-            "preview": "https://pics.example.com/200/100",
-          },
-          "onUpload": [Function],
-          "openEditor": [Function],
-          "reset": [Function],
-          "scale": 2,
-          "setEditor": [Function],
-          "setImage": [Function],
-          "setScale": [Function],
-          "uploaded": undefined,
-          "uploading": true,
-          "url": undefined,
-        },
-        "refs": Object {},
-        "state": null,
-        "updater": Object {
-          "enqueueCallback": [Function],
-          "enqueueCallbackInternal": [Function],
-          "enqueueElementInternal": [Function],
-          "enqueueForceUpdate": [Function],
-          "enqueueReplaceState": [Function],
-          "enqueueSetState": [Function],
-          "isMounted": [Function],
-          "validateCallback": [Function],
-        },
-      },
-      "_mountOrder": 3,
-      "_pendingCallbacks": null,
-      "_pendingElement": null,
-      "_pendingForceUpdate": false,
-      "_pendingReplaceState": false,
-      "_pendingStateQueue": null,
-      "_renderedComponent": NoopInternalComponent {
-        "_currentElement": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <LinearProgress
-                              max={100}
-                              min={0}
-                              mode="indeterminate"
-                              style={
-                                        Object {
-                                                  "marginBottom": 5,
-                                                }
-                              }
-                              value={0}
-                    />
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={2}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={true}
-                              fullWidth={false}
-                              label="Upload"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-        "_debugID": 6,
-        "_renderedOutput": <Card
-          expandable={false}
-          expanded={null}
-          initiallyExpanded={false}
-          style={
-                    Object {
-                              "maxWidth": 300,
-                            }
-          }
->
-          <CardText
-                    style={
-                              Object {
-                                        "maxHeight": 300,
-                                        "paddingBottom": 0,
-                                      }
-                    }
-          >
-                    <LinearProgress
-                              max={100}
-                              min={0}
-                              mode="indeterminate"
-                              style={
-                                        Object {
-                                                  "marginBottom": 5,
-                                                }
-                              }
-                              value={0}
-                    />
-                    <withHandlers(ImageCropper)
-                              image={
-                                        Object {
-                                                  "preview": "https://pics.example.com/200/100",
-                                                }
-                              }
-                              scale={2}
-                              setEditor={[Function]}
-                              setScale={[Function]}
-                    />
-          </CardText>
-          <CardActions>
-                    <RaisedButton
-                              disabled={true}
-                              fullWidth={false}
-                              label="Upload"
-                              labelPosition="after"
-                              name="Upload"
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={true}
-                    />
-                    <RaisedButton
-                              containerElement="label"
-                              disabled={false}
-                              fullWidth={false}
-                              label="Change"
-                              labelPosition="before"
-                              name="Select"
-                              primary={true}
-                              secondary={false}
-                    >
-                              <withHandlers(ImageSelector)
-                                        setImage={[Function]}
-                              />
-                    </RaisedButton>
-                    <FlatButton
-                              disabled={false}
-                              fullWidth={false}
-                              label="Reset"
-                              labelPosition="after"
-                              labelStyle={Object {}}
-                              onKeyboardFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              onTouchStart={[Function]}
-                              onTouchTap={[Function]}
-                              primary={false}
-                              secondary={false}
-                              style={
-                                        Object {
-                                                  "marginRight": 0,
-                                                  "minWidth": 85,
-                                                }
-                              }
-                    />
-          </CardActions>
-</Card>,
-      },
-      "_renderedNodeType": 1,
-      "_rootNodeID": 0,
-      "_topLevelWrapper": null,
-      "_updateBatchNumber": null,
-      "_warnedAboutRefsInRender": false,
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <ImageRenderer
-    cropping={true}
-    failed={undefined}
-    image={
-        Object {
-            "preview": "https://pics.example.com/200/100",
-          }
     }
-    onUpload={[Function]}
-    openEditor={[Function]}
-    reset={[Function]}
-    scale={2}
-    setEditor={[Function]}
-    setImage={[Function]}
-    setScale={[Function]}
-    uploaded={undefined}
-    uploading={true}
-    url={undefined}
-/>,
-}
+  >
+    <LinearProgress
+      max={100}
+      min={0}
+      mode="indeterminate"
+      style={
+        Object {
+          "marginBottom": 5,
+        }
+      }
+      value={0}
+    />
+    <withHandlers(ImageCropper)
+      image={
+        Object {
+          "preview": "https://pics.example.com/200/100",
+        }
+      }
+      scale={2}
+      setEditor={[Function]}
+      setScale={[Function]}
+    />
+  </CardText>
+  <CardActions>
+    <RaisedButton
+      disabled={true}
+      fullWidth={false}
+      label="Upload"
+      labelPosition="after"
+      name="Upload"
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={true}
+    />
+    <RaisedButton
+      containerElement="label"
+      disabled={false}
+      fullWidth={false}
+      label="Change"
+      labelPosition="before"
+      name="Select"
+      primary={true}
+      secondary={false}
+    >
+      <withHandlers(ImageSelector)
+        setImage={[Function]}
+      />
+    </RaisedButton>
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Reset"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      primary={false}
+      secondary={false}
+      style={
+        Object {
+          "marginRight": 0,
+          "minWidth": 85,
+        }
+      }
+    />
+  </CardActions>
+</Card>
 `;
