@@ -1,86 +1,60 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react';
-import { action } from '@storybook/addon-actions';
-import { number } from '@storybook/addon-knobs';
+import { number, boolean } from '@storybook/addon-knobs';
+import { Story } from '@storybook/addon-info';
 
-import RenderCounter, { Counter, StatelessRenderCounter } from '../../src/RenderCounter';
+import RenderCounter, { Counter, StatelessRenderCounter, withRenderCount } from '../../src/RenderCounter';
 import DivRefreshable from './DivRefreshable';
+import MyCounter from './MyCounter';
+import createOuterHandler from './createOuterHandler';
+import './RenderCounter.story.css';
 
-const stories = storiesOf('RenderCounter', module);
-
-const styles = {
-  container: {
-    width: '50%',
-    minHeight: 100,
-    border: 'solid 1px grey',
-    padding: 10,
-  },
-};
-
-stories.addWithInfo(
-  'RenderCounter',
-  `
-    This is the basic usage inside any component.\n
-    NOTICE: You may see them render some extra times. That's a bug of storybook when you enter this page directly.
-    Click another menu and re-enter this page to see real render times.
-  `,
-  () => (
-    <div style={styles.container}>
-      <RenderCounter initialCount={number('initialCount', 1)} />
-    </div>
-  ),
-  { inline: true },
-);
-
-const description = (
-  <div>
-    <h2>DivRefreshable</h2>
-    <p><strong>DivRefreshable</strong> is a div with a button that can refresh itself</p>
-    <p>It will update its only child if cloneChild prop is set to true</p>
-  </div>
-);
-
-const createUnstableHandler = (possibility = 0.5, log = action('onRerender')) => {
-  const handler = (props, next) => (count) => {
-    if (Math.random() < possibility) {
-      next();
-      log('hit', possibility, props, count);
-    } else {
-      log('miss', possibility, props, count);
+const stories = storiesOf('RenderCounter', module)
+  .addDecorator((getStory) => {
+    const element = getStory();
+    if (element.type === Story) {
+      return <div className="root">{element}</div>;
     }
-  };
+    return element;
+  });
 
-  Object.defineProperty(handler, 'name', { value: handler.toString() });
-  return handler;
+const defaultDesc = `
+  NOTICE: You may see some extra times.\n
+  That's a bug of storybook happens when you enter this page directly.\n
+  You can click another menu and re-enter this route to see real render times.
+`;
+
+const defaultOptions = {
+  propTablesExclude: [DivRefreshable],
 };
+const addRenderCounter = (name, Component, { desc = defaultDesc, options } = {}) =>
+  stories.addWithInfo(name, desc, () => {
+    const blockOnRerender = boolean('blockOnRerender', true);
+    const onRerender = createOuterHandler({ name: 'onRerender', block: blockOnRerender });
+    const initialCount = number('initialCount', 1);
+    return (
+      <div>
+        {`blockOnRerender: ${JSON.stringify(blockOnRerender)}`}
+        <DivRefreshable>
+          <Component initialCount={initialCount} onRerender={onRerender} />
+        </DivRefreshable>
+      </div>
+    );
+  },
+  { ...defaultOptions, ...options });
 
-stories.addWithInfo('inside DivRefreshable', description, () => {
-  const possibility = number('possibility', 0.5);
-  const onRerender = createUnstableHandler(possibility);
-  return (
-    <DivRefreshable
-      label={`Counter re-rendered in ${possibility * 100}% possibility`}
-      style={styles.container}
-    >
-      <RenderCounter onRerender={onRerender} />
-    </DivRefreshable>
-  );
-}, { inline: true, propTablesExclude: [RenderCounter] });
+addRenderCounter('RenderCounter', RenderCounter);
+addRenderCounter('StatelessRenderCounter', StatelessRenderCounter, {
+  options: {
+    propTables: [StatelessRenderCounter, Counter],
+  },
+});
 
-stories.addWithInfo('Counter', () => (
-  <div style={styles.container}>
-    <Counter count={number('count', 1)} />
-  </div>
-), { inline: true });
+const MyRenderCounter = withRenderCount(MyCounter);
 
-stories.addWithInfo(
-  'StatelessRenderCounter',
-  'This is another implement of RenderCounter',
-  () => (
-    <div style={styles.container}>
-      <StatelessRenderCounter initialCount={number('initialCount', 1)} />
-    </div>
-  ),
-  { inline: true },
-);
+addRenderCounter('withRenderCount', MyRenderCounter, {
+  options: {
+    propTables: [MyRenderCounter, MyCounter],
+  },
+});
