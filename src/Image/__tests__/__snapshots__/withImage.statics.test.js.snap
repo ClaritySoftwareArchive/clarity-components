@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`withImage(BaseComponent): NewComponent NewComponent has the extended statics of BaseComponent 1`] = `
+Object {
+  "defaultProps": Object {
+    "foo": "1",
+    "initialState": Object {
+      "editor": undefined,
+      "failed": false,
+      "scale": 1,
+      "uploading": false,
+    },
+  },
+  "displayName": "withImage(BaseComponent)",
+  "propTypes": Object {
+    "foo": [Function],
+    "initialState": [Function],
+    "onUploadFail": [Function],
+    "onUploadStart": [Function],
+    "onUploadSucceed": [Function],
+    "uploadImage": [Function],
+  },
+}
+`;
