@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import { createEmbeddedHandler } from '../embedHandler';
+import { createEmbeddedHandler } from 'react-render-counter/hocs/embedHandler';
 
 test('embedHandlers should call mapValues with createEmbeddedHandler', () => {
   jest.mock('lodash.mapvalues', () => jest.fn());

@@ -1,6 +1,6 @@
 import mapValues from 'lodash.mapvalues';
+import { createEmbeddedHandler } from 'react-render-counter/hocs/embedHandler';
 import withHandlers from './withHandlers';
-import { createEmbeddedHandler } from './embedHandler';
 
 const createEmbeddedHandlers = handlers => mapValues(handlers, createEmbeddedHandler);
 

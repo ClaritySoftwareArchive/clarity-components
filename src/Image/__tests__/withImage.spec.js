@@ -3,8 +3,8 @@ import React from 'react';
 import _ from 'lodash';
 import { mount } from 'enzyme';
 import compose from 'recompose/compose';
+import withPropsPeeker from 'react-render-counter/hocs/withPropsPeeker';
 import withImage from '../withImage';
-import withPropsPeeker from '../../hocs/withPropsPeeker';
 import testExpectedProps from './testExpectedProps';
 import testExpectedHandlers from './testExpectedHandlers';
 

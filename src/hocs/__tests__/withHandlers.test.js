@@ -2,7 +2,7 @@
 import React from 'react';
 import _ from 'lodash';
 import { mount } from 'enzyme';
-import withPropsPeeker from '../withPropsPeeker';
+import withPropsPeeker from 'react-render-counter/hocs/withPropsPeeker';
 
 jest.mock('recompose/withHandlers', () => {
   const recomposeWithHandlers = require.requireActual('recompose/withHandlers').default;

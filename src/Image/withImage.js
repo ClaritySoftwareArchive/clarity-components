@@ -5,10 +5,10 @@ import mapProps from 'recompose/mapProps';
 import pure from 'recompose/pure';
 import flattenProp from 'recompose/flattenProp';
 
-import omitProps from '../hocs/omitProps';
-import omitPropTypes from '../hocs/omitPropTypes';
-import extendStatics from '../hocs/extendStatics';
-import copyStatics from '../hocs/copyStatics';
+import omitProps from 'react-render-counter/hocs/omitProps';
+import omitPropTypes from 'react-render-counter/hocs/omitPropTypes';
+import extendStatics from 'react-render-counter/hocs/extendStatics';
+import copyStatics from 'react-render-counter/hocs/copyStatics';
 import embedHandlers from '../hocs/embedHandlers';
 
 const defaultState = {
