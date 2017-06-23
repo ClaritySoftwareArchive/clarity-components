@@ -1,0 +1,229 @@
+/* eslint-env jest */
+import _ from 'lodash';
+import { defaultState, mergeState, handlers } from '../withImage';
+
+const [{
+  openEditor,
+  setEditor,
+  setImage,
+  setScale,
+  onUploadFail,
+  onUploadStart,
+  onUploadSucceed,
+  reset,
+}, {
+  onUpload,
+}] = handlers;
+
+test('openEditor({ setState, ...props }):handler', () => {
+  const setState = jest.fn();
+  openEditor({ setState })();
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({ uploaded: false });
+});
+
+test('setEditor({ setState, ...props }):handler', () => {
+  const setState = jest.fn();
+  const editor = _.stubObject();
+  setEditor({ setState })(editor);
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({ editor });
+});
+
+test('setImage({ setState, ...props }):handler', () => {
+  const setState = jest.fn();
+  const image = _.stubObject();
+  setImage({ setState })(image);
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({ image });
+});
+
+test('setScale({ setState, ...props }):handler', () => {
+  const setState = jest.fn();
+  const scale = 32;
+  setScale({ setState })(scale);
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({ scale: 32 });
+});
+
+test('reset({ setState, ...props }):handler', () => {
+  const setState = jest.fn();
+  const props = {
+    foo: 1,
+    bar: 2,
+  };
+  reset({ setState, ...props })();
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({
+    type: 'reset',
+    props,
+  });
+});
+
+test('onUploadStart({ setState }):handler', () => {
+  const setState = jest.fn();
+  onUploadStart({ setState })();
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({
+    uploaded: false,
+    uploading: true,
+    failed: false,
+  });
+});
+
+test('onUploadSucceed({ setState }):handler', () => {
+  const setState = jest.fn();
+  const url = 'http://url.com';
+  onUploadSucceed({ setState })({ url });
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({
+    url,
+    uploaded: true,
+    uploading: false,
+  });
+});
+
+test('onUploadFail({ setState }):handler', () => {
+  const setState = jest.fn();
+  onUploadFail({ setState })();
+  expect(setState).toHaveBeenCalled();
+  expect(setState).toHaveBeenCalledWith({
+    uploading: false,
+    failed: true,
+  });
+});
+
+describe('onUpload({ uploadImage }):handler', () => {
+  const dataUrl = _.stubString();
+  let props;
+  beforeEach(() => {
+    props = {
+      editor: {
+        getDataUrl: jest.fn(() => dataUrl),
+      },
+      onUploadStart: jest.fn(),
+      onUploadSucceed: jest.fn(),
+      onUploadFail: jest.fn(),
+    };
+  });
+
+  test('when uploadImage will resolve', async () => {
+    const imageUploaded = _.stubObject();
+    const uploadImage = jest.fn(() => new Promise(resolve => resolve(imageUploaded)));
+    await onUpload({
+      ...props,
+      uploadImage,
+    })();
+    expect(props.editor.getDataUrl).toHaveBeenCalled();
+    expect(props.onUploadStart).toHaveBeenCalled();
+    expect(props.onUploadSucceed).toHaveBeenCalled();
+    expect(props.onUploadFail).not.toHaveBeenCalled();
+  });
+
+  test('when uploadImage will reject', async () => {
+    const uploadImage = jest.fn(() => new Promise((resolve, reject) => reject()));
+    await onUpload({
+      ...props,
+      uploadImage,
+    })();
+    expect(props.editor.getDataUrl).toHaveBeenCalled();
+    expect(props.onUploadStart).toHaveBeenCalled();
+    expect(props.onUploadSucceed).not.toHaveBeenCalled();
+    expect(props.onUploadFail).toHaveBeenCalled();
+  });
+
+  test('when no uploadImage', async () => {
+    await onUpload(props)();
+    expect(props.editor.getDataUrl).not.toHaveBeenCalled();
+    expect(props.onUploadStart).not.toHaveBeenCalled();
+    expect(props.onUploadSucceed).not.toHaveBeenCalled();
+    expect(props.onUploadFail).not.toHaveBeenCalled();
+  });
+});
+
+describe('mergeState(state, { type, props, ...action }): newState', () => {
+  test('normal merge', () => {
+    const state = { foo: 1 };
+    const action = { bar: 2 };
+    const newState = mergeState(state, action);
+    expect(newState).not.toBe(state);
+    expect(newState).not.toBe(action);
+    expect(newState).toEqual({
+      foo: 1,
+      bar: 2,
+    });
+  });
+
+  describe('reset merge', () => {
+    let state;
+    let action;
+    let newState;
+
+    beforeEach(() => {
+      state = { scale: 2, foo: 1 };
+      action = { type: 'reset', props: {} };
+    });
+
+    afterEach(() => {
+      expect(newState).not.toBe(state);
+      expect(newState).not.toBe(action);
+    });
+
+    test('with empty initialState', () => {
+      action.props = { initialState: {} };
+      newState = mergeState(state, action);
+      expect(newState).toEqual(defaultState);
+    });
+
+    test('when scale is initialized in initialState', () => {
+      action.props = {
+        initialState: {
+          scale: 2,
+        },
+      };
+      newState = mergeState(state, action);
+      expect(newState).toEqual({
+        ...defaultState,
+        scale: 2,
+      });
+    });
+
+    test('when scale is controlled in props', () => {
+      action.props = {
+        initialState: {
+          scale: 2,
+        },
+        scale: 3,
+      };
+      newState = mergeState(state, action);
+      expect(newState).toEqual({
+        ...defaultState,
+        scale: 3,
+      });
+    });
+
+    test('when editor is set', () => {
+      const editor = { reset: jest.fn() };
+      state.editor = editor;
+      newState = mergeState(state, action);
+      expect(newState).toEqual({
+        ...defaultState,
+        editor,
+      });
+      expect(editor.reset).toHaveBeenCalled();
+    });
+
+    test('when image is controlled in props', () => {
+      const editor = { reset: jest.fn() };
+      state.editor = editor;
+      action.props = { image: {} };
+      newState = mergeState(state, action);
+      expect(newState).toEqual({
+        ...defaultState,
+        editor,
+      });
+      expect(editor.reset).not.toHaveBeenCalled();
+    });
+  });
+});
+

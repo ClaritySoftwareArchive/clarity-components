@@ -11,7 +11,7 @@ import extendStatics from 'react-render-counter/hocs/extendStatics';
 import copyStatics from 'react-render-counter/hocs/copyStatics';
 import embedHandlers from '../hocs/embedHandlers';
 
-const defaultState = {
+export const defaultState = {
   scale: 1,
   uploading: false,
   failed: false,
@@ -33,7 +33,7 @@ const createInitialState = ({ initialState, ...props }) => {
   return state;
 };
 
-const onUpload = ({
+export const onUpload = ({
   editor,
   uploadImage,
   onUploadFail,
@@ -72,7 +72,7 @@ export const handlers = [{
   onUpload,
 }];
 
-const mergeState = (state, { type, props, ...action }) => {
+export const mergeState = (state, { type, props, ...action }) => {
   if (type === 'reset') {
     const { editor } = state;
     if (!props.image && editor && editor.reset) {
