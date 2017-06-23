@@ -96,7 +96,7 @@ const propsMapper = ({
   cropping: !!image && !uploaded,
 });
 
-export const propTypes = {
+const propTypes = {
   initialState: T.shape({
     url: T.string,
   }),
@@ -106,7 +106,7 @@ export const propTypes = {
   uploadImage: T.func,
 };
 
-export const defaultProps = {
+const defaultProps = {
   initialState: defaultState,
 };
 
