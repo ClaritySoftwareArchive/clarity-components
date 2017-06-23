@@ -1,130 +1,55 @@
 /* eslint-env jest */
 import React from 'react';
-import _ from 'lodash';
 import { mount } from 'enzyme';
-import compose from 'recompose/compose';
-import withPropsPeeker from 'react-render-counter/hocs/withPropsPeeker';
+import enzymeToJson from 'enzyme-to-json';
 import withImage from '../withImage';
-import testExpectedProps from './testExpectedProps';
-import testExpectedHandlers from './testExpectedHandlers';
 
 const url = 'http://pic.example.com/200/200';
 const image = { preview: url };
-const editor = {
-  reset: jest.fn(),
-  getDataUrl: () => url,
-};
 
-const defaultMapMode = {
-  inputProps: {},
-  outputProps: {
-    // props flattened from defaultState
-    scale: 1,
-    failed: false,
-    uploading: false,
-    // props generated from propsMapper
-    cropping: false,
-    image: undefined,
-    url: undefined,
-    uploaded: false,
-  },
-};
-
-const handlerMirror = _.mapKeys([
-  'openEditor',
-  'setEditor',
-  'setImage',
-  'setScale',
-  'reset',
-]/* , _.identity*/);
-
-const mapModes = [{
-  desc: 'with default props',
-  // handler props
-  handlersShouldCall: { ...handlerMirror, onUpload: [] },
-}, {
-  desc: 'with image prop',
-  inputProps: { image },
-  outputProps: { cropping: true, image },
-}, {
-  desc: 'with url prop',
-  inputProps: { url },
-  outputProps: { image, url, uploaded: true },
-}, {
-  desc: 'while uploading',
-  inputProps: { image, uploading: true },
-  outputProps: { image, cropping: true, uploading: true },
-}, {
-  desc: 'after upload failed',
-  inputProps: { image, failed: true },
-  outputProps: { image, cropping: true, failed: true },
-}, {
-  desc: 'crop with url prop',
-  inputProps: { url, uploaded: false },
-  outputProps: { image, url, cropping: true },
-}, {
-  desc: 'if upload will succeed',
-  handlersShouldCall: {
-    onUpload: ['onUploadStart', 'uploadImage', 'onUploadSucceed'],
-  },
-  inputHandlers: {
-    uploadImage: jest.fn(() => new Promise(resolve => resolve({ url }))),
-  },
-  inputProps: { editor },
-}, {
-  desc: 'if upload will fail',
-  handlersShouldCall: {
-    onUpload: ['onUploadStart', 'uploadImage', 'onUploadFail'],
-  },
-  inputHandlers: {
-    uploadImage: jest.fn(() => new Promise((resolve, reject) => reject(new Error()))),
-  },
-  inputProps: { editor },
-}, {
-  desc: 'when reset is called',
-  handlersShouldCall: { reset: [] },
-  inputProps: { editor },
-  postValidate: () => {
-    test('editor.reset should be called', () => {
-      expect(editor.reset).toHaveBeenCalledTimes(1);
-    });
-  },
-}];
-
-describe('withImage(BaseComponent)(inputProps): outputProps', () => {
+describe('withImage(BaseComponent): NewComponent', () => {
   const BaseComponent = () => <div />;
-
-  const testMapMode = ({
-    desc,
-    inputProps,
-    inputHandlers = {},
-    outputProps,
-    handlersShouldCall = {},
-    postValidate,
-  }) => describe(desc, () => {
-    const peekedProps = {};
-    const NewComponent = compose(
-      withImage,
-      withPropsPeeker(peekedProps),
-    )(BaseComponent);
-
-    const inputNames = _.flatten(_.values(handlersShouldCall));
-    const handlers = {};
-    inputNames.forEach((name) => {
-      handlers[name] = inputHandlers[name] || jest.fn(() => jest.fn());
+  const NewComponent = withImage(BaseComponent);
+  describe('start with default props', () => {
+    test('waiting for user to select any image', () => {
+      const wrapper = mount(<NewComponent />);
+      expect(enzymeToJson(wrapper)).toMatchSnapshot();
     });
-
-    mount(<NewComponent {...inputProps} {...handlers} />);
-
-    const expectedProps = { ...defaultMapMode.outputProps, ...outputProps };
-    testExpectedProps(peekedProps, expectedProps);
-
-    testExpectedHandlers(handlersShouldCall, peekedProps, handlers);
-
-    if (postValidate) {
-      postValidate();
-    }
   });
 
-  _.forEach(mapModes, testMapMode);
+  describe('start with image preset', () => {
+    test('cropping image', () => {
+      const props = { image };
+      const wrapper = mount(<NewComponent {...props} />);
+      expect(enzymeToJson(wrapper)).toMatchSnapshot();
+    });
+    test('uploading image', () => {
+      const props = { image, uploading: true };
+      const wrapper = mount(<NewComponent {...props} />);
+      expect(enzymeToJson(wrapper)).toMatchSnapshot();
+    });
+    test('failed to upload image', () => {
+      const props = { image, failed: true };
+      const wrapper = mount(<NewComponent {...props} />);
+      expect(enzymeToJson(wrapper)).toMatchSnapshot();
+    });
+    test('succeeded to upload image', () => {
+      const props = { image, url };
+      const wrapper = mount(<NewComponent {...props} />);
+      expect(enzymeToJson(wrapper)).toMatchSnapshot();
+    });
+  });
+
+  describe('start with url preset', () => {
+    test('previewing url', () => {
+      const props = { url };
+      const wrapper = mount(<NewComponent {...props} />);
+      expect(enzymeToJson(wrapper)).toMatchSnapshot();
+    });
+    test('cropping url', () => {
+      const props = { url, uploaded: false };
+      const wrapper = mount(<NewComponent {...props} />);
+      expect(enzymeToJson(wrapper)).toMatchSnapshot();
+    });
+  });
 });
