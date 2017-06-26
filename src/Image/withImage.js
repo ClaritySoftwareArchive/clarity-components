@@ -1,15 +1,7 @@
 import T from 'prop-types';
-import compose from 'recompose/compose';
-import withReducer from 'recompose/withReducer';
-import mapProps from 'recompose/mapProps';
-import pure from 'recompose/pure';
-import flattenProp from 'recompose/flattenProp';
+import { compose, withReducer, mapProps, pure, flattenProp } from 'recompose';
 
-import omitProps from 'react-render-counter/hocs/omitProps';
-import omitPropTypes from 'react-render-counter/hocs/omitPropTypes';
-import extendStatics from 'react-render-counter/hocs/extendStatics';
-import copyStatics from 'react-render-counter/hocs/copyStatics';
-import embedHandlers from '../hocs/embedHandlers';
+import { omitProps, omitPropTypes, extendStatics, copyStatics, embedHandlers } from 'react-render-counter/hocs';
 
 export const defaultState = {
   scale: 1,

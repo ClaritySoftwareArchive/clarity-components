@@ -5925,16 +5925,12 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-render-counter@^0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/react-render-counter/-/react-render-counter-0.4.2.tgz#0fa2a534af85bc4d3e235cb0778a08f20d16fd42"
+react-render-counter@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/react-render-counter/-/react-render-counter-0.5.0.tgz#6d5184789eb9a017a3ce13ede1e0995987ebf123"
   dependencies:
-    lodash.clonedeep "^4.5.0"
-    lodash.mapvalues "^4.6.0"
-    lodash.omit "^4.5.0"
+    lodash "^4.17.4"
     prop-types "^15.5.10"
-    react "^15.5.4"
-    react-dom "^15.5.4"
     recompose "^0.23.4"
 
 react-simple-di@^1.2.0:
