@@ -42,7 +42,6 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
       secondary={true}
     />
     <RaisedButton
-      containerElement="label"
       disabled={false}
       fullWidth={false}
       label="Change"
@@ -121,7 +120,6 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
       secondary={true}
     />
     <RaisedButton
-      containerElement="label"
       disabled={false}
       fullWidth={false}
       label="Change"
@@ -179,7 +177,6 @@ exports[`<ImageRenderer {...props} />: elements tree with default props 1`] = `
   />
   <CardActions>
     <RaisedButton
-      containerElement="label"
       disabled={false}
       fullWidth={false}
       label="Select Image"
@@ -258,7 +255,6 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
       secondary={true}
     />
     <RaisedButton
-      containerElement="label"
       disabled={false}
       fullWidth={false}
       label="Change"
@@ -410,7 +406,6 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
       secondary={true}
     />
     <RaisedButton
-      containerElement="label"
       disabled={false}
       fullWidth={false}
       label="Change"

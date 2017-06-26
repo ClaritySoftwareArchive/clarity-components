@@ -86,7 +86,7 @@ Welcome.propTypes = {
 
 storiesOf('Welcome', module)
   .add('to stupid-rc-starter', () => <Markdown source={starter} />)
-  // Set skipHtml to hide the link to starter/README.md in docs
+  // Set skipHtml to hide the link to starter/README.md
   .add('to clarity-components', () => <Markdown source={readme} skipHtml />)
   .add('to Storybook', () => (
     <Welcome showApp={linkTo('RenderCounter')} />

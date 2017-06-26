@@ -61,7 +61,6 @@ const ImageRenderer = ({
           primary
           label={image ? 'Change' : 'Select Image'}
           labelPosition="before"
-          containerElement="label"
         >
           <ImageSelector setImage={setImage} />
         </RaisedButton>

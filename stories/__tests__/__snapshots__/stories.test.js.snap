@@ -134,7 +134,7 @@ exports[`Storyshots Image Controlled 1`] = `
                   }
                 }
               >
-                <label
+                <button
                   disabled={false}
                   href={undefined}
                   name="Select"
@@ -167,6 +167,7 @@ exports[`Storyshots Image Controlled 1`] = `
                       "margin": 0,
                       "muiPrepared": true,
                       "outline": "none",
+                      "overflow": "hidden",
                       "padding": 0,
                       "position": "relative",
                       "textAlign": "center",
@@ -178,6 +179,7 @@ exports[`Storyshots Image Controlled 1`] = `
                     }
                   }
                   tabIndex={0}
+                  type="button"
                 >
                   <div
                     onMouseDown={[Function]}
@@ -238,7 +240,7 @@ exports[`Storyshots Image Controlled 1`] = `
                       />
                     </div>
                   </div>
-                </label>
+                </button>
               </div>
               <button
                 disabled={true}
@@ -1056,7 +1058,6 @@ exports[`Storyshots Image with initialState 1`] = `
               "muiPrepared": true,
             }
           }
-          value={1}
         >
           <div
             onBlur={[Function]}
@@ -1237,6 +1238,7 @@ exports[`Storyshots Image with initialState 1`] = `
               "margin": 0,
               "muiPrepared": true,
               "outline": "none",
+              "overflow": "hidden",
               "padding": 0,
               "position": "relative",
               "textAlign": "center",
@@ -1305,7 +1307,7 @@ exports[`Storyshots Image with initialState 1`] = `
           }
         }
       >
-        <label
+        <button
           disabled={false}
           href={undefined}
           name="Select"
@@ -1338,6 +1340,7 @@ exports[`Storyshots Image with initialState 1`] = `
               "margin": 0,
               "muiPrepared": true,
               "outline": "none",
+              "overflow": "hidden",
               "padding": 0,
               "position": "relative",
               "textAlign": "center",
@@ -1349,6 +1352,7 @@ exports[`Storyshots Image with initialState 1`] = `
             }
           }
           tabIndex={0}
+          type="button"
         >
           <div
             onMouseDown={[Function]}
@@ -1409,7 +1413,7 @@ exports[`Storyshots Image with initialState 1`] = `
               />
             </div>
           </div>
-        </label>
+        </button>
       </div>
       <button
         disabled={false}
