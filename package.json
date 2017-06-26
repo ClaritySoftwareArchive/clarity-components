@@ -59,7 +59,7 @@
   "dependencies": {
     "attr-accept": "^1.1.0",
     "lodash": "^4.17.4",
-    "material-ui": "^0.18.1",
+    "material-ui": "^0.18.4",
     "prop-types": "^15.5.10",
     "react-avatar-editor": "^9.1.1",
     "react-image": "^1.0.1",
