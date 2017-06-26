@@ -1,6 +1,6 @@
 import React from 'react';
-import find from 'lodash.find';
 import T from 'prop-types';
+import _ from 'lodash';
 import withHandlers from 'recompose/withHandlers';
 
 import accepts from 'attr-accept';
@@ -39,8 +39,10 @@ ImageSelector.propTypes = {
   onImageSelect: T.func.isRequired,
 };
 
+const isValidImage = file => accepts(file, staticProps.selector.accept);
+
 export const onImageSelect = ({ setImage }) => (event) => {
-  const imgFile = find(event.target.files, file => accepts(file, staticProps.selector.accept));
+  const imgFile = _.find(event.target.files, isValidImage);
 
   if (imgFile) {
     imgFile.preview = createObjectURL(imgFile);

@@ -167,6 +167,7 @@ exports[`Storyshots Image Controlled 1`] = `
                       "margin": 0,
                       "muiPrepared": true,
                       "outline": "none",
+                      "overflow": "hidden",
                       "padding": 0,
                       "position": "relative",
                       "textAlign": "center",
@@ -1056,7 +1057,6 @@ exports[`Storyshots Image with initialState 1`] = `
               "muiPrepared": true,
             }
           }
-          value={1}
         >
           <div
             onBlur={[Function]}
@@ -1237,6 +1237,7 @@ exports[`Storyshots Image with initialState 1`] = `
               "margin": 0,
               "muiPrepared": true,
               "outline": "none",
+              "overflow": "hidden",
               "padding": 0,
               "position": "relative",
               "textAlign": "center",
@@ -1338,6 +1339,7 @@ exports[`Storyshots Image with initialState 1`] = `
               "margin": 0,
               "muiPrepared": true,
               "outline": "none",
+              "overflow": "hidden",
               "padding": 0,
               "position": "relative",
               "textAlign": "center",

@@ -1,5 +1,5 @@
 <blockquote>
-  <!-- This <blockquote> will be hidden in gh-pages, because it's no gonna work there and there's better menue -->
+  <!-- This <blockquote> will be hidden in gh-pages, because it's no gonna work there and there's a better menu -->
   <a href="https://github.com/Stupidism/stupid-rc-starter/tree/master/starter">README of starter</a> 
   <p>
     If you are here for the <strong>starter</strong> click above link</br>
@@ -34,22 +34,22 @@ npm install --save clarity-components
 ## Usage
 1. `Image` - withImage(Image)
 
-  ```js
-  import { Image } from 'clarity-components';
-  
-  const uploadImage = () => new Promise(resolve => resolve({ url: 'https://img-url' }));
-  <Image uploadImage={uploadImage} />
-  ```
+```js
+import { Image } from 'clarity-components';
+
+const uploadImage = () => new Promise(resolve => resolve({ url: 'https://img-url' }));
+<Image uploadImage={uploadImage} />
+```
 
 2. `withImage` - High order component to provide data and logic
 
-  ```js
-  import { withImage } from 'clarity-components';
-  
-  const MyImage = (props) => <div>{console.log(props)}</div>;
-  
-  export default withImage(MyImage);
-  ```
+```js
+import { withImage } from 'clarity-components';
+
+const MyImage = (props) => <div>{console.log(props)}</div>;
+
+export default withImage(MyImage);
+```
 
 ## [Documentation](https://claritymovement.github.io/clarity-components/)
 
