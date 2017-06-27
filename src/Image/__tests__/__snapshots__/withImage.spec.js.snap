@@ -2,9 +2,10 @@
 
 exports[`withImage(BaseComponent): NewComponent start with default props waiting for user to select any image 1`] = `
 <div
-  name="PropsDisplayer"
+  name="props-displayer"
 >
-  <ReactComponent
+  <input-props />
+  <output-props
     cropping={false}
     failed={false}
     onUpload={[Function]}
@@ -23,9 +24,16 @@ exports[`withImage(BaseComponent): NewComponent start with default props waiting
 
 exports[`withImage(BaseComponent): NewComponent start with image preset cropping image 1`] = `
 <div
-  name="PropsDisplayer"
+  name="props-displayer"
 >
-  <ReactComponent
+  <input-props
+    image={
+      Object {
+        "preview": "http://pic.example.com/200/200",
+      }
+    }
+  />
+  <output-props
     cropping={true}
     failed={false}
     image={
@@ -49,9 +57,17 @@ exports[`withImage(BaseComponent): NewComponent start with image preset cropping
 
 exports[`withImage(BaseComponent): NewComponent start with image preset failed to upload image 1`] = `
 <div
-  name="PropsDisplayer"
+  name="props-displayer"
 >
-  <ReactComponent
+  <input-props
+    failed={true}
+    image={
+      Object {
+        "preview": "http://pic.example.com/200/200",
+      }
+    }
+  />
+  <output-props
     cropping={true}
     failed={true}
     image={
@@ -75,9 +91,17 @@ exports[`withImage(BaseComponent): NewComponent start with image preset failed t
 
 exports[`withImage(BaseComponent): NewComponent start with image preset succeeded to upload image 1`] = `
 <div
-  name="PropsDisplayer"
+  name="props-displayer"
 >
-  <ReactComponent
+  <input-props
+    image={
+      Object {
+        "preview": "http://pic.example.com/200/200",
+      }
+    }
+    url="http://pic.example.com/200/200"
+  />
+  <output-props
     cropping={false}
     failed={false}
     image={
@@ -102,9 +126,17 @@ exports[`withImage(BaseComponent): NewComponent start with image preset succeede
 
 exports[`withImage(BaseComponent): NewComponent start with image preset uploading image 1`] = `
 <div
-  name="PropsDisplayer"
+  name="props-displayer"
 >
-  <ReactComponent
+  <input-props
+    image={
+      Object {
+        "preview": "http://pic.example.com/200/200",
+      }
+    }
+    uploading={true}
+  />
+  <output-props
     cropping={true}
     failed={false}
     image={
@@ -128,9 +160,13 @@ exports[`withImage(BaseComponent): NewComponent start with image preset uploadin
 
 exports[`withImage(BaseComponent): NewComponent start with url preset cropping url 1`] = `
 <div
-  name="PropsDisplayer"
+  name="props-displayer"
 >
-  <ReactComponent
+  <input-props
+    uploaded={false}
+    url="http://pic.example.com/200/200"
+  />
+  <output-props
     cropping={true}
     failed={false}
     image={
@@ -155,9 +191,12 @@ exports[`withImage(BaseComponent): NewComponent start with url preset cropping u
 
 exports[`withImage(BaseComponent): NewComponent start with url preset previewing url 1`] = `
 <div
-  name="PropsDisplayer"
+  name="props-displayer"
 >
-  <ReactComponent
+  <input-props
+    url="http://pic.example.com/200/200"
+  />
+  <output-props
     cropping={false}
     failed={false}
     image={
