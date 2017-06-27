@@ -22,7 +22,7 @@ const styles = {
   slider: { margin: '5px 0' },
 };
 
-const ImageCropper = ({ image, scale, refEditor, onScaleChange }) => (
+const ImageCropperRenderer = ({ image, scale, refEditor, onScaleChange }) => (
   <div>
     <AvatarEditor
       {...staticProps.cropper}
@@ -39,7 +39,7 @@ const ImageCropper = ({ image, scale, refEditor, onScaleChange }) => (
   </div>
 );
 
-ImageCropper.propTypes = {
+ImageCropperRenderer.propTypes = {
   image: T.shape({
     preview: T.string.isRequired,
   }),
@@ -48,7 +48,7 @@ ImageCropper.propTypes = {
   onScaleChange: T.func.isRequired,
 };
 
-ImageCropper.defaultProps = {
+ImageCropperRenderer.defaultProps = {
   image: {},
   scale: 1,
 };
@@ -65,7 +65,11 @@ export const onScaleChange = ({ setScale }) => (e, scale) => {
   setScale(scale);
 };
 
+export {
+  ImageCropperRenderer,
+};
+
 export default withHandlers({
   refEditor,
   onScaleChange,
-})(ImageCropper);
+})(ImageCropperRenderer);
