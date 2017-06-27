@@ -103,13 +103,16 @@ const defaultOptions = {
 };
 
 export const createOptions = (initialState, options = {}) => {
-  if (typeof initialState === 'function' && !options.stateKeys) {
-    throw new Error('options.stateKeys must be specified when initialState is a function');
+  let stateKeys = options.stateKeys;
+
+  if (!stateKeys) {
+    if (typeof initialState === 'function') {
+      throw new Error('options.stateKeys must be specified when initialState is a function');
+    }
+    stateKeys = Array.isArray(initialState) ? initialState : Object.keys(initialState);
   }
 
   const mergedOptions = _.merge({}, defaultOptions, options);
-
-  const stateKeys = options.stateKeys || Object.keys(initialState);
 
   const omit = _.mapKeys(mergedOptions.omit, (value, key) => mergedOptions.names[key]);
 
@@ -149,9 +152,11 @@ export default (
   initialKeysOrState,
   options,
 ) => {
-  const initialState = createGetInitialState(initialKeysOrState);
-  const finalOptions = createOptions(initialState, options);
+  const finalOptions = createOptions(initialKeysOrState, options);
+
+  const initialState = createGetInitialState(initialKeysOrState, finalOptions);
 
   const hocs = createWithStatesHocs(initialState, finalOptions);
+
   return compose(...hocs);
 };
