@@ -1,6 +1,13 @@
 /* eslint-env jest */
 import _ from 'lodash';
-import { refEditor, onScaleChange } from '../ImageCropper';
+import { handlers } from '../ImageCropper';
+
+const {
+  refEditor,
+  onScaleChange,
+  onRotateLeft,
+  onRotateRight,
+} = handlers;
 
 describe('refEditor({ setEditor })(editor): { reset, getDataUrl }', () => {
   let editor;
@@ -60,5 +67,39 @@ describe('onScaleChange({ setScale })(event, scale){...}', () => {
   test('setScale gets called with scale', () => {
     expect(setScale).toHaveBeenCalledTimes(1);
     expect(setScale).toHaveBeenCalledWith(scale);
+  });
+});
+
+describe('onRotateLeft({ setRotate, rotate })(event){...}', () => {
+  const setRotate = jest.fn();
+  const rotate = 0;
+  const event = {
+    stopPropagation: jest.fn(),
+  };
+  onRotateLeft({ setRotate, rotate })(event);
+  test('event.stopPropagation gets called', () => {
+    expect(event.stopPropagation).toHaveBeenCalledTimes(1);
+  });
+
+  test('setRotate, rotate gets called with scale', () => {
+    expect(setRotate).toHaveBeenCalledTimes(1);
+    expect(setRotate).toHaveBeenCalledWith(-90);
+  });
+});
+
+describe('onRotateRight({ setRotate, rotate })(event){...}', () => {
+  const setRotate = jest.fn();
+  const rotate = 0;
+  const event = {
+    stopPropagation: jest.fn(),
+  };
+  onRotateRight({ setRotate, rotate })(event);
+  test('event.stopPropagation gets called', () => {
+    expect(event.stopPropagation).toHaveBeenCalledTimes(1);
+  });
+
+  test('setRotate, rotate gets called with scale', () => {
+    expect(setRotate).toHaveBeenCalledTimes(1);
+    expect(setRotate).toHaveBeenCalledWith(90);
   });
 });

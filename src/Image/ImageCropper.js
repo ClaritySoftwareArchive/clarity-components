@@ -100,7 +100,7 @@ ImageCropperRenderer.defaultProps = {
   rotate: 0,
 };
 
-export const refEditor = ({ setEditor, resetState }) => editor =>
+const refEditor = ({ setEditor, resetState }) => editor =>
   setEditor(editor && Object.assign(editor, {
     reset: () => {
       editor.state.image = {}; // eslint-disable-line no-param-reassign
@@ -109,22 +109,22 @@ export const refEditor = ({ setEditor, resetState }) => editor =>
     getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
   }));
 
-export const onScaleChange = ({ setScale }) => (e, scale) => {
+const onScaleChange = ({ setScale }) => (e, scale) => {
   e.stopPropagation();
   setScale(scale);
 };
 
-export const onRotateLeft = ({ setRotate, rotate }) => (e) => {
+const onRotateLeft = ({ setRotate, rotate }) => (e) => {
   e.stopPropagation();
   setRotate((rotate - 90) % 360);
 };
 
-export const onRotateRight = ({ setRotate, rotate }) => (e) => {
+const onRotateRight = ({ setRotate, rotate }) => (e) => {
   e.stopPropagation();
   setRotate((rotate + 90) % 360);
 };
 
-const handlers = {
+export const handlers = {
   refEditor,
   onScaleChange,
   onRotateLeft,
