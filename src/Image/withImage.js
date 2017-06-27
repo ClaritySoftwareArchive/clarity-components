@@ -6,7 +6,6 @@ import { omitProps, omitPropTypes, extendStatics, copyStatics, embedHandlers } f
 import withStates from '../hocs/withStates';
 
 export const defaultState = {
-  scale: 1,
   uploading: false,
   failed: false,
   editor: undefined,
@@ -94,7 +93,7 @@ const defaultProps = {
   initialState: defaultState,
 };
 
-const stateKeys = ['editor', 'scale', 'image'];
+const stateKeys = ['editor', 'image'];
 
 export default Component => compose(
   omitPropTypes(['onUpload']),

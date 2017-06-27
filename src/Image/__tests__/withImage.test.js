@@ -25,28 +25,28 @@ describe('createInitialState({ initialState, ...props }): handler', () => {
     expect(res).toEqual(defaultState);
   });
 
-  test('when scale is initialized in initialState', () => {
+  test('when uploading is initialized in initialState', () => {
     const res = createInitialState({
       initialState: {
-        scale: 2,
+        uploading: true,
       },
     });
     expect(res).toEqual({
       ...defaultState,
-      scale: 2,
+      uploading: true,
     });
   });
 
-  test('when scale is controlled in props', () => {
+  test('when uploading is controlled in props', () => {
     const res = createInitialState({
       initialState: {
-        scale: 2,
+        uploading: true,
       },
-      scale: 3,
+      uploading: false,
     });
     expect(res).toEqual({
       ...defaultState,
-      scale: 3,
+      uploading: false,
     });
   });
 });

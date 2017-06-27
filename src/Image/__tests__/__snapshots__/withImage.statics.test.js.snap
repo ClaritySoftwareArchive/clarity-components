@@ -7,7 +7,6 @@ Object {
     "initialState": Object {
       "editor": undefined,
       "failed": false,
-      "scale": 1,
       "uploading": false,
     },
   },

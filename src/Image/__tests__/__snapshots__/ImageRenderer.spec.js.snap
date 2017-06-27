@@ -25,9 +25,7 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
           "preview": "https://pics.example.com/200/100",
         }
       }
-      scale={1}
       setEditor={[Function]}
-      setScale={[Function]}
     />
   </CardText>
   <CardActions>
@@ -103,9 +101,7 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
           "preview": "https://pics.example.com/200/100",
         }
       }
-      scale={2}
       setEditor={[Function]}
-      setScale={[Function]}
     />
   </CardText>
   <CardActions>
@@ -238,9 +234,7 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
           "preview": "https://pics.example.com/200/100",
         }
       }
-      scale={2}
       setEditor={[Function]}
-      setScale={[Function]}
     />
   </CardText>
   <CardActions>
@@ -389,9 +383,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
           "preview": "https://pics.example.com/200/100",
         }
       }
-      scale={2}
       setEditor={[Function]}
-      setScale={[Function]}
     />
   </CardText>
   <CardActions>

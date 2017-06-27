@@ -13,10 +13,8 @@ exports[`withImage(BaseComponent): NewComponent start with default props waiting
     onUploadSucceed={[Function]}
     openEditor={[Function]}
     reset={[Function]}
-    scale={1}
     setEditor={[Function]}
     setImage={[Function]}
-    setScale={[Function]}
     uploaded={false}
     uploading={false}
   />
@@ -41,10 +39,8 @@ exports[`withImage(BaseComponent): NewComponent start with image preset cropping
     onUploadSucceed={[Function]}
     openEditor={[Function]}
     reset={[Function]}
-    scale={1}
     setEditor={[Function]}
     setImage={[Function]}
-    setScale={[Function]}
     uploaded={false}
     uploading={false}
   />
@@ -69,10 +65,8 @@ exports[`withImage(BaseComponent): NewComponent start with image preset failed t
     onUploadSucceed={[Function]}
     openEditor={[Function]}
     reset={[Function]}
-    scale={1}
     setEditor={[Function]}
     setImage={[Function]}
-    setScale={[Function]}
     uploaded={false}
     uploading={false}
   />
@@ -97,10 +91,8 @@ exports[`withImage(BaseComponent): NewComponent start with image preset succeede
     onUploadSucceed={[Function]}
     openEditor={[Function]}
     reset={[Function]}
-    scale={1}
     setEditor={[Function]}
     setImage={[Function]}
-    setScale={[Function]}
     uploaded={true}
     uploading={false}
     url="http://pic.example.com/200/200"
@@ -126,10 +118,8 @@ exports[`withImage(BaseComponent): NewComponent start with image preset uploadin
     onUploadSucceed={[Function]}
     openEditor={[Function]}
     reset={[Function]}
-    scale={1}
     setEditor={[Function]}
     setImage={[Function]}
-    setScale={[Function]}
     uploaded={false}
     uploading={true}
   />
@@ -154,10 +144,8 @@ exports[`withImage(BaseComponent): NewComponent start with url preset cropping u
     onUploadSucceed={[Function]}
     openEditor={[Function]}
     reset={[Function]}
-    scale={1}
     setEditor={[Function]}
     setImage={[Function]}
-    setScale={[Function]}
     uploaded={false}
     uploading={false}
     url="http://pic.example.com/200/200"
@@ -183,10 +171,8 @@ exports[`withImage(BaseComponent): NewComponent start with url preset previewing
     onUploadSucceed={[Function]}
     openEditor={[Function]}
     reset={[Function]}
-    scale={1}
     setEditor={[Function]}
     setImage={[Function]}
-    setScale={[Function]}
     uploaded={true}
     uploading={false}
     url="http://pic.example.com/200/200"
