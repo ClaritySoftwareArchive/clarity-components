@@ -78,11 +78,7 @@ export const createGetInitialState = (initialKeysOrState) => {
   }
 
   if (Array.isArray(initialKeysOrState)) {
-    const initialState = {};
-    initialKeysOrState.forEach((key) => {
-      initialState[key] = undefined;
-    });
-    return initialState;
+    return {};
   }
   return initialKeysOrState;
 };
