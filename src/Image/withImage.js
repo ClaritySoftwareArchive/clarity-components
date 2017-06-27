@@ -1,7 +1,9 @@
 import T from 'prop-types';
-import { compose, withReducer, mapProps, pure, flattenProp } from 'recompose';
+import { compose, mapProps, pure } from 'recompose';
 
 import { omitProps, omitPropTypes, extendStatics, copyStatics, embedHandlers } from 'react-render-counter/hocs';
+
+import withStates from '../hocs/withStates';
 
 export const defaultState = {
   scale: 1,
@@ -10,7 +12,7 @@ export const defaultState = {
   editor: undefined,
 };
 
-const createInitialState = ({ initialState, ...props }) => {
+export const createInitialState = ({ initialState, ...props }) => {
   const state = {
     ...defaultState,
     ...initialState,
@@ -39,11 +41,8 @@ export const onUpload = ({
   uploadImage(dataUrl).then(onUploadSucceed, onUploadFail);
 };
 
-const reset = ({ setState, ...props }) => () => setState({ type: 'reset', props });
-const setEditor = ({ setState }) => editor => setState({ editor });
 const openEditor = ({ setState }) => () => setState({ uploaded: false });
-const setImage = ({ setState }) => image => setState({ image });
-const setScale = ({ setState }) => scale => setState({ scale });
+
 const onUploadSucceed = ({ setState }) => ({ url }) =>
   setState({ url, uploaded: true, uploading: false });
 const onUploadFail = ({ setState }) => () =>
@@ -51,11 +50,15 @@ const onUploadFail = ({ setState }) => () =>
 const onUploadStart = ({ setState }) => () =>
   setState({ uploading: true, uploaded: false, failed: false });
 
+const reset = ({ resetState, editor, image }) => () => {
+  if (!image && editor && editor.reset) {
+    editor.reset();
+  }
+  return resetState(props => createInitialState({ ...props, editor }));
+};
+
 export const handlers = [{
   openEditor,
-  setEditor,
-  setImage,
-  setScale,
   onUploadFail,
   onUploadStart,
   onUploadSucceed,
@@ -63,17 +66,6 @@ export const handlers = [{
 }, {
   onUpload,
 }];
-
-export const mergeState = (state, { type, props, ...action }) => {
-  if (type === 'reset') {
-    const { editor } = state;
-    if (!props.image && editor && editor.reset) {
-      editor.reset();
-    }
-    return createInitialState({ ...props, editor });
-  }
-  return { ...state, ...action };
-};
 
 const propsMapper = ({
   url,
@@ -102,6 +94,8 @@ const defaultProps = {
   initialState: defaultState,
 };
 
+const stateKeys = ['editor', 'scale', 'image'];
+
 export default Component => compose(
   omitPropTypes(['onUpload']),
   extendStatics({
@@ -110,11 +104,9 @@ export default Component => compose(
     defaultProps,
   }),
   copyStatics(Component),
-  withReducer('state', 'setState', mergeState, createInitialState),
-  flattenProp('state'),
-  omitProps('initialState'),
+  withStates(createInitialState, { stateKeys }),
   embedHandlers(handlers),
-  omitProps(['editor', 'state', 'setState']),
+  omitProps(['editor', 'setState', 'resetState', 'initialState']),
   mapProps(propsMapper),
   pure,
 )(Component);
