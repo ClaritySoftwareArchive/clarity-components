@@ -19,7 +19,7 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
       }
     }
   >
-    <withHandlers(ImageCropperRenderer)
+    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
       image={
         Object {
           "preview": "https://pics.example.com/200/100",
@@ -97,7 +97,7 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
       }
     }
   >
-    <withHandlers(ImageCropperRenderer)
+    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
       image={
         Object {
           "preview": "https://pics.example.com/200/100",
@@ -232,7 +232,7 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
       }
     }
   >
-    <withHandlers(ImageCropperRenderer)
+    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
       image={
         Object {
           "preview": "https://pics.example.com/200/100",
@@ -383,7 +383,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
       }
       value={0}
     />
-    <withHandlers(ImageCropperRenderer)
+    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
       image={
         Object {
           "preview": "https://pics.example.com/200/100",

@@ -1,9 +1,11 @@
 import React from 'react';
 import T from 'prop-types';
-import withHandlers from 'recompose/withHandlers';
+import { compose, withHandlers } from 'recompose';
 
 import AvatarEditor from 'react-avatar-editor';
 import Slider from 'material-ui/Slider';
+
+import withStates from '../hocs/withStates';
 
 const staticProps = {
   slider: {
@@ -69,7 +71,14 @@ export {
   ImageCropperRenderer,
 };
 
-export default withHandlers({
+const handlers = {
   refEditor,
   onScaleChange,
-})(ImageCropperRenderer);
+};
+
+export const withImageCropper = compose(
+  withStates(['scale']),
+  withHandlers(handlers),
+);
+
+export default withImageCropper(ImageCropperRenderer);
