@@ -4,13 +4,19 @@ import { refEditor, onScaleChange } from '../ImageCropper';
 
 describe('refEditor({ setEditor })(editor): { reset, getDataUrl }', () => {
   let editor;
+  const resetState = jest.fn();
   const setEditor = jest.fn((c) => {
     editor = c;
   });
 
-  const handler = refEditor({ setEditor });
-  beforeEach(() => setEditor.mockClear());
-  afterEach(() => expect(setEditor).toHaveBeenCalledTimes(1));
+  const handler = refEditor({ setEditor, resetState });
+  beforeEach(() => {
+    setEditor.mockClear();
+    resetState.mockClear();
+  });
+  afterEach(() => {
+    expect(setEditor).toHaveBeenCalledTimes(1);
+  });
 
   test('reset changes editor.state.image to empty object', () => {
     const emptyImage = _.stubObject();
@@ -23,6 +29,7 @@ describe('refEditor({ setEditor })(editor): { reset, getDataUrl }', () => {
     editor.reset();
     expect(editorEntity.state.image).not.toBe(emptyImage);
     expect(editorEntity.state.image).toEqual(emptyImage);
+    expect(resetState).toHaveBeenCalledTimes(1);
   });
 
   test('getDataUrl calls editor.getImageScaledToCanvas().toDataURL()', () => {

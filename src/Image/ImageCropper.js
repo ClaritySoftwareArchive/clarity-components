@@ -55,12 +55,14 @@ ImageCropperRenderer.defaultProps = {
   scale: 1,
 };
 
-export const refEditor = ({ setEditor }) => editor => setEditor(editor && Object.assign(editor, {
-  reset: () => {
-    editor.state.image = {}; // eslint-disable-line no-param-reassign
-  },
-  getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
-}));
+export const refEditor = ({ setEditor, resetState }) => editor =>
+  setEditor(editor && Object.assign(editor, {
+    reset: () => {
+      editor.state.image = {}; // eslint-disable-line no-param-reassign
+      resetState();
+    },
+    getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
+  }));
 
 export const onScaleChange = ({ setScale }) => (e, scale) => {
   e.stopPropagation();
