@@ -1,598 +1,195 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`withImage(BaseComponent): NewComponent start with default props waiting for user to select any image 1`] = `
-<withImage(BaseComponent)
-  initialState={
-    Object {
-      "editor": undefined,
-      "failed": false,
-      "scale": 1,
-      "uploading": false,
-    }
-  }
+<div
+  name="PropsDisplayer"
 >
-  <withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))
+  <ReactComponent
+    cropping={false}
     failed={false}
+    onUpload={[Function]}
+    onUploadFail={[Function]}
+    onUploadStart={[Function]}
+    onUploadSucceed={[Function]}
+    openEditor={[Function]}
+    reset={[Function]}
     scale={1}
-    setState={[Function]}
-    state={
-      Object {
-        "editor": undefined,
-        "failed": false,
-        "scale": 1,
-        "uploading": false,
-      }
-    }
+    setEditor={[Function]}
+    setImage={[Function]}
+    setScale={[Function]}
+    uploaded={false}
     uploading={false}
-  >
-    <withHandlers(mapProps(mapProps(pure(BaseComponent))))
-      failed={false}
-      onUploadFail={[Function]}
-      onUploadStart={[Function]}
-      onUploadSucceed={[Function]}
-      openEditor={[Function]}
-      reset={[Function]}
-      scale={1}
-      setEditor={[Function]}
-      setImage={[Function]}
-      setScale={[Function]}
-      setState={[Function]}
-      state={
-        Object {
-          "editor": undefined,
-          "failed": false,
-          "scale": 1,
-          "uploading": false,
-        }
-      }
-      uploading={false}
-    >
-      <pure(BaseComponent)
-        cropping={false}
-        failed={false}
-        onUpload={[Function]}
-        onUploadFail={[Function]}
-        onUploadStart={[Function]}
-        onUploadSucceed={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={false}
-        uploading={false}
-      >
-        <div />
-      </pure(BaseComponent)>
-    </withHandlers(mapProps(mapProps(pure(BaseComponent))))>
-  </withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))>
-</withImage(BaseComponent)>
+  />
+</div>
 `;
 
 exports[`withImage(BaseComponent): NewComponent start with image preset cropping image 1`] = `
-<withImage(BaseComponent)
-  image={
-    Object {
-      "preview": "http://pic.example.com/200/200",
-    }
-  }
-  initialState={
-    Object {
-      "editor": undefined,
-      "failed": false,
-      "scale": 1,
-      "uploading": false,
-    }
-  }
+<div
+  name="PropsDisplayer"
 >
-  <withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))
+  <ReactComponent
+    cropping={true}
     failed={false}
     image={
       Object {
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onUpload={[Function]}
+    onUploadFail={[Function]}
+    onUploadStart={[Function]}
+    onUploadSucceed={[Function]}
+    openEditor={[Function]}
+    reset={[Function]}
     scale={1}
-    setState={[Function]}
-    state={
-      Object {
-        "editor": undefined,
-        "failed": false,
-        "scale": 1,
-        "uploading": false,
-      }
-    }
+    setEditor={[Function]}
+    setImage={[Function]}
+    setScale={[Function]}
+    uploaded={false}
     uploading={false}
-  >
-    <withHandlers(mapProps(mapProps(pure(BaseComponent))))
-      failed={false}
-      image={
-        Object {
-          "preview": "http://pic.example.com/200/200",
-        }
-      }
-      onUploadFail={[Function]}
-      onUploadStart={[Function]}
-      onUploadSucceed={[Function]}
-      openEditor={[Function]}
-      reset={[Function]}
-      scale={1}
-      setEditor={[Function]}
-      setImage={[Function]}
-      setScale={[Function]}
-      setState={[Function]}
-      state={
-        Object {
-          "editor": undefined,
-          "failed": false,
-          "scale": 1,
-          "uploading": false,
-        }
-      }
-      uploading={false}
-    >
-      <pure(BaseComponent)
-        cropping={true}
-        failed={false}
-        image={
-          Object {
-            "preview": "http://pic.example.com/200/200",
-          }
-        }
-        onUpload={[Function]}
-        onUploadFail={[Function]}
-        onUploadStart={[Function]}
-        onUploadSucceed={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={false}
-        uploading={false}
-      >
-        <div />
-      </pure(BaseComponent)>
-    </withHandlers(mapProps(mapProps(pure(BaseComponent))))>
-  </withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))>
-</withImage(BaseComponent)>
+  />
+</div>
 `;
 
 exports[`withImage(BaseComponent): NewComponent start with image preset failed to upload image 1`] = `
-<withImage(BaseComponent)
-  failed={true}
-  image={
-    Object {
-      "preview": "http://pic.example.com/200/200",
-    }
-  }
-  initialState={
-    Object {
-      "editor": undefined,
-      "failed": false,
-      "scale": 1,
-      "uploading": false,
-    }
-  }
+<div
+  name="PropsDisplayer"
 >
-  <withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))
+  <ReactComponent
+    cropping={true}
     failed={true}
     image={
       Object {
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onUpload={[Function]}
+    onUploadFail={[Function]}
+    onUploadStart={[Function]}
+    onUploadSucceed={[Function]}
+    openEditor={[Function]}
+    reset={[Function]}
     scale={1}
-    setState={[Function]}
-    state={
-      Object {
-        "editor": undefined,
-        "failed": true,
-        "scale": 1,
-        "uploading": false,
-      }
-    }
+    setEditor={[Function]}
+    setImage={[Function]}
+    setScale={[Function]}
+    uploaded={false}
     uploading={false}
-  >
-    <withHandlers(mapProps(mapProps(pure(BaseComponent))))
-      failed={true}
-      image={
-        Object {
-          "preview": "http://pic.example.com/200/200",
-        }
-      }
-      onUploadFail={[Function]}
-      onUploadStart={[Function]}
-      onUploadSucceed={[Function]}
-      openEditor={[Function]}
-      reset={[Function]}
-      scale={1}
-      setEditor={[Function]}
-      setImage={[Function]}
-      setScale={[Function]}
-      setState={[Function]}
-      state={
-        Object {
-          "editor": undefined,
-          "failed": true,
-          "scale": 1,
-          "uploading": false,
-        }
-      }
-      uploading={false}
-    >
-      <pure(BaseComponent)
-        cropping={true}
-        failed={true}
-        image={
-          Object {
-            "preview": "http://pic.example.com/200/200",
-          }
-        }
-        onUpload={[Function]}
-        onUploadFail={[Function]}
-        onUploadStart={[Function]}
-        onUploadSucceed={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={false}
-        uploading={false}
-      >
-        <div />
-      </pure(BaseComponent)>
-    </withHandlers(mapProps(mapProps(pure(BaseComponent))))>
-  </withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))>
-</withImage(BaseComponent)>
+  />
+</div>
 `;
 
 exports[`withImage(BaseComponent): NewComponent start with image preset succeeded to upload image 1`] = `
-<withImage(BaseComponent)
-  image={
-    Object {
-      "preview": "http://pic.example.com/200/200",
-    }
-  }
-  initialState={
-    Object {
-      "editor": undefined,
-      "failed": false,
-      "scale": 1,
-      "uploading": false,
-    }
-  }
-  url="http://pic.example.com/200/200"
+<div
+  name="PropsDisplayer"
 >
-  <withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))
+  <ReactComponent
+    cropping={false}
     failed={false}
     image={
       Object {
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onUpload={[Function]}
+    onUploadFail={[Function]}
+    onUploadStart={[Function]}
+    onUploadSucceed={[Function]}
+    openEditor={[Function]}
+    reset={[Function]}
     scale={1}
-    setState={[Function]}
-    state={
-      Object {
-        "editor": undefined,
-        "failed": false,
-        "scale": 1,
-        "uploading": false,
-      }
-    }
+    setEditor={[Function]}
+    setImage={[Function]}
+    setScale={[Function]}
+    uploaded={true}
     uploading={false}
     url="http://pic.example.com/200/200"
-  >
-    <withHandlers(mapProps(mapProps(pure(BaseComponent))))
-      failed={false}
-      image={
-        Object {
-          "preview": "http://pic.example.com/200/200",
-        }
-      }
-      onUploadFail={[Function]}
-      onUploadStart={[Function]}
-      onUploadSucceed={[Function]}
-      openEditor={[Function]}
-      reset={[Function]}
-      scale={1}
-      setEditor={[Function]}
-      setImage={[Function]}
-      setScale={[Function]}
-      setState={[Function]}
-      state={
-        Object {
-          "editor": undefined,
-          "failed": false,
-          "scale": 1,
-          "uploading": false,
-        }
-      }
-      uploading={false}
-      url="http://pic.example.com/200/200"
-    >
-      <pure(BaseComponent)
-        cropping={false}
-        failed={false}
-        image={
-          Object {
-            "preview": "http://pic.example.com/200/200",
-          }
-        }
-        onUpload={[Function]}
-        onUploadFail={[Function]}
-        onUploadStart={[Function]}
-        onUploadSucceed={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={true}
-        uploading={false}
-        url="http://pic.example.com/200/200"
-      >
-        <div />
-      </pure(BaseComponent)>
-    </withHandlers(mapProps(mapProps(pure(BaseComponent))))>
-  </withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))>
-</withImage(BaseComponent)>
+  />
+</div>
 `;
 
 exports[`withImage(BaseComponent): NewComponent start with image preset uploading image 1`] = `
-<withImage(BaseComponent)
-  image={
-    Object {
-      "preview": "http://pic.example.com/200/200",
-    }
-  }
-  initialState={
-    Object {
-      "editor": undefined,
-      "failed": false,
-      "scale": 1,
-      "uploading": false,
-    }
-  }
-  uploading={true}
+<div
+  name="PropsDisplayer"
 >
-  <withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))
+  <ReactComponent
+    cropping={true}
     failed={false}
     image={
       Object {
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onUpload={[Function]}
+    onUploadFail={[Function]}
+    onUploadStart={[Function]}
+    onUploadSucceed={[Function]}
+    openEditor={[Function]}
+    reset={[Function]}
     scale={1}
-    setState={[Function]}
-    state={
-      Object {
-        "editor": undefined,
-        "failed": false,
-        "scale": 1,
-        "uploading": true,
-      }
-    }
+    setEditor={[Function]}
+    setImage={[Function]}
+    setScale={[Function]}
+    uploaded={false}
     uploading={true}
-  >
-    <withHandlers(mapProps(mapProps(pure(BaseComponent))))
-      failed={false}
-      image={
-        Object {
-          "preview": "http://pic.example.com/200/200",
-        }
-      }
-      onUploadFail={[Function]}
-      onUploadStart={[Function]}
-      onUploadSucceed={[Function]}
-      openEditor={[Function]}
-      reset={[Function]}
-      scale={1}
-      setEditor={[Function]}
-      setImage={[Function]}
-      setScale={[Function]}
-      setState={[Function]}
-      state={
-        Object {
-          "editor": undefined,
-          "failed": false,
-          "scale": 1,
-          "uploading": true,
-        }
-      }
-      uploading={true}
-    >
-      <pure(BaseComponent)
-        cropping={true}
-        failed={false}
-        image={
-          Object {
-            "preview": "http://pic.example.com/200/200",
-          }
-        }
-        onUpload={[Function]}
-        onUploadFail={[Function]}
-        onUploadStart={[Function]}
-        onUploadSucceed={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={false}
-        uploading={true}
-      >
-        <div />
-      </pure(BaseComponent)>
-    </withHandlers(mapProps(mapProps(pure(BaseComponent))))>
-  </withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))>
-</withImage(BaseComponent)>
+  />
+</div>
 `;
 
 exports[`withImage(BaseComponent): NewComponent start with url preset cropping url 1`] = `
-<withImage(BaseComponent)
-  initialState={
-    Object {
-      "editor": undefined,
-      "failed": false,
-      "scale": 1,
-      "uploading": false,
-    }
-  }
-  uploaded={false}
-  url="http://pic.example.com/200/200"
+<div
+  name="PropsDisplayer"
 >
-  <withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))
+  <ReactComponent
+    cropping={true}
     failed={false}
-    scale={1}
-    setState={[Function]}
-    state={
+    image={
       Object {
-        "editor": undefined,
-        "failed": false,
-        "scale": 1,
-        "uploading": false,
+        "preview": "http://pic.example.com/200/200",
       }
     }
+    onUpload={[Function]}
+    onUploadFail={[Function]}
+    onUploadStart={[Function]}
+    onUploadSucceed={[Function]}
+    openEditor={[Function]}
+    reset={[Function]}
+    scale={1}
+    setEditor={[Function]}
+    setImage={[Function]}
+    setScale={[Function]}
     uploaded={false}
     uploading={false}
     url="http://pic.example.com/200/200"
-  >
-    <withHandlers(mapProps(mapProps(pure(BaseComponent))))
-      failed={false}
-      onUploadFail={[Function]}
-      onUploadStart={[Function]}
-      onUploadSucceed={[Function]}
-      openEditor={[Function]}
-      reset={[Function]}
-      scale={1}
-      setEditor={[Function]}
-      setImage={[Function]}
-      setScale={[Function]}
-      setState={[Function]}
-      state={
-        Object {
-          "editor": undefined,
-          "failed": false,
-          "scale": 1,
-          "uploading": false,
-        }
-      }
-      uploaded={false}
-      uploading={false}
-      url="http://pic.example.com/200/200"
-    >
-      <pure(BaseComponent)
-        cropping={true}
-        failed={false}
-        image={
-          Object {
-            "preview": "http://pic.example.com/200/200",
-          }
-        }
-        onUpload={[Function]}
-        onUploadFail={[Function]}
-        onUploadStart={[Function]}
-        onUploadSucceed={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={false}
-        uploading={false}
-        url="http://pic.example.com/200/200"
-      >
-        <div />
-      </pure(BaseComponent)>
-    </withHandlers(mapProps(mapProps(pure(BaseComponent))))>
-  </withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))>
-</withImage(BaseComponent)>
+  />
+</div>
 `;
 
 exports[`withImage(BaseComponent): NewComponent start with url preset previewing url 1`] = `
-<withImage(BaseComponent)
-  initialState={
-    Object {
-      "editor": undefined,
-      "failed": false,
-      "scale": 1,
-      "uploading": false,
-    }
-  }
-  url="http://pic.example.com/200/200"
+<div
+  name="PropsDisplayer"
 >
-  <withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))
+  <ReactComponent
+    cropping={false}
     failed={false}
-    scale={1}
-    setState={[Function]}
-    state={
+    image={
       Object {
-        "editor": undefined,
-        "failed": false,
-        "scale": 1,
-        "uploading": false,
+        "preview": "http://pic.example.com/200/200",
       }
     }
+    onUpload={[Function]}
+    onUploadFail={[Function]}
+    onUploadStart={[Function]}
+    onUploadSucceed={[Function]}
+    openEditor={[Function]}
+    reset={[Function]}
+    scale={1}
+    setEditor={[Function]}
+    setImage={[Function]}
+    setScale={[Function]}
+    uploaded={true}
     uploading={false}
     url="http://pic.example.com/200/200"
-  >
-    <withHandlers(mapProps(mapProps(pure(BaseComponent))))
-      failed={false}
-      onUploadFail={[Function]}
-      onUploadStart={[Function]}
-      onUploadSucceed={[Function]}
-      openEditor={[Function]}
-      reset={[Function]}
-      scale={1}
-      setEditor={[Function]}
-      setImage={[Function]}
-      setScale={[Function]}
-      setState={[Function]}
-      state={
-        Object {
-          "editor": undefined,
-          "failed": false,
-          "scale": 1,
-          "uploading": false,
-        }
-      }
-      uploading={false}
-      url="http://pic.example.com/200/200"
-    >
-      <pure(BaseComponent)
-        cropping={false}
-        failed={false}
-        image={
-          Object {
-            "preview": "http://pic.example.com/200/200",
-          }
-        }
-        onUpload={[Function]}
-        onUploadFail={[Function]}
-        onUploadStart={[Function]}
-        onUploadSucceed={[Function]}
-        openEditor={[Function]}
-        reset={[Function]}
-        scale={1}
-        setEditor={[Function]}
-        setImage={[Function]}
-        setScale={[Function]}
-        uploaded={true}
-        uploading={false}
-        url="http://pic.example.com/200/200"
-      >
-        <div />
-      </pure(BaseComponent)>
-    </withHandlers(mapProps(mapProps(pure(BaseComponent))))>
-  </withHandlers(withHandlers(mapProps(mapProps(pure(BaseComponent)))))>
-</withImage(BaseComponent)>
+  />
+</div>
 `;
