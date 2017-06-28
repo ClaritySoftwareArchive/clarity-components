@@ -1,8 +1,5 @@
 import Image from './Image';
-import withImage from './withImage';
 
-export {
-  withImage,
-};
+export * from './components';
 
 export default Image;
