@@ -141,4 +141,7 @@ export {
   ImageCropperRenderer,
 };
 
-export default withImageCropper(ImageCropperRenderer);
+const ImageCropper = withImageCropper(ImageCropperRenderer);
+ImageCropper.displayName = 'ImageCropper';
+
+export default ImageCropper;

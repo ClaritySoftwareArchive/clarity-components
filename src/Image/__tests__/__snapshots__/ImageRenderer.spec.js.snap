@@ -19,7 +19,7 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
       }
     }
   >
-    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
+    <ImageCropper
       image={
         Object {
           "preview": "https://pics.example.com/200/100",
@@ -48,7 +48,7 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
       primary={true}
       secondary={false}
     >
-      <withHandlers(ImageSelector)
+      <ImageSelector
         setImage={[Function]}
       />
     </RaisedButton>
@@ -95,7 +95,7 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
       }
     }
   >
-    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
+    <ImageCropper
       image={
         Object {
           "preview": "https://pics.example.com/200/100",
@@ -124,7 +124,7 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
       primary={true}
       secondary={false}
     >
-      <withHandlers(ImageSelector)
+      <ImageSelector
         setImage={[Function]}
       />
     </RaisedButton>
@@ -181,7 +181,7 @@ exports[`<ImageRenderer {...props} />: elements tree with default props 1`] = `
       primary={true}
       secondary={false}
     >
-      <withHandlers(ImageSelector)
+      <ImageSelector
         setImage={[Function]}
       />
     </RaisedButton>
@@ -228,7 +228,7 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
       }
     }
   >
-    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
+    <ImageCropper
       image={
         Object {
           "preview": "https://pics.example.com/200/100",
@@ -257,7 +257,7 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
       primary={true}
       secondary={false}
     >
-      <withHandlers(ImageSelector)
+      <ImageSelector
         setImage={[Function]}
       />
     </RaisedButton>
@@ -304,7 +304,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploaded props 1`] = `
       }
     }
   >
-    <withState(withHandlers(withHandlers(mapProps(ImagePreviewerRenderer))))
+    <ImagePreviewer
       height="100%"
       src="https://pics.example.com/200/100"
       width="100%"
@@ -375,7 +375,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
       }
       value={0}
     />
-    <withReducer(withHandlers(flattenProp(mapProps(withHandlers(ImageCropperRenderer)))))
+    <ImageCropper
       image={
         Object {
           "preview": "https://pics.example.com/200/100",
@@ -404,7 +404,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
       primary={true}
       secondary={false}
     >
-      <withHandlers(ImageSelector)
+      <ImageSelector
         setImage={[Function]}
       />
     </RaisedButton>

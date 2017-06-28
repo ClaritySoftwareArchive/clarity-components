@@ -46,4 +46,7 @@ export {
   withImagePreviewer,
 };
 
-export default withImagePreviewer(ImagePreviewerRenderer);
+const ImagePreviewer = withImagePreviewer(ImagePreviewerRenderer);
+ImagePreviewer.displayName = 'ImagePreviewer';
+
+export default ImagePreviewer;
