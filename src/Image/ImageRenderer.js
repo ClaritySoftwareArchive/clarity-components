@@ -22,7 +22,6 @@ const styles = {
 
 const ImageRenderer = ({
   image,
-  scale,
   url,
   cropping,
   failed,
@@ -33,13 +32,12 @@ const ImageRenderer = ({
   reset,
   setEditor,
   setImage,
-  setScale,
 }) => (
   <Card style={styles.root}>
     <CardText style={styles.content}>
       {uploading ? <LinearProgress style={styles.loader} /> : null}
       {cropping ? (
-        <ImageCropper image={image} setScale={setScale} setEditor={setEditor} scale={scale} />
+        <ImageCropper image={image} setEditor={setEditor} />
       ) : null}
       {uploaded ? <Img width="100%" height="100%" src={url} /> : null}
     </CardText>
@@ -74,7 +72,6 @@ ImageRenderer.propTypes = {
   image: T.shape({
     preview: T.string.isRequired,
   }),
-  scale: T.number,
   url: T.string,
   cropping: T.bool,
   failed: T.bool,
@@ -85,12 +82,10 @@ ImageRenderer.propTypes = {
   reset: T.func,
   setEditor: T.func,
   setImage: T.func,
-  setScale: T.func,
 };
 
 ImageRenderer.defaultProps = {
   image: undefined,
-  scale: 1,
   url: undefined,
   cropping: undefined,
   failed: undefined,
@@ -101,7 +96,6 @@ ImageRenderer.defaultProps = {
   reset: undefined,
   setEditor: undefined,
   setImage: undefined,
-  setScale: undefined,
 };
 
 export default ImageRenderer;

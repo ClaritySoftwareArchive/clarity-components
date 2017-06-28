@@ -1,0 +1,205 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImageCropper {...props} />: elements tree with default props 1`] = `
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <AvatarEditor
+    border={34}
+    borderRadius={0}
+    color={
+      Array [
+        222,
+        222,
+        222,
+        0.6,
+      ]
+    }
+    crossOrigin="anonymous"
+    height={200}
+    image="http://pic.example.com/200/200"
+    onDropFile={[Function]}
+    onImageChange={[Function]}
+    onImageReady={[Function]}
+    onLoadFailure={[Function]}
+    onLoadSuccess={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onPositionChange={[Function]}
+    rotate={0}
+    scale={1}
+    style={Object {}}
+    width={200}
+  />
+  <Slider
+    axis="x"
+    disableFocusRipple={false}
+    disabled={false}
+    max={2}
+    min={1}
+    onChange={[Function]}
+    required={true}
+    sliderStyle={
+      Object {
+        "bottom": 0,
+        "margin": 10,
+        "position": "absolute",
+        "width": "calc(100% - 20px)",
+      }
+    }
+    step={0.01}
+    style={Object {}}
+    value={1}
+  />
+  <IconButton
+    disableTouchRipple={false}
+    disabled={false}
+    iconStyle={Object {}}
+    onTouchTap={[Function]}
+    style={
+      Object {
+        "height": 34,
+        "left": 0,
+        "padding": 5,
+        "position": "absolute",
+        "top": 0,
+        "width": 34,
+      }
+    }
+    tooltipPosition="bottom-center"
+    touch={false}
+  >
+    <ImageRotateLeft
+      color="#9e9e9e"
+    />
+  </IconButton>
+  <IconButton
+    disableTouchRipple={false}
+    disabled={false}
+    iconStyle={Object {}}
+    onTouchTap={[Function]}
+    style={
+      Object {
+        "height": 34,
+        "padding": 5,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 34,
+      }
+    }
+    tooltipPosition="bottom-center"
+    touch={false}
+  >
+    <ImageRotateRight
+      color="#9e9e9e"
+    />
+  </IconButton>
+</div>
+`;
+
+exports[`<ImageCropper {...props} />: elements tree with scale controlled 1`] = `
+<div
+  style={
+    Object {
+      "position": "relative",
+    }
+  }
+>
+  <AvatarEditor
+    border={34}
+    borderRadius={0}
+    color={
+      Array [
+        222,
+        222,
+        222,
+        0.6,
+      ]
+    }
+    crossOrigin="anonymous"
+    height={200}
+    image="http://pic.example.com/200/200"
+    onDropFile={[Function]}
+    onImageChange={[Function]}
+    onImageReady={[Function]}
+    onLoadFailure={[Function]}
+    onLoadSuccess={[Function]}
+    onMouseMove={[Function]}
+    onMouseUp={[Function]}
+    onPositionChange={[Function]}
+    rotate={0}
+    scale={1}
+    style={Object {}}
+    width={200}
+  />
+  <Slider
+    axis="x"
+    disableFocusRipple={false}
+    disabled={false}
+    max={2}
+    min={1}
+    onChange={[Function]}
+    required={true}
+    sliderStyle={
+      Object {
+        "bottom": 0,
+        "margin": 10,
+        "position": "absolute",
+        "width": "calc(100% - 20px)",
+      }
+    }
+    step={0.01}
+    style={Object {}}
+    value={1}
+  />
+  <IconButton
+    disableTouchRipple={false}
+    disabled={false}
+    iconStyle={Object {}}
+    onTouchTap={[Function]}
+    style={
+      Object {
+        "height": 34,
+        "left": 0,
+        "padding": 5,
+        "position": "absolute",
+        "top": 0,
+        "width": 34,
+      }
+    }
+    tooltipPosition="bottom-center"
+    touch={false}
+  >
+    <ImageRotateLeft
+      color="#9e9e9e"
+    />
+  </IconButton>
+  <IconButton
+    disableTouchRipple={false}
+    disabled={false}
+    iconStyle={Object {}}
+    onTouchTap={[Function]}
+    style={
+      Object {
+        "height": 34,
+        "padding": 5,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 34,
+      }
+    }
+    tooltipPosition="bottom-center"
+    touch={false}
+  >
+    <ImageRotateRight
+      color="#9e9e9e"
+    />
+  </IconButton>
+</div>
+`;

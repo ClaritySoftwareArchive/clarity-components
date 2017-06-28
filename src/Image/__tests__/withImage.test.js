@@ -1,12 +1,9 @@
 /* eslint-env jest */
 import _ from 'lodash';
-import { defaultState, mergeState, handlers } from '../withImage';
+import { defaultState, handlers, createInitialState } from '../withImage';
 
 const [{
   openEditor,
-  setEditor,
-  setImage,
-  setScale,
   onUploadFail,
   onUploadStart,
   onUploadSucceed,
@@ -22,41 +19,74 @@ test('openEditor({ setState, ...props }):handler', () => {
   expect(setState).toHaveBeenCalledWith({ uploaded: false });
 });
 
-test('setEditor({ setState, ...props }):handler', () => {
-  const setState = jest.fn();
-  const editor = _.stubObject();
-  setEditor({ setState })(editor);
-  expect(setState).toHaveBeenCalled();
-  expect(setState).toHaveBeenCalledWith({ editor });
+describe('createInitialState({ initialState, ...props }): handler', () => {
+  test('with empty initialState', () => {
+    const res = createInitialState({ initialState: {} });
+    expect(res).toEqual(defaultState);
+  });
+
+  test('when uploading is initialized in initialState', () => {
+    const res = createInitialState({
+      initialState: {
+        uploading: true,
+      },
+    });
+    expect(res).toEqual({
+      ...defaultState,
+      uploading: true,
+    });
+  });
+
+  test('when uploading is controlled in props', () => {
+    const res = createInitialState({
+      initialState: {
+        uploading: true,
+      },
+      uploading: false,
+    });
+    expect(res).toEqual({
+      ...defaultState,
+      uploading: false,
+    });
+  });
 });
 
-test('setImage({ setState, ...props }):handler', () => {
-  const setState = jest.fn();
-  const image = _.stubObject();
-  setImage({ setState })(image);
-  expect(setState).toHaveBeenCalled();
-  expect(setState).toHaveBeenCalledWith({ image });
-});
-
-test('setScale({ setState, ...props }):handler', () => {
-  const setState = jest.fn();
-  const scale = 32;
-  setScale({ setState })(scale);
-  expect(setState).toHaveBeenCalled();
-  expect(setState).toHaveBeenCalledWith({ scale: 32 });
-});
-
-test('reset({ setState, ...props }):handler', () => {
-  const setState = jest.fn();
-  const props = {
-    foo: 1,
-    bar: 2,
+describe('reset({ resetState, ...props }):handler', () => {
+  let props;
+  let res;
+  const resetState = (fn) => {
+    res = fn(props);
+    return res;
   };
-  reset({ setState, ...props })();
-  expect(setState).toHaveBeenCalled();
-  expect(setState).toHaveBeenCalledWith({
-    type: 'reset',
-    props,
+  const createNewState = jest.fn();
+
+  beforeEach(() => {
+    props = { foo: 1, bar: 2 };
+    res = null;
+    createNewState.mockClear();
+  });
+
+  test('when editor is set', () => {
+    const editor = { reset: jest.fn() };
+    props.editor = editor;
+    reset({ resetState, ...props })();
+    expect(res).toEqual({
+      ...defaultState,
+      editor,
+    });
+    expect(editor.reset).toHaveBeenCalled();
+  });
+
+  test('when image is controlled in props', () => {
+    const editor = { reset: jest.fn() };
+    props.editor = editor;
+    props.image = _.stubObject();
+    reset({ resetState, ...props })();
+    expect(res).toEqual({
+      ...defaultState,
+      editor,
+    });
+    expect(editor.reset).not.toHaveBeenCalled();
   });
 });
 
@@ -140,90 +170,3 @@ describe('onUpload({ uploadImage }):handler', () => {
     expect(props.onUploadFail).not.toHaveBeenCalled();
   });
 });
-
-describe('mergeState(state, { type, props, ...action }): newState', () => {
-  test('normal merge', () => {
-    const state = { foo: 1 };
-    const action = { bar: 2 };
-    const newState = mergeState(state, action);
-    expect(newState).not.toBe(state);
-    expect(newState).not.toBe(action);
-    expect(newState).toEqual({
-      foo: 1,
-      bar: 2,
-    });
-  });
-
-  describe('reset merge', () => {
-    let state;
-    let action;
-    let newState;
-
-    beforeEach(() => {
-      state = { scale: 2, foo: 1 };
-      action = { type: 'reset', props: {} };
-    });
-
-    afterEach(() => {
-      expect(newState).not.toBe(state);
-      expect(newState).not.toBe(action);
-    });
-
-    test('with empty initialState', () => {
-      action.props = { initialState: {} };
-      newState = mergeState(state, action);
-      expect(newState).toEqual(defaultState);
-    });
-
-    test('when scale is initialized in initialState', () => {
-      action.props = {
-        initialState: {
-          scale: 2,
-        },
-      };
-      newState = mergeState(state, action);
-      expect(newState).toEqual({
-        ...defaultState,
-        scale: 2,
-      });
-    });
-
-    test('when scale is controlled in props', () => {
-      action.props = {
-        initialState: {
-          scale: 2,
-        },
-        scale: 3,
-      };
-      newState = mergeState(state, action);
-      expect(newState).toEqual({
-        ...defaultState,
-        scale: 3,
-      });
-    });
-
-    test('when editor is set', () => {
-      const editor = { reset: jest.fn() };
-      state.editor = editor;
-      newState = mergeState(state, action);
-      expect(newState).toEqual({
-        ...defaultState,
-        editor,
-      });
-      expect(editor.reset).toHaveBeenCalled();
-    });
-
-    test('when image is controlled in props', () => {
-      const editor = { reset: jest.fn() };
-      state.editor = editor;
-      action.props = { image: {} };
-      newState = mergeState(state, action);
-      expect(newState).toEqual({
-        ...defaultState,
-        editor,
-      });
-      expect(editor.reset).not.toHaveBeenCalled();
-    });
-  });
-});
-
