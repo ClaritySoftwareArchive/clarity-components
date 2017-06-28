@@ -4,13 +4,26 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with default pr
 <div
   style={
     Object {
+      "alignItems": "center",
+      "backgroundColor": "#f7f7f7",
+      "display": "flex",
       "height": "100%",
+      "justifyContent": "center",
       "width": "100%",
     }
   }
 >
   <Img
-    loader={false}
+    loader={
+      <MDSpinner
+        color1="rgb(66, 165, 245)"
+        color2="rgb(239, 83, 80)"
+        color3="rgb(253, 216, 53)"
+        color4="rgb(76, 175, 80)"
+        duration={1333}
+        size={28}
+      />
+    }
     onClick={[Function]}
     src="http://pic.example.com/200/200"
     style={
@@ -29,13 +42,26 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
 <div
   style={
     Object {
+      "alignItems": "center",
+      "backgroundColor": "#f7f7f7",
+      "display": "flex",
       "height": "100%",
+      "justifyContent": "center",
       "width": "100%",
     }
   }
 >
   <Img
-    loader={false}
+    loader={
+      <MDSpinner
+        color1="rgb(66, 165, 245)"
+        color2="rgb(239, 83, 80)"
+        color3="rgb(253, 216, 53)"
+        color4="rgb(76, 175, 80)"
+        duration={1333}
+        size={28}
+      />
+    }
     onClick={[Function]}
     src="http://pic.example.com/200/200"
     style={

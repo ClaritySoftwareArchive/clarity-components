@@ -2,16 +2,29 @@ import React from 'react';
 import T from 'prop-types';
 import Image from 'react-image';
 import LightBox from 'react-image-lightbox';
+import Spinner from 'react-md-spinner';
 import { compose, withState, withHandlers } from 'recompose';
 import { omitProps, embedHandler } from 'react-render-counter/hocs';
 
 const styles = {
+  root: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f7f7f7',
+  },
   image: { width: '100%', height: '100%' },
 };
 
 const ImagePreviewerRenderer = ({ src, style, open, openLightBox, closeLightBox, ...rest }) => (
-  <div style={style}>
-    <Image {...rest} style={styles.image} src={src} onClick={openLightBox} />
+  <div style={{ ...styles.root, ...style }}>
+    <Image
+      {...rest}
+      style={styles.image}
+      src={src}
+      onClick={openLightBox}
+      loader={<Spinner />}
+    />
     {open ? <LightBox mainSrc={src} onCloseRequest={closeLightBox} /> : null }
   </div>
 );
