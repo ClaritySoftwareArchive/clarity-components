@@ -13,6 +13,12 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with default pr
     loader={false}
     onClick={[Function]}
     src="http://pic.example.com/200/200"
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
     unloader={false}
     width="90%"
   />
@@ -33,6 +39,12 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
     loader={false}
     onClick={[Function]}
     src="http://pic.example.com/200/200"
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
     unloader={false}
     width="90%"
   />

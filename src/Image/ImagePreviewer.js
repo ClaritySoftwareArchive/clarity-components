@@ -6,12 +6,12 @@ import { compose, withState, withHandlers } from 'recompose';
 import { omitProps, embedHandler } from 'react-render-counter/hocs';
 
 const styles = {
-  root: { width: '100%', height: '100%' },
+  image: { width: '100%', height: '100%' },
 };
 
-const ImagePreviewerRenderer = ({ src, open, openLightBox, closeLightBox, ...rest }) => (
-  <div style={styles.root}>
-    <Image {...rest} src={src} onClick={openLightBox} />
+const ImagePreviewerRenderer = ({ src, style, open, openLightBox, closeLightBox, ...rest }) => (
+  <div style={style}>
+    <Image {...rest} style={styles.image} src={src} onClick={openLightBox} />
     {open ? <LightBox mainSrc={src} onCloseRequest={closeLightBox} /> : null }
   </div>
 );
@@ -21,12 +21,14 @@ ImagePreviewerRenderer.propTypes = {
   open: T.bool,
   openLightBox: T.func,
   src: T.string.isRequired,
+  style: T.objectOf(T.any),
 };
 
 ImagePreviewerRenderer.defaultProps = {
   closeLightBox: undefined,
   open: false,
   openLightBox: undefined,
+  style: styles.image,
 };
 
 export const handlers = {
