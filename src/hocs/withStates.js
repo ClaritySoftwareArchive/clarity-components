@@ -3,8 +3,8 @@ import { compose, withReducer, withHandlers, flattenProp } from 'recompose';
 
 import { omitProps } from 'react-render-counter/hocs';
 
-const MERGE_STATE = 'MERGE_STATE';
-const RESET_STATE = 'RESET_STATE';
+export const MERGE_STATE = 'MERGE_STATE';
+export const RESET_STATE = 'RESET_STATE';
 
 export const reducer = (state, { type, payload } = {}) => {
   switch (type) {
