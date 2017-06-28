@@ -304,11 +304,9 @@ exports[`<ImageRenderer {...props} />: elements tree with uploaded props 1`] = `
       }
     }
   >
-    <Img
+    <withState(withHandlers(withHandlers(mapProps(ImagePreviewerRenderer))))
       height="100%"
-      loader={false}
       src="https://pics.example.com/200/100"
-      unloader={false}
       width="100%"
     />
   </CardText>
