@@ -40,7 +40,7 @@ const withImagePreviewer = compose(
   withState('open', 'setOpen', ({ initialOpen }) => initialOpen),
   embedHandler('setOpen', 'onSetOpen'),
   withHandlers(handlers),
-  omitProps(['setOpen', 'onSetOpen']),
+  omitProps(['setOpen', 'onSetOpen', 'initialOpen']),
 );
 
 export {

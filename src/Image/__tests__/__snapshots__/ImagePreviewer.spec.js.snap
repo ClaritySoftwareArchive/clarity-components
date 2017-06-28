@@ -35,7 +35,6 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
   }
 >
   <Img
-    initialOpen={true}
     loader={false}
     onClick={[Function]}
     src="http://pic.example.com/200/200"
