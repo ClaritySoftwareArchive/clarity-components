@@ -728,96 +728,6 @@ exports[`Storyshots Image Controlled 1`] = `
               </tr>
               <tr>
                 <td>
-                  uploaded
-                </td>
-                <td>
-                  bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  uploadImage
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  reset
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onUploadSucceed
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  setImage
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  openEditor
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
                   initialState
                 </td>
                 <td>
@@ -909,7 +819,37 @@ exports[`Storyshots Image Controlled 1`] = `
               </tr>
               <tr>
                 <td>
-                  onUploadFail
+                  uploadImage
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  reset
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onUploadSucceed
                 </td>
                 <td>
                   func
@@ -928,6 +868,66 @@ exports[`Storyshots Image Controlled 1`] = `
                 </td>
                 <td>
                   func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  openEditor
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onSetImage
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onUploadFail
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploaded
+                </td>
+                <td>
+                  bool
                 </td>
                 <td>
                   no
