@@ -30,7 +30,7 @@ const ImagePreviewerRenderer = ({
       {...rest}
       style={styles.image}
       src={src}
-      onClick={openLightBox}
+      onTouchTap={openLightBox}
       loader={<Spinner />}
     />
     {open ? (
@@ -62,9 +62,19 @@ ImagePreviewerRenderer.defaultProps = {
   modalZIndex: 9999,
 };
 
+const openLightBox = ({ onSetOpen }) => (e) => {
+  e.stopPropagation();
+  onSetOpen(true);
+};
+
+const closeLightBox = ({ onSetOpen }) => (e) => {
+  e.stopPropagation();
+  onSetOpen(false);
+};
+
 export const handlers = {
-  openLightBox: ({ onSetOpen }) => () => onSetOpen(true),
-  closeLightBox: ({ onSetOpen }) => () => onSetOpen(false),
+  openLightBox,
+  closeLightBox,
 };
 
 const withImagePreviewer = compose(

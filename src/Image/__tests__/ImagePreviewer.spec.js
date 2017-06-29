@@ -33,7 +33,12 @@ describe('<ImagePreviewer {...props} />: elements tree', () => {
 
   describe('interactions', () => {
     let root;
+    const event = {
+      stopPropagation: jest.fn(),
+    };
     const getWrapperProps = () => root.until(ImagePreviewerRenderer).instance().props;
+
+    beforeEach(() => event.stopPropagation.mockClear());
 
     describe('with default props', () => {
       test('openLightBox && closeLightBox', () => {
@@ -41,9 +46,11 @@ describe('<ImagePreviewer {...props} />: elements tree', () => {
         const { openLightBox, closeLightBox } = getWrapperProps();
 
         expect(getWrapperProps().open).toBe(false);
-        openLightBox();
+        openLightBox(event);
+        expect(event.stopPropagation).toHaveBeenCalledTimes(1);
         expect(getWrapperProps().open).toBe(true);
-        closeLightBox();
+        closeLightBox(event);
+        expect(event.stopPropagation).toHaveBeenCalledTimes(2);
         expect(getWrapperProps().open).toBe(false);
       });
     });
@@ -54,11 +61,13 @@ describe('<ImagePreviewer {...props} />: elements tree', () => {
         root = shallow(<ImagePreviewer {...defaultProps} onSetOpen={onSetOpen} />);
         const { openLightBox, closeLightBox } = getWrapperProps();
 
-        openLightBox();
+        openLightBox(event);
+        expect(event.stopPropagation).toHaveBeenCalledTimes(1);
         expect(onSetOpen).toHaveBeenCalledTimes(1);
         expect(onSetOpen).toHaveBeenCalledWith(true);
 
-        closeLightBox();
+        closeLightBox(event);
+        expect(event.stopPropagation).toHaveBeenCalledTimes(2);
         expect(onSetOpen).toHaveBeenCalledTimes(2);
         expect(onSetOpen).toHaveBeenCalledWith(false);
       });

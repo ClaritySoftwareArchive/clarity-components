@@ -24,7 +24,7 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with default pr
         size={28}
       />
     }
-    onClick={[Function]}
+    onTouchTap={[Function]}
     src="http://pic.example.com/200/200"
     style={
       Object {
@@ -62,7 +62,7 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
         size={28}
       />
     }
-    onClick={[Function]}
+    onTouchTap={[Function]}
     src="http://pic.example.com/200/200"
     style={
       Object {
