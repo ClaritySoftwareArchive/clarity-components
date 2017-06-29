@@ -16,7 +16,15 @@ const styles = {
   image: { width: '100%', height: '100%' },
 };
 
-const ImagePreviewerRenderer = ({ src, style, open, openLightBox, closeLightBox, ...rest }) => (
+const ImagePreviewerRenderer = ({
+  src,
+  style,
+  modalZIndex,
+  open,
+  openLightBox,
+  closeLightBox,
+  ...rest
+}) => (
   <div style={{ ...styles.root, ...style }}>
     <Image
       {...rest}
@@ -25,7 +33,15 @@ const ImagePreviewerRenderer = ({ src, style, open, openLightBox, closeLightBox,
       onClick={openLightBox}
       loader={<Spinner />}
     />
-    {open ? <LightBox mainSrc={src} onCloseRequest={closeLightBox} /> : null }
+    {open ? (
+      <LightBox
+        mainSrc={src}
+        onCloseRequest={closeLightBox}
+        reactModalStyle={{
+          overlay: { zIndex: modalZIndex },
+        }}
+      />
+    ) : null }
   </div>
 );
 
@@ -35,6 +51,7 @@ ImagePreviewerRenderer.propTypes = {
   openLightBox: T.func,
   src: T.string.isRequired,
   style: T.objectOf(T.any),
+  modalZIndex: T.number,
 };
 
 ImagePreviewerRenderer.defaultProps = {
@@ -42,6 +59,7 @@ ImagePreviewerRenderer.defaultProps = {
   open: false,
   openLightBox: undefined,
   style: styles.image,
+  modalZIndex: 9999,
 };
 
 export const handlers = {

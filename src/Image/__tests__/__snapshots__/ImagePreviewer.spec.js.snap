@@ -89,7 +89,13 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
     onImageLoadError={[Function]}
     onMoveNextRequest={[Function]}
     onMovePrevRequest={[Function]}
-    reactModalStyle={Object {}}
+    reactModalStyle={
+      Object {
+        "overlay": Object {
+          "zIndex": 9999,
+        },
+      }
+    }
   />
 </div>
 `;
