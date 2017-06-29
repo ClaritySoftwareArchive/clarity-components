@@ -106,7 +106,10 @@ const refEditor = ({ setEditor, resetState }) => editor =>
       editor.state.image = {}; // eslint-disable-line no-param-reassign
       resetState();
     },
-    getDataUrl: () => editor.getImageScaledToCanvas().toDataURL(),
+    getDataUrl: (scaleToCanvas) => {
+      const methodName = scaleToCanvas ? 'getImageScaledToCanvas' : 'getImage';
+      return editor[methodName]().toDataURL();
+    },
   }));
 
 const onScaleChange = ({ setScale }) => (e, scale) => {

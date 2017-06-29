@@ -16,7 +16,7 @@ describe('refEditor({ setEditor })(editor): { reset, getDataUrl }', () => {
     editor = c;
   });
 
-  const handler = refEditor({ setEditor, resetState });
+  const refEditorHandler = refEditor({ setEditor, resetState });
   beforeEach(() => {
     setEditor.mockClear();
     resetState.mockClear();
@@ -32,7 +32,7 @@ describe('refEditor({ setEditor })(editor): { reset, getDataUrl }', () => {
         image: emptyImage,
       },
     };
-    handler(editorEntity);
+    refEditorHandler(editorEntity);
     editor.reset();
     expect(editorEntity.state.image).not.toBe(emptyImage);
     expect(editorEntity.state.image).toEqual(emptyImage);
@@ -40,16 +40,20 @@ describe('refEditor({ setEditor })(editor): { reset, getDataUrl }', () => {
   });
 
   test('getDataUrl calls editor.getImageScaledToCanvas().toDataURL()', () => {
-    const url = _.stubObject();
-    const toDataURL = jest.fn(() => url);
-    const editorEntity = {
-      getImageScaledToCanvas: () => ({ toDataURL }),
+    const dataUrl = _.stubObject();
+    const scaledUrl = _.stubObject();
+    const editorInstance = {
+      getImage: () => ({
+        toDataURL: jest.fn(() => dataUrl),
+      }),
+      getImageScaledToCanvas: () => ({
+        toDataURL: jest.fn(() => scaledUrl),
+      }),
     };
-    handler(editorEntity);
+    refEditorHandler(editorInstance);
 
-    const res = editor.getDataUrl();
-    expect(res).toBe(url);
-    expect(toDataURL).toHaveBeenCalledTimes(1);
+    expect(editor.getDataUrl()).toBe(dataUrl);
+    expect(editor.getDataUrl(true)).toBe(scaledUrl);
   });
 });
 
