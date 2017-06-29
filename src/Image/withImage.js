@@ -32,10 +32,11 @@ export const onUpload = ({
   onUploadFail,
   onUploadStart,
   onUploadSucceed,
+  adaptScale,
 }) => () => {
   if (!uploadImage) return;
 
-  const dataUrl = editor.getDataUrl();
+  const dataUrl = editor.getDataUrl(adaptScale);
   onUploadStart();
   uploadImage(dataUrl).then(onUploadSucceed, onUploadFail);
 };
@@ -80,6 +81,7 @@ const propsMapper = ({
 });
 
 const propTypes = {
+  adaptScale: T.bool,
   initialState: T.shape({
     url: T.string,
   }),
@@ -90,6 +92,7 @@ const propTypes = {
 };
 
 const defaultProps = {
+  adaptScale: false,
   initialState: defaultState,
 };
 
@@ -105,7 +108,7 @@ export default Component => compose(
   copyStatics(Component),
   withStates(createInitialState, { stateKeys }),
   embedHandlers(handlers),
-  omitProps(['editor', 'setState', 'resetState', 'initialState']),
+  omitProps(['editor', 'setState', 'resetState', 'initialState', 'adaptScale']),
   mapProps(propsMapper),
   pure,
 )(Component);

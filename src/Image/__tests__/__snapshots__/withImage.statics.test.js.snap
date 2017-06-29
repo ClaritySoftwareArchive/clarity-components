@@ -3,6 +3,7 @@
 exports[`withImage(BaseComponent): NewComponent NewComponent has the extended statics of BaseComponent 1`] = `
 Object {
   "defaultProps": Object {
+    "adaptScale": false,
     "foo": "1",
     "initialState": Object {
       "editor": undefined,
@@ -12,6 +13,7 @@ Object {
   },
   "displayName": "withImage(BaseComponent)",
   "propTypes": Object {
+    "adaptScale": [Function],
     "foo": [Function],
     "initialState": [Function],
     "onUploadFail": [Function],

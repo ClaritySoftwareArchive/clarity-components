@@ -643,7 +643,7 @@ exports[`Storyshots Image Controlled 1`] = `
             <tbody>
               <tr>
                 <td>
-                  reset
+                  setEditor
                 </td>
                 <td>
                   func
@@ -703,10 +703,35 @@ exports[`Storyshots Image Controlled 1`] = `
               </tr>
               <tr>
                 <td>
-                  setImage
+                  adaptScale
                 </td>
                 <td>
-                  func
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "#a11",
+                        }
+                      }
+                    >
+                      false
+                    </span>
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploaded
+                </td>
+                <td>
+                  bool
                 </td>
                 <td>
                   no
@@ -733,7 +758,7 @@ exports[`Storyshots Image Controlled 1`] = `
               </tr>
               <tr>
                 <td>
-                  openEditor
+                  reset
                 </td>
                 <td>
                   func
@@ -763,7 +788,7 @@ exports[`Storyshots Image Controlled 1`] = `
               </tr>
               <tr>
                 <td>
-                  setEditor
+                  setImage
                 </td>
                 <td>
                   func
@@ -778,7 +803,7 @@ exports[`Storyshots Image Controlled 1`] = `
               </tr>
               <tr>
                 <td>
-                  onUploadStart
+                  openEditor
                 </td>
                 <td>
                   func
@@ -899,10 +924,10 @@ exports[`Storyshots Image Controlled 1`] = `
               </tr>
               <tr>
                 <td>
-                  uploaded
+                  onUploadStart
                 </td>
                 <td>
-                  bool
+                  func
                 </td>
                 <td>
                   no
