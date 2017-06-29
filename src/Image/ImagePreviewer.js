@@ -67,10 +67,7 @@ const openLightBox = ({ onSetOpen }) => (e) => {
   onSetOpen(true);
 };
 
-const closeLightBox = ({ onSetOpen }) => (e) => {
-  e.stopPropagation();
-  onSetOpen(false);
-};
+const closeLightBox = ({ onSetOpen }) => () => onSetOpen(false);
 
 export const handlers = {
   openLightBox,

@@ -49,8 +49,7 @@ describe('<ImagePreviewer {...props} />: elements tree', () => {
         openLightBox(event);
         expect(event.stopPropagation).toHaveBeenCalledTimes(1);
         expect(getWrapperProps().open).toBe(true);
-        closeLightBox(event);
-        expect(event.stopPropagation).toHaveBeenCalledTimes(2);
+        closeLightBox();
         expect(getWrapperProps().open).toBe(false);
       });
     });
@@ -66,8 +65,7 @@ describe('<ImagePreviewer {...props} />: elements tree', () => {
         expect(onSetOpen).toHaveBeenCalledTimes(1);
         expect(onSetOpen).toHaveBeenCalledWith(true);
 
-        closeLightBox(event);
-        expect(event.stopPropagation).toHaveBeenCalledTimes(2);
+        closeLightBox();
         expect(onSetOpen).toHaveBeenCalledTimes(2);
         expect(onSetOpen).toHaveBeenCalledWith(false);
       });
