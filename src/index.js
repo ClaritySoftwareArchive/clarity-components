@@ -1,7 +1,8 @@
 // this should be the entry point to your library
-import Image, { withImage } from './Image';
+import * as imageComponents from './Image/components';
 
-module.exports = {
-  Image,
-  withImage,
+export * from './Image/components';
+
+export default {
+  ...imageComponents,
 };

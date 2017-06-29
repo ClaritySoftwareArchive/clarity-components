@@ -27,7 +27,7 @@ const styles = {
   },
 };
 
-const ImageSelector = ({ onImageSelect }) => (
+const ImageSelectorRenderer = ({ onImageSelect }) => (
   <input
     {...staticProps.selector}
     onChange={onImageSelect}
@@ -35,7 +35,7 @@ const ImageSelector = ({ onImageSelect }) => (
   />
 );
 
-ImageSelector.propTypes = {
+ImageSelectorRenderer.propTypes = {
   onImageSelect: T.func.isRequired,
 };
 
@@ -50,6 +50,16 @@ export const onImageSelect = ({ setImage }) => (event) => {
   }
 };
 
-export default withHandlers({
+const withImageSelector = withHandlers({
   onImageSelect,
-})(ImageSelector);
+});
+
+export {
+  withImageSelector,
+  ImageSelectorRenderer,
+};
+
+const ImageSelector = withImageSelector(ImageSelectorRenderer);
+ImageSelector.displayName = 'ImageSelector';
+
+export default ImageSelector;

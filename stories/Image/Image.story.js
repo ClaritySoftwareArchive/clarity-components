@@ -2,11 +2,11 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { object, select } from '@storybook/addon-knobs';
+import { object, select, number, text } from '@storybook/addon-knobs';
 import { MuiThemeProvider } from 'material-ui';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import Image from '../../src/Image';
+import { Image, ImagePreviewer } from '../../src';
 // Needed for onTouchTap
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
@@ -58,3 +58,26 @@ stories.add('with initialState', () => (
     })}
   />
 ));
+
+stories.addWithInfo('ImagePreviewer', '', () => {
+  const src1 = text('src1', url);
+  const src2 = text('src2', 'https://unsplash.it/600/600');
+  const style = {
+    width: number('width', 300),
+    height: number('height', 300),
+  };
+
+  return (
+    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'space-around' }}>
+      <ImagePreviewer
+        src={src1}
+        style={style}
+        initialOpen
+      />
+      <ImagePreviewer
+        src={src2}
+        style={style}
+      />
+    </div>
+  );
+}, { inline: false });

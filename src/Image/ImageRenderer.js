@@ -8,10 +8,9 @@ import RaisedButton from 'material-ui/RaisedButton';
 import FlatButton from 'material-ui/FlatButton';
 import LinearProgress from 'material-ui/LinearProgress';
 
-import Img from 'react-image';
-
 import ImageCropper from './ImageCropper';
 import ImageSelector from './ImageSelector';
+import ImagePreviewer from './ImagePreviewer';
 
 const styles = {
   root: { maxWidth: 300 },
@@ -39,7 +38,7 @@ const ImageRenderer = ({
       {cropping ? (
         <ImageCropper image={image} setEditor={setEditor} />
       ) : null}
-      {uploaded ? <Img width="100%" height="100%" src={url} /> : null}
+      {uploaded ? <ImagePreviewer width="100%" height="100%" src={url} /> : null}
     </CardText>
     <CardActions>
       {image && !uploaded ? (

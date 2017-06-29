@@ -1,0 +1,95 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ImagePreviewer {...props} />: elements tree structures with default props 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#f7f7f7",
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Img
+    loader={
+      <MDSpinner
+        color1="rgb(66, 165, 245)"
+        color2="rgb(239, 83, 80)"
+        color3="rgb(253, 216, 53)"
+        color4="rgb(76, 175, 80)"
+        duration={1333}
+        size={28}
+      />
+    }
+    onClick={[Function]}
+    src="http://pic.example.com/200/200"
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+    unloader={false}
+    width="90%"
+  />
+</div>
+`;
+
+exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpen controlled 1`] = `
+<div
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#f7f7f7",
+      "display": "flex",
+      "height": "100%",
+      "justifyContent": "center",
+      "width": "100%",
+    }
+  }
+>
+  <Img
+    loader={
+      <MDSpinner
+        color1="rgb(66, 165, 245)"
+        color2="rgb(239, 83, 80)"
+        color3="rgb(253, 216, 53)"
+        color4="rgb(76, 175, 80)"
+        duration={1333}
+        size={28}
+      />
+    }
+    onClick={[Function]}
+    src="http://pic.example.com/200/200"
+    style={
+      Object {
+        "height": "100%",
+        "width": "100%",
+      }
+    }
+    unloader={false}
+    width="90%"
+  />
+  <ReactImageLightbox
+    animationDisabled={false}
+    animationDuration={300}
+    animationOnKeyInput={false}
+    clickOutsideToClose={true}
+    discourageDownloads={false}
+    enableZoom={true}
+    imagePadding={10}
+    keyRepeatKeyupBonus={40}
+    keyRepeatLimit={180}
+    mainSrc="http://pic.example.com/200/200"
+    onAfterOpen={[Function]}
+    onCloseRequest={[Function]}
+    onImageLoadError={[Function]}
+    onMoveNextRequest={[Function]}
+    onMovePrevRequest={[Function]}
+    reactModalStyle={Object {}}
+  />
+</div>
+`;
