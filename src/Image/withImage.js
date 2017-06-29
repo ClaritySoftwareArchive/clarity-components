@@ -3,7 +3,7 @@ import { compose, mapProps, pure } from 'recompose';
 
 import { omitProps, omitPropTypes, extendStatics, copyStatics, embedHandlers } from 'react-render-counter/hocs';
 
-import withStates from '../hocs/withStates';
+import withStates from 'react-render-counter/hocs/withStates';
 
 export const defaultState = {
   uploading: false,

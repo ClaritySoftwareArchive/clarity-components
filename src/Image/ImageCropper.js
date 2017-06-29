@@ -8,8 +8,7 @@ import IconButton from 'material-ui/IconButton';
 import ImageRotateLeft from 'material-ui/svg-icons/image/rotate-left';
 import ImageRotateRight from 'material-ui/svg-icons/image/rotate-right';
 
-
-import withStates from '../hocs/withStates';
+import withStates from 'react-render-counter/hocs/withStates';
 
 const editorBorder = 34;
 const sliderMargin = 10;

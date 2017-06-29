@@ -62,12 +62,12 @@ ImagePreviewerRenderer.defaultProps = {
   modalZIndex: 9999,
 };
 
-const openLightBox = ({ onSetOpen }) => (e) => {
+const openLightBox = ({ setOpen }) => (e) => {
   e.stopPropagation();
-  onSetOpen(true);
+  setOpen(true);
 };
 
-const closeLightBox = ({ onSetOpen }) => () => onSetOpen(false);
+const closeLightBox = ({ setOpen }) => () => setOpen(false);
 
 export const handlers = {
   openLightBox,
