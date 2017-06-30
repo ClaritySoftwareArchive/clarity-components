@@ -1,9 +1,14 @@
 import T from 'prop-types';
 import { compose, mapProps, pure } from 'recompose';
 
-import { omitProps, omitPropTypes, extendStatics, copyStatics, embedHandlers } from 'react-render-counter/hocs';
-
-import withStates from 'react-render-counter/hocs/withStates';
+import {
+  omitProps,
+  omitPropTypes,
+  extendStatics,
+  copyStatics,
+  embedHandlers,
+  withStates,
+} from 'react-render-counter/hocs';
 
 export const defaultState = {
   uploading: false,

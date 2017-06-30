@@ -65,7 +65,7 @@
     "react-image": "^1.0.1",
     "react-image-lightbox": "^4.1.0",
     "react-md-spinner": "^0.2.4",
-    "react-render-counter": "^0.6.0",
+    "react-render-counter": "^0.6.2",
     "recompose": "^0.23.4"
   },
   "devDependencies": {

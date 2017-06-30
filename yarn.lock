@@ -6000,9 +6000,9 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-render-counter@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/react-render-counter/-/react-render-counter-0.6.0.tgz#ce715e94b6d0cdccfe96470bd2e9457abe8a5cf8"
+react-render-counter@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.yarnpkg.com/react-render-counter/-/react-render-counter-0.6.2.tgz#ff3dd3b140e669939bf70a454d0a90ebeb380bec"
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.5.10"
