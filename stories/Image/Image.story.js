@@ -2,7 +2,7 @@ import React from 'react';
 
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
-import { object, select, number, text } from '@storybook/addon-knobs';
+import { object, select, number, text, boolean } from '@storybook/addon-knobs';
 import { MuiThemeProvider } from 'material-ui';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -14,42 +14,64 @@ injectTapEventPlugin();
 const createUploadImage = ({
   log = action('upload image'),
   printable,
+  willFail,
+  delay = 1000,
 } = {}) => {
-  const uploadImage = dataUrl => new Promise((resolve, reject) => {
-    log(dataUrl);
-    const upload = () => (Math.random() < 0.5
-      ? resolve({ url: dataUrl })
-      : reject(new Error('failed')));
-    setTimeout(upload, 1000);
+  const succeed = url => new Promise((resolve) => {
+    log(url);
+    setTimeout(() => resolve({ url }), delay);
   });
+
+  const fail = url => new Promise((resolve, reject) => {
+    log(url);
+    setTimeout(() => reject(new Error('failed')), delay);
+  });
+
+  const uploadImage = willFail ? fail : succeed;
   if (printable) {
     Object.defineProperty(uploadImage, 'name', { value: uploadImage.toString() });
   }
   return uploadImage;
 };
 
-const url = 'https://unsplash.it/200/100';
+const url = 'https://unsplash.it/500/500';
 const image = { preview: url };
 
 const stories = storiesOf('Image', module)
   .addDecorator(story => <MuiThemeProvider>{story()}</MuiThemeProvider>);
 
 const description = 'Control point to start from with knobs panel';
-stories.addWithInfo('Controlled', description, () => {
+stories.addWithInfo('presets', description, () => {
   const startFrom = select('start-from', ['upload', 'cropping', 'preview'], 'upload');
   return (
     <div>
-      <h2>Start from {startFrom}</h2>
+      <h2>{`Start from ${startFrom}`}</h2>
       <Image
         image={startFrom === 'cropping' ? image : undefined}
         url={startFrom === 'preview' ? url : undefined}
-        uploadImage={createUploadImage({ printable: true })}
+        uploadImage={createUploadImage({
+          printable: true,
+          willFail: boolean('will fail', false),
+          delay: number('delay', 1000),
+        })}
       />
     </div>
   );
 }, { inline: true });
 
-stories.add('with initialState', () => (
+stories.add('events', () => (
+  <Image
+    uploadImage={createUploadImage({
+      willFail: boolean('will fail', true),
+      log: dataURL => action('upload image size')(dataURL.length),
+    })}
+    onUploadSucceed={({ url: dataURL }) => action('upload succeed size')(dataURL.length)}
+    onUploadFail={error => action('upload fail')(error.message)}
+    onSetImage={file => action('select size')(file.size)}
+  />
+));
+
+stories.add('initialState', () => (
   <Image
     uploadImage={createUploadImage()}
     initialState={object('initialState', {
