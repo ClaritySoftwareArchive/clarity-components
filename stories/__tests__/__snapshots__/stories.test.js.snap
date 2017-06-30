@@ -1,981 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots Image Controlled 1`] = `
-<div>
-  <div
-    style={undefined}
-  >
-    <div
-      style={
-        Object {
-          "WebkitFontSmoothing": "antialiased",
-          "backgroundColor": "#fff",
-          "border": "1px solid #eee",
-          "borderRadius": "2px",
-          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
-          "color": "#444",
-          "fontFamily": "
-            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
-            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
-          ",
-          "fontSize": "15px",
-          "fontWeight": 300,
-          "lineHeight": 1.45,
-          "marginTop": "50px",
-          "padding": "20px 40px 40px",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "borderBottom": "1px solid #eee",
-            "marginBottom": 10,
-            "paddingTop": 10,
-          }
-        }
-      >
-        <h1
-          style={
-            Object {
-              "fontSize": "35px",
-              "margin": 0,
-              "padding": 0,
-            }
-          }
-        >
-          Image
-        </h1>
-        <h2
-          style={
-            Object {
-              "fontSize": "22px",
-              "fontWeight": 400,
-              "margin": "0 0 10px 0",
-              "padding": 0,
-            }
-          }
-        >
-          Controlled
-        </h2>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <div>
-        <h2>
-          Start from 
-          upload
-        </h2>
-        <div
-          style={
-            Object {
-              "WebkitTapHighlightColor": "rgba(0,0,0,0)",
-              "backgroundColor": "#ffffff",
-              "borderRadius": 2,
-              "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                     0 1px 4px rgba(0, 0, 0, 0.12)",
-              "boxSizing": "border-box",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "fontFamily": "Roboto, sans-serif",
-              "maxWidth": 300,
-              "muiPrepared": true,
-              "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-              "zIndex": 1,
-            }
-          }
-        >
-          <div
-            style={
-              Object {
-                "paddingBottom": 0,
-              }
-            }
-          >
-            <div
-              style={
-                Object {
-                  "color": "rgba(0, 0, 0, 0.87)",
-                  "fontSize": 14,
-                  "maxHeight": 300,
-                  "muiPrepared": true,
-                  "padding": 16,
-                  "paddingBottom": 0,
-                }
-              }
-            />
-            <div
-              style={
-                Object {
-                  "muiPrepared": true,
-                  "padding": 8,
-                  "position": "relative",
-                }
-              }
-            >
-              <div
-                className={undefined}
-                style={
-                  Object {
-                    "WebkitTapHighlightColor": "rgba(0,0,0,0)",
-                    "backgroundColor": "#ffffff",
-                    "borderRadius": 2,
-                    "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                           0 1px 4px rgba(0, 0, 0, 0.12)",
-                    "boxSizing": "border-box",
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "display": "inline-block",
-                    "fontFamily": "Roboto, sans-serif",
-                    "marginRight": 8,
-                    "minWidth": 88,
-                    "muiPrepared": true,
-                    "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                  }
-                }
-              >
-                <button
-                  disabled={false}
-                  href={undefined}
-                  name="Select"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  style={
-                    Object {
-                      "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                      "backgroundColor": "#00bcd4",
-                      "border": 10,
-                      "borderRadius": 2,
-                      "boxSizing": "border-box",
-                      "cursor": "pointer",
-                      "display": "inline-block",
-                      "fontFamily": "Roboto, sans-serif",
-                      "fontSize": "inherit",
-                      "fontWeight": "inherit",
-                      "height": 36,
-                      "lineHeight": "36px",
-                      "margin": 0,
-                      "muiPrepared": true,
-                      "outline": "none",
-                      "overflow": "hidden",
-                      "padding": 0,
-                      "position": "relative",
-                      "textAlign": "center",
-                      "textDecoration": "none",
-                      "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                      "verticalAlign": null,
-                      "width": "100%",
-                      "zIndex": 1,
-                    }
-                  }
-                  tabIndex={0}
-                  type="button"
-                >
-                  <div
-                    onMouseDown={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseUp={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchStart={[Function]}
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundColor": false,
-                          "borderRadius": 2,
-                          "height": 36,
-                          "muiPrepared": true,
-                          "top": 0,
-                          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#ffffff",
-                            "fontSize": 14,
-                            "fontWeight": 500,
-                            "letterSpacing": 0,
-                            "margin": 0,
-                            "muiPrepared": true,
-                            "opacity": 1,
-                            "paddingLeft": 16,
-                            "paddingRight": 16,
-                            "position": "relative",
-                            "textTransform": "uppercase",
-                            "userSelect": "none",
-                          }
-                        }
-                      >
-                        Select Image
-                      </span>
-                      <input
-                        accept="image/*"
-                        multiple={false}
-                        onChange={[Function]}
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "cursor": "pointer",
-                            "left": 0,
-                            "opacity": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                        type="file"
-                      />
-                    </div>
-                  </div>
-                </button>
-              </div>
-              <button
-                disabled={true}
-                href={undefined}
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onKeyDown={[Function]}
-                onKeyUp={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                onTouchStart={[Function]}
-                onTouchTap={[Function]}
-                style={
-                  Object {
-                    "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                    "backgroundColor": "rgba(0, 0, 0, 0)",
-                    "border": 10,
-                    "borderRadius": 2,
-                    "boxSizing": "border-box",
-                    "color": "rgba(0, 0, 0, 0.3)",
-                    "cursor": "default",
-                    "display": "inline-block",
-                    "fontFamily": "Roboto, sans-serif",
-                    "fontSize": "inherit",
-                    "fontWeight": "inherit",
-                    "height": 36,
-                    "lineHeight": "36px",
-                    "margin": 0,
-                    "marginRight": 0,
-                    "minWidth": 85,
-                    "muiPrepared": true,
-                    "outline": "none",
-                    "overflow": "hidden",
-                    "padding": 0,
-                    "position": "relative",
-                    "textAlign": "center",
-                    "textDecoration": "none",
-                    "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                    "userSelect": "none",
-                    "verticalAlign": null,
-                    "zIndex": 1,
-                  }
-                }
-                tabIndex={-1}
-                type="button"
-              >
-                <span
-                  style={
-                    Object {
-                      "fontSize": 14,
-                      "fontWeight": 500,
-                      "letterSpacing": 0,
-                      "muiPrepared": true,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
-                      "position": "relative",
-                      "textTransform": "uppercase",
-                      "verticalAlign": "middle",
-                    }
-                  }
-                >
-                  Reset
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div
-    style={undefined}
-  >
-    <div
-      style={
-        Object {
-          "WebkitFontSmoothing": "antialiased",
-          "backgroundColor": "#fff",
-          "border": "1px solid #eee",
-          "borderRadius": "2px",
-          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
-          "color": "#444",
-          "fontFamily": "
-            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
-            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
-          ",
-          "fontSize": "15px",
-          "fontWeight": 300,
-          "lineHeight": 1.45,
-          "marginTop": "50px",
-          "padding": "20px 40px 40px",
-        }
-      }
-    >
-      <div
-        style={
-          Object {
-            "marginBottom": 0,
-          }
-        }
-      >
-        <p
-          style={
-            Object {
-              "WebkitFontSmoothing": "antialiased",
-              "color": "#444",
-              "fontFamily": "
-                -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
-                \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
-              ",
-              "fontSize": "15px",
-            }
-          }
-        >
-          Control point to start from with knobs panel
-        </p>
-      </div>
-      <div>
-        <h1
-          style={
-            Object {
-              "borderBottom": "1px solid #EEE",
-              "fontSize": "25px",
-              "margin": "20px 0 0 0",
-              "padding": "0 0 5px 0",
-            }
-          }
-        >
-          Story Source
-        </h1>
-        <pre
-          style={
-            Object {
-              "backgroundColor": "#fafafa",
-              "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
-              "fontSize": ".88em",
-              "lineHeight": 1.5,
-              "overflowX": "scroll",
-              "padding": ".5rem",
-            }
-          }
-        >
-          <div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                div
-              </span>
-              <span />
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &gt;
-              </span>
-            </div>
-            <div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;
-                  h2
-                </span>
-                <span />
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &gt;
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  Start from 
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  upload
-                </span>
-              </div>
-              <div
-                style={
-                  Object {
-                    "paddingLeft": 33,
-                    "paddingRight": 3,
-                  }
-                }
-              >
-                <span
-                  style={
-                    Object {
-                      "color": "#777",
-                    }
-                  }
-                >
-                  &lt;/
-                  h2
-                  &gt;
-                </span>
-              </div>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 33,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;
-                Image
-              </span>
-              <span>
-                <span>
-                   
-                  <span
-                    style={Object {}}
-                  >
-                    uploadImage
-                  </span>
-                  <span>
-                    =
-                    <span
-                      style={Object {}}
-                    >
-                      <span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#170",
-                            }
-                          }
-                        >
-                          function uploadImage(dataUrl) {return new Promise(function (resolve, reject) {
-                                log(dataUrl);
-                                var upload = function upload() {return Math.random() &lt; 0.5 ?
-                                  resolve({ url: dataUrl }) :
-                                  reject(new Error('failed'));};
-                                setTimeout(upload, 1000);
-                              });}()
-                        </span>
-                      </span>
-                    </span>
-                  </span>
-                   
-                </span>
-              </span>
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                /&gt;
-              </span>
-            </div>
-            <div
-              style={
-                Object {
-                  "paddingLeft": 18,
-                  "paddingRight": 3,
-                }
-              }
-            >
-              <span
-                style={
-                  Object {
-                    "color": "#777",
-                  }
-                }
-              >
-                &lt;/
-                div
-                &gt;
-              </span>
-            </div>
-          </div>
-        </pre>
-      </div>
-      <div>
-        <h1
-          style={
-            Object {
-              "borderBottom": "1px solid #EEE",
-              "fontSize": "25px",
-              "margin": "20px 0 0 0",
-              "padding": "0 0 5px 0",
-            }
-          }
-        >
-          Prop Types
-        </h1>
-        <div>
-          <h2
-            style={
-              Object {
-                "margin": "20px 0 0 0",
-              }
-            }
-          >
-            "
-            Image
-            " Component
-          </h2>
-          <table
-            style={
-              Object {
-                "borderCollapse": "separate",
-                "borderSpacing": "10px 5px",
-                "marginLeft": -10,
-              }
-            }
-          >
-            <thead>
-              <tr>
-                <th>
-                  property
-                </th>
-                <th>
-                  propType
-                </th>
-                <th>
-                  required
-                </th>
-                <th>
-                  default
-                </th>
-                <th>
-                  description
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  setEditor
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  image
-                </td>
-                <td>
-                  other
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  cropping
-                </td>
-                <td>
-                  bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  failed
-                </td>
-                <td>
-                  bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  adaptScale
-                </td>
-                <td>
-                  bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#a11",
-                        }
-                      }
-                    >
-                      false
-                    </span>
-                  </span>
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  uploaded
-                </td>
-                <td>
-                  bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  uploadImage
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  reset
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onUploadSucceed
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  setImage
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  openEditor
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  initialState
-                </td>
-                <td>
-                  other
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#666",
-                        }
-                      }
-                    >
-                      {
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        uploading
-                      </span>
-                      : 
-                      <span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#a11",
-                            }
-                          }
-                        >
-                          false
-                        </span>
-                      </span>
-                      , 
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        failed
-                      </span>
-                      : 
-                      <span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#a11",
-                            }
-                          }
-                        >
-                          false
-                        </span>
-                      </span>
-                      , 
-                      <span
-                        style={
-                          Object {
-                            "color": "#666",
-                          }
-                        }
-                      >
-                        editor
-                      </span>
-                      : 
-                      <span>
-                        <span
-                          style={
-                            Object {
-                              "color": "#777",
-                            }
-                          }
-                        >
-                          undefined
-                        </span>
-                      </span>
-                      }
-                    </span>
-                  </span>
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onUploadFail
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onUploadStart
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  uploading
-                </td>
-                <td>
-                  bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  url
-                </td>
-                <td>
-                  string
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
 exports[`Storyshots Image ImagePreviewer 1`] = `
 <div>
   <div
@@ -2175,7 +1199,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                           }
                         >
                           "
-                          https://unsplash.it/200/100
+                          https://unsplash.it/500/500
                           "
                         </span>
                       </span>
@@ -2470,7 +1494,251 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
 </div>
 `;
 
-exports[`Storyshots Image with initialState 1`] = `
+exports[`Storyshots Image events 1`] = `
+<div
+  style={
+    Object {
+      "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+      "backgroundColor": "#ffffff",
+      "borderRadius": 2,
+      "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+             0 1px 4px rgba(0, 0, 0, 0.12)",
+      "boxSizing": "border-box",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "fontFamily": "Roboto, sans-serif",
+      "maxWidth": 300,
+      "muiPrepared": true,
+      "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+      "zIndex": 1,
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingBottom": 0,
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "color": "rgba(0, 0, 0, 0.87)",
+          "fontSize": 14,
+          "maxHeight": 300,
+          "muiPrepared": true,
+          "padding": 16,
+          "paddingBottom": 0,
+        }
+      }
+    />
+    <div
+      style={
+        Object {
+          "muiPrepared": true,
+          "padding": 8,
+          "position": "relative",
+        }
+      }
+    >
+      <div
+        className={undefined}
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 2,
+            "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+                   0 1px 4px rgba(0, 0, 0, 0.12)",
+            "boxSizing": "border-box",
+            "color": "rgba(0, 0, 0, 0.87)",
+            "display": "inline-block",
+            "fontFamily": "Roboto, sans-serif",
+            "marginRight": 8,
+            "minWidth": 88,
+            "muiPrepared": true,
+            "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+          }
+        }
+      >
+        <button
+          disabled={false}
+          href={undefined}
+          name="Select"
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseEnter={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}
+          onTouchTap={[Function]}
+          style={
+            Object {
+              "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+              "backgroundColor": "#00bcd4",
+              "border": 10,
+              "borderRadius": 2,
+              "boxSizing": "border-box",
+              "cursor": "pointer",
+              "display": "inline-block",
+              "fontFamily": "Roboto, sans-serif",
+              "fontSize": "inherit",
+              "fontWeight": "inherit",
+              "height": 36,
+              "lineHeight": "36px",
+              "margin": 0,
+              "muiPrepared": true,
+              "outline": "none",
+              "overflow": "hidden",
+              "padding": 0,
+              "position": "relative",
+              "textAlign": "center",
+              "textDecoration": "none",
+              "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+              "verticalAlign": null,
+              "width": "100%",
+              "zIndex": 1,
+            }
+          }
+          tabIndex={0}
+          type="button"
+        >
+          <div
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+          >
+            <div
+              style={
+                Object {
+                  "backgroundColor": false,
+                  "borderRadius": 2,
+                  "height": 36,
+                  "muiPrepared": true,
+                  "top": 0,
+                  "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#ffffff",
+                    "fontSize": 14,
+                    "fontWeight": 500,
+                    "letterSpacing": 0,
+                    "margin": 0,
+                    "muiPrepared": true,
+                    "opacity": 1,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "position": "relative",
+                    "textTransform": "uppercase",
+                    "userSelect": "none",
+                  }
+                }
+              >
+                Select Image
+              </span>
+              <input
+                accept="image/*"
+                multiple={false}
+                onChange={[Function]}
+                style={
+                  Object {
+                    "bottom": 0,
+                    "cursor": "pointer",
+                    "left": 0,
+                    "opacity": 0,
+                    "position": "absolute",
+                    "right": 0,
+                    "top": 0,
+                    "width": "100%",
+                  }
+                }
+                type="file"
+              />
+            </div>
+          </div>
+        </button>
+      </div>
+      <button
+        disabled={true}
+        href={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onTouchStart={[Function]}
+        onTouchTap={[Function]}
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "rgba(0, 0, 0, 0)",
+            "border": 10,
+            "borderRadius": 2,
+            "boxSizing": "border-box",
+            "color": "rgba(0, 0, 0, 0.3)",
+            "cursor": "default",
+            "display": "inline-block",
+            "fontFamily": "Roboto, sans-serif",
+            "fontSize": "inherit",
+            "fontWeight": "inherit",
+            "height": 36,
+            "lineHeight": "36px",
+            "margin": 0,
+            "marginRight": 0,
+            "minWidth": 85,
+            "muiPrepared": true,
+            "outline": "none",
+            "overflow": "hidden",
+            "padding": 0,
+            "position": "relative",
+            "textAlign": "center",
+            "textDecoration": "none",
+            "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+            "userSelect": "none",
+            "verticalAlign": null,
+            "zIndex": 1,
+          }
+        }
+        tabIndex={-1}
+        type="button"
+      >
+        <span
+          style={
+            Object {
+              "fontSize": 14,
+              "fontWeight": 500,
+              "letterSpacing": 0,
+              "muiPrepared": true,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "position": "relative",
+              "textTransform": "uppercase",
+              "verticalAlign": "middle",
+            }
+          }
+        >
+          Reset
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image initialState 1`] = `
 <div
   style={
     Object {
@@ -3097,6 +2365,960 @@ exports[`Storyshots Image with initialState 1`] = `
           </span>
         </div>
       </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Storyshots Image presets 1`] = `
+<div>
+  <div
+    style={undefined}
+  >
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+          "color": "#444",
+          "fontFamily": "
+            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
+            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
+          ",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginTop": "50px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "borderBottom": "1px solid #eee",
+            "marginBottom": 10,
+            "paddingTop": 10,
+          }
+        }
+      >
+        <h1
+          style={
+            Object {
+              "fontSize": "35px",
+              "margin": 0,
+              "padding": 0,
+            }
+          }
+        >
+          Image
+        </h1>
+        <h2
+          style={
+            Object {
+              "fontSize": "22px",
+              "fontWeight": 400,
+              "margin": "0 0 10px 0",
+              "padding": 0,
+            }
+          }
+        >
+          presets
+        </h2>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <h2>
+          Start from upload
+        </h2>
+        <div
+          style={
+            Object {
+              "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+              "backgroundColor": "#ffffff",
+              "borderRadius": 2,
+              "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+                     0 1px 4px rgba(0, 0, 0, 0.12)",
+              "boxSizing": "border-box",
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontFamily": "Roboto, sans-serif",
+              "maxWidth": 300,
+              "muiPrepared": true,
+              "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+              "zIndex": 1,
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "paddingBottom": 0,
+              }
+            }
+          >
+            <div
+              style={
+                Object {
+                  "color": "rgba(0, 0, 0, 0.87)",
+                  "fontSize": 14,
+                  "maxHeight": 300,
+                  "muiPrepared": true,
+                  "padding": 16,
+                  "paddingBottom": 0,
+                }
+              }
+            />
+            <div
+              style={
+                Object {
+                  "muiPrepared": true,
+                  "padding": 8,
+                  "position": "relative",
+                }
+              }
+            >
+              <div
+                className={undefined}
+                style={
+                  Object {
+                    "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+                    "backgroundColor": "#ffffff",
+                    "borderRadius": 2,
+                    "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+                           0 1px 4px rgba(0, 0, 0, 0.12)",
+                    "boxSizing": "border-box",
+                    "color": "rgba(0, 0, 0, 0.87)",
+                    "display": "inline-block",
+                    "fontFamily": "Roboto, sans-serif",
+                    "marginRight": 8,
+                    "minWidth": 88,
+                    "muiPrepared": true,
+                    "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                  }
+                }
+              >
+                <button
+                  disabled={false}
+                  href={undefined}
+                  name="Select"
+                  onBlur={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onKeyDown={[Function]}
+                  onKeyUp={[Function]}
+                  onMouseDown={[Function]}
+                  onMouseEnter={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
+                  onTouchTap={[Function]}
+                  style={
+                    Object {
+                      "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                      "backgroundColor": "#00bcd4",
+                      "border": 10,
+                      "borderRadius": 2,
+                      "boxSizing": "border-box",
+                      "cursor": "pointer",
+                      "display": "inline-block",
+                      "fontFamily": "Roboto, sans-serif",
+                      "fontSize": "inherit",
+                      "fontWeight": "inherit",
+                      "height": 36,
+                      "lineHeight": "36px",
+                      "margin": 0,
+                      "muiPrepared": true,
+                      "outline": "none",
+                      "overflow": "hidden",
+                      "padding": 0,
+                      "position": "relative",
+                      "textAlign": "center",
+                      "textDecoration": "none",
+                      "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                      "verticalAlign": null,
+                      "width": "100%",
+                      "zIndex": 1,
+                    }
+                  }
+                  tabIndex={0}
+                  type="button"
+                >
+                  <div
+                    onMouseDown={[Function]}
+                    onMouseLeave={[Function]}
+                    onMouseUp={[Function]}
+                    onTouchEnd={[Function]}
+                    onTouchStart={[Function]}
+                  >
+                    <div
+                      style={
+                        Object {
+                          "backgroundColor": false,
+                          "borderRadius": 2,
+                          "height": 36,
+                          "muiPrepared": true,
+                          "top": 0,
+                          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                        }
+                      }
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#ffffff",
+                            "fontSize": 14,
+                            "fontWeight": 500,
+                            "letterSpacing": 0,
+                            "margin": 0,
+                            "muiPrepared": true,
+                            "opacity": 1,
+                            "paddingLeft": 16,
+                            "paddingRight": 16,
+                            "position": "relative",
+                            "textTransform": "uppercase",
+                            "userSelect": "none",
+                          }
+                        }
+                      >
+                        Select Image
+                      </span>
+                      <input
+                        accept="image/*"
+                        multiple={false}
+                        onChange={[Function]}
+                        style={
+                          Object {
+                            "bottom": 0,
+                            "cursor": "pointer",
+                            "left": 0,
+                            "opacity": 0,
+                            "position": "absolute",
+                            "right": 0,
+                            "top": 0,
+                            "width": "100%",
+                          }
+                        }
+                        type="file"
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+              <button
+                disabled={true}
+                href={undefined}
+                onBlur={[Function]}
+                onClick={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseEnter={[Function]}
+                onMouseLeave={[Function]}
+                onTouchStart={[Function]}
+                onTouchTap={[Function]}
+                style={
+                  Object {
+                    "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "border": 10,
+                    "borderRadius": 2,
+                    "boxSizing": "border-box",
+                    "color": "rgba(0, 0, 0, 0.3)",
+                    "cursor": "default",
+                    "display": "inline-block",
+                    "fontFamily": "Roboto, sans-serif",
+                    "fontSize": "inherit",
+                    "fontWeight": "inherit",
+                    "height": 36,
+                    "lineHeight": "36px",
+                    "margin": 0,
+                    "marginRight": 0,
+                    "minWidth": 85,
+                    "muiPrepared": true,
+                    "outline": "none",
+                    "overflow": "hidden",
+                    "padding": 0,
+                    "position": "relative",
+                    "textAlign": "center",
+                    "textDecoration": "none",
+                    "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                    "userSelect": "none",
+                    "verticalAlign": null,
+                    "zIndex": 1,
+                  }
+                }
+                tabIndex={-1}
+                type="button"
+              >
+                <span
+                  style={
+                    Object {
+                      "fontSize": 14,
+                      "fontWeight": 500,
+                      "letterSpacing": 0,
+                      "muiPrepared": true,
+                      "paddingLeft": 16,
+                      "paddingRight": 16,
+                      "position": "relative",
+                      "textTransform": "uppercase",
+                      "verticalAlign": "middle",
+                    }
+                  }
+                >
+                  Reset
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    style={undefined}
+  >
+    <div
+      style={
+        Object {
+          "WebkitFontSmoothing": "antialiased",
+          "backgroundColor": "#fff",
+          "border": "1px solid #eee",
+          "borderRadius": "2px",
+          "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
+          "color": "#444",
+          "fontFamily": "
+            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
+            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
+          ",
+          "fontSize": "15px",
+          "fontWeight": 300,
+          "lineHeight": 1.45,
+          "marginTop": "50px",
+          "padding": "20px 40px 40px",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "marginBottom": 0,
+          }
+        }
+      >
+        <p
+          style={
+            Object {
+              "WebkitFontSmoothing": "antialiased",
+              "color": "#444",
+              "fontFamily": "
+                -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
+                \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
+              ",
+              "fontSize": "15px",
+            }
+          }
+        >
+          Control point to start from with knobs panel
+        </p>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Story Source
+        </h1>
+        <pre
+          style={
+            Object {
+              "backgroundColor": "#fafafa",
+              "fontFamily": "Menlo, Monaco, \\"Courier New\\", monospace",
+              "fontSize": ".88em",
+              "lineHeight": 1.5,
+              "overflowX": "scroll",
+              "padding": ".5rem",
+            }
+          }
+        >
+          <div>
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &lt;
+                div
+              </span>
+              <span />
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &gt;
+              </span>
+            </div>
+            <div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;
+                  h2
+                </span>
+                <span />
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &gt;
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  Start from upload
+                </span>
+              </div>
+              <div
+                style={
+                  Object {
+                    "paddingLeft": 33,
+                    "paddingRight": 3,
+                  }
+                }
+              >
+                <span
+                  style={
+                    Object {
+                      "color": "#777",
+                    }
+                  }
+                >
+                  &lt;/
+                  h2
+                  &gt;
+                </span>
+              </div>
+            </div>
+            <div
+              style={
+                Object {
+                  "paddingLeft": 33,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &lt;
+                Image
+              </span>
+              <span>
+                <span>
+                   
+                  <span
+                    style={Object {}}
+                  >
+                    uploadImage
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#170",
+                            }
+                          }
+                        >
+                          function succeed(url) {return new Promise(function (resolve) {
+                                log(url);
+                                setTimeout(function () {return resolve({ url: url });}, delay);
+                              });}()
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                   
+                </span>
+              </span>
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                /&gt;
+              </span>
+            </div>
+            <div
+              style={
+                Object {
+                  "paddingLeft": 18,
+                  "paddingRight": 3,
+                }
+              }
+            >
+              <span
+                style={
+                  Object {
+                    "color": "#777",
+                  }
+                }
+              >
+                &lt;/
+                div
+                &gt;
+              </span>
+            </div>
+          </div>
+        </pre>
+      </div>
+      <div>
+        <h1
+          style={
+            Object {
+              "borderBottom": "1px solid #EEE",
+              "fontSize": "25px",
+              "margin": "20px 0 0 0",
+              "padding": "0 0 5px 0",
+            }
+          }
+        >
+          Prop Types
+        </h1>
+        <div>
+          <h2
+            style={
+              Object {
+                "margin": "20px 0 0 0",
+              }
+            }
+          >
+            "
+            Image
+            " Component
+          </h2>
+          <table
+            style={
+              Object {
+                "borderCollapse": "separate",
+                "borderSpacing": "10px 5px",
+                "marginLeft": -10,
+              }
+            }
+          >
+            <thead>
+              <tr>
+                <th>
+                  property
+                </th>
+                <th>
+                  propType
+                </th>
+                <th>
+                  required
+                </th>
+                <th>
+                  default
+                </th>
+                <th>
+                  description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  setEditor
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  image
+                </td>
+                <td>
+                  other
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  cropping
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  failed
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  adaptScale
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "#a11",
+                        }
+                      }
+                    >
+                      false
+                    </span>
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  initialState
+                </td>
+                <td>
+                  other
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "#666",
+                        }
+                      }
+                    >
+                      {
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        uploading
+                      </span>
+                      : 
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#a11",
+                            }
+                          }
+                        >
+                          false
+                        </span>
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        failed
+                      </span>
+                      : 
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#a11",
+                            }
+                          }
+                        >
+                          false
+                        </span>
+                      </span>
+                      , 
+                      <span
+                        style={
+                          Object {
+                            "color": "#666",
+                          }
+                        }
+                      >
+                        editor
+                      </span>
+                      : 
+                      <span>
+                        <span
+                          style={
+                            Object {
+                              "color": "#777",
+                            }
+                          }
+                        >
+                          undefined
+                        </span>
+                      </span>
+                      }
+                    </span>
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploadImage
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  reset
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onUploadSucceed
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onUploadStart
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  openEditor
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onSetImage
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onUploadFail
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploaded
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploading
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  url
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </div>

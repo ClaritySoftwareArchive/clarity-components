@@ -16,6 +16,7 @@ Object {
     "adaptScale": [Function],
     "foo": [Function],
     "initialState": [Function],
+    "onSetImage": [Function],
     "onUploadFail": [Function],
     "onUploadStart": [Function],
     "onUploadSucceed": [Function],

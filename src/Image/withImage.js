@@ -68,6 +68,7 @@ export const handlers = [{
   onUploadStart,
   onUploadSucceed,
   reset,
+  onSetImage: 'setImage',
 }, {
   onUpload,
 }];
@@ -90,6 +91,7 @@ const propTypes = {
   initialState: T.shape({
     url: T.string,
   }),
+  onSetImage: T.func,
   onUploadFail: T.func,
   onUploadStart: T.func,
   onUploadSucceed: T.func,
@@ -104,7 +106,7 @@ const defaultProps = {
 const stateKeys = ['editor', 'image'];
 
 export default Component => compose(
-  omitPropTypes(['onUpload']),
+  omitPropTypes(['onUpload', 'setImage']),
   extendStatics({
     displayName: 'withImage',
     propTypes,
@@ -113,7 +115,7 @@ export default Component => compose(
   copyStatics(Component),
   withStates(createInitialState, { stateKeys }),
   embedHandlers(handlers),
-  omitProps(['editor', 'setState', 'resetState', 'initialState', 'adaptScale']),
+  omitProps(['editor', 'setState', 'resetState', 'initialState', 'adaptScale', 'onSetImage']),
   mapProps(propsMapper),
   pure,
 )(Component);

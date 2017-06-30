@@ -39,21 +39,31 @@ describe('refEditor({ setEditor })(editor): { reset, getDataUrl }', () => {
     expect(resetState).toHaveBeenCalledTimes(1);
   });
 
-  test('getDataUrl calls editor.getImageScaledToCanvas().toDataURL()', () => {
-    const dataUrl = _.stubObject();
-    const scaledUrl = _.stubObject();
+  describe('getDataUrl(scaleToCanvas, type, quality)', () => {
+    const toDataURL = jest.fn();
     const editorInstance = {
-      getImage: () => ({
-        toDataURL: jest.fn(() => dataUrl),
-      }),
-      getImageScaledToCanvas: () => ({
-        toDataURL: jest.fn(() => scaledUrl),
-      }),
+      getImage: jest.fn(() => ({ toDataURL })),
+      getImageScaledToCanvas: jest.fn(() => ({ toDataURL })),
     };
-    refEditorHandler(editorInstance);
 
-    expect(editor.getDataUrl()).toBe(dataUrl);
-    expect(editor.getDataUrl(true)).toBe(scaledUrl);
+    beforeEach(() => {
+      toDataURL.mockClear();
+      refEditorHandler(editorInstance);
+    });
+
+    test('call with default params', () => {
+      editor.getDataUrl();
+      expect(editorInstance.getImage).toHaveBeenCalledTimes(1);
+      expect(toDataURL).toHaveBeenCalledTimes(1);
+      expect(toDataURL).toHaveBeenCalledWith('image/jpeg', 0.92);
+    });
+
+    test('call with all params', () => {
+      editor.getDataUrl(true, 'image/png', 0.5);
+      expect(editorInstance.getImageScaledToCanvas).toHaveBeenCalledTimes(1);
+      expect(toDataURL).toHaveBeenCalledTimes(1);
+      expect(toDataURL).toHaveBeenCalledWith('image/png', 0.5);
+    });
   });
 });
 
