@@ -1,5 +1,5 @@
 /* eslint-env jest */
-import snapshotHocProps from '../../utils/testHelpers/snapshotHocProps';
+import snapshotHocProps from 'react-render-counter/utils/testHelpers/snapshotHocProps';
 import withImage from '../withImage';
 
 const url = 'http://pic.example.com/200/200';
