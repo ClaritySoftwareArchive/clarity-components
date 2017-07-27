@@ -67,8 +67,8 @@ const AccordionItem = ({ wide, expanded, collapsed, onExpand, onCollapse, title,
     <CardTitle style={styles.title}>
       <ListItem
         primaryText={title}
-        onTouchTap={onExpand}
-        leftIcon={expanded ? <CloseIcon onTouchTap={onCollapse} /> : null}
+        onTouchTap={wide && expanded ? onCollapse : onExpand}
+        leftIcon={!wide && expanded ? <CloseIcon onTouchTap={onCollapse} /> : null}
       />
     </CardTitle>
     <CardText style={{ ...styles.content.default, ...styles.content[expanded ? 'expanded' : 'collapsed'] }}>
