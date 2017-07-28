@@ -27,7 +27,9 @@ const propsMapper = ({ children, ...containerProps }) => {
 };
 
 const onActivate = ({ activateKey }) => (event, value) => {
-  event.stopPropagation();
+  if (event) {
+    event.stopPropagation();
+  }
   activateKey(value);
 };
 
