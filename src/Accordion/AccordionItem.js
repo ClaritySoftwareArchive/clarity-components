@@ -2,6 +2,7 @@ import React from 'react';
 import T from 'prop-types';
 import { Card, CardTitle, CardText, ListItem } from 'material-ui';
 import CloseIcon from 'material-ui/svg-icons/navigation/close';
+import asAccordionItem from './asAccordionItem';
 
 const styles = {
   narrow: {
@@ -78,18 +79,23 @@ const AccordionItem = ({ wide, expanded, collapsed, onExpand, onCollapse, title,
 );
 
 AccordionItem.propTypes = {
-  wide: T.bool.isRequired,
-  expanded: T.bool.isRequired,
-  collapsed: T.bool.isRequired,
-  onExpand: T.func.isRequired,
-  onCollapse: T.func.isRequired,
+  wide: T.bool,
+  expanded: T.bool,
+  collapsed: T.bool,
+  onExpand: T.func,
+  onCollapse: T.func,
   title: T.string,
   children: T.node,
 };
 
 AccordionItem.defaultProps = {
+  wide: undefined,
+  expanded: undefined,
+  collapsed: undefined,
+  onExpand: undefined,
+  onCollapse: undefined,
   title: undefined,
   children: undefined,
 };
 
-export default AccordionItem;
+export default asAccordionItem(AccordionItem);
