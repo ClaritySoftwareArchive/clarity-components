@@ -71,9 +71,13 @@ const onActivate = ({ activateKey }) => (event, value) => {
   activateKey(value);
 };
 
+export const handlers = {
+  onActivate,
+};
+
 export default compose(
   withState('activeKey', 'activateKey', ({ defaultActiveKey }) => defaultActiveKey),
-  withHandlers({ onActivate }),
+  withHandlers(handlers),
   embedHandler('onActivate', 'onChange'),
   withProps(propsMapper),
   withProps(stylesMapper),
