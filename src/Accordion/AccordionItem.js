@@ -5,7 +5,7 @@ import CloseIcon from 'material-ui/svg-icons/navigation/close';
 import asAccordionItem from './asAccordionItem';
 import { stylePropType } from './constants';
 
-const AccordionItem = ({
+export const AccordionItemRenderer = ({
   style,
   titleStyle,
   contentStyle,
@@ -30,7 +30,7 @@ const AccordionItem = ({
   </Card>
 );
 
-AccordionItem.propTypes = {
+AccordionItemRenderer.propTypes = {
   style: stylePropType,
   titleStyle: stylePropType,
   contentStyle: stylePropType,
@@ -42,7 +42,7 @@ AccordionItem.propTypes = {
   children: T.node,
 };
 
-AccordionItem.defaultProps = {
+AccordionItemRenderer.defaultProps = {
   style: {},
   titleStyle: {},
   contentStyle: {},
@@ -54,4 +54,4 @@ AccordionItem.defaultProps = {
   children: undefined,
 };
 
-export default asAccordionItem(AccordionItem);
+export default asAccordionItem(AccordionItemRenderer);
