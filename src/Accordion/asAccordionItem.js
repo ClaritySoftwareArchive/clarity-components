@@ -1,4 +1,4 @@
-import { compose, withProps } from 'recompose';
+import { compose, withProps, withHandlers } from 'recompose';
 import { embedHandler } from 'react-render-counter/hocs';
 
 const staticStyles = {
@@ -83,15 +83,19 @@ const stylesMapper = ({ wide, expanded, collapsed, style }) => {
   };
 };
 
-const propsMapper = ({ onActivate, activeKey, itemKey }) => ({
+const propsMapper = ({ activeKey, itemKey }) => ({
   expanded: activeKey === itemKey,
   collapsed: activeKey != null && activeKey !== itemKey,
-  onExpand: event => onActivate(event, itemKey),
-  onCollapse: event => onActivate(event, null),
 });
+
+export const handlers = {
+  onExpand: ({ onActivate, itemKey }) => event => onActivate(event, itemKey),
+  onCollapse: ({ onActivate }) => event => onActivate(event, null),
+};
 
 const asAccordionItem = compose(
   embedHandler('onActivate', 'onToggle'),
+  withHandlers(handlers),
   withProps(propsMapper),
   withProps(stylesMapper),
 );

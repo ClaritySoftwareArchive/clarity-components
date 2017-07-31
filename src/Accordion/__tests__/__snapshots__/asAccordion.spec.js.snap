@@ -27,7 +27,7 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default
       }
     }
   >
-    <withHandlers(withProps(withProps(div)))
+    <withHandlers(withHandlers(withProps(withProps(div))))
       activateKey={[Function]}
       activeKey={1}
       defaultActiveKey={1}
@@ -36,7 +36,7 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default
       itemKey="1"
       onActivate={[Function]}
     />
-    <withHandlers(withProps(withProps(div)))
+    <withHandlers(withHandlers(withProps(withProps(div))))
       activateKey={[Function]}
       activeKey={1}
       defaultActiveKey={1}
@@ -71,14 +71,14 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen with defaul
       }
     }
   >
-    <withHandlers(withProps(withProps(div)))
+    <withHandlers(withHandlers(withProps(withProps(div))))
       activateKey={[Function]}
       isFirst={true}
       isLast={false}
       itemKey="1"
       onActivate={[Function]}
     />
-    <withHandlers(withProps(withProps(div)))
+    <withHandlers(withHandlers(withProps(withProps(div))))
       activateKey={[Function]}
       isFirst={false}
       isLast={true}
@@ -119,7 +119,7 @@ exports[`asAccordion(BaseComponent): NewComponent with wide screen with default 
     }
     wide={true}
   >
-    <withHandlers(withProps(withProps(div)))
+    <withHandlers(withHandlers(withProps(withProps(div))))
       activateKey={[Function]}
       activeKey={1}
       defaultActiveKey={1}
@@ -129,7 +129,7 @@ exports[`asAccordion(BaseComponent): NewComponent with wide screen with default 
       onActivate={[Function]}
       wide={true}
     />
-    <withHandlers(withProps(withProps(div)))
+    <withHandlers(withHandlers(withProps(withProps(div))))
       activateKey={[Function]}
       activeKey={1}
       defaultActiveKey={1}
