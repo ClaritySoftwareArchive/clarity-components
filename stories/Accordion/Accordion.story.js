@@ -1,5 +1,5 @@
 import React from 'react';
-import { compose, renameProp, withHandlers } from 'recompose';
+import { compose, mapProps, withHandlers } from 'recompose';
 import _ from 'lodash';
 
 import { storiesOf } from '@storybook/react';
@@ -38,14 +38,31 @@ storiesOf('Accordion', module)
       asAccordion,
       withHandlers({ onChange: ({ onActivate }) => key => onActivate(undefined, key) }),
     )(Collapse);
+
+    const border = '1px solid #d9d9d9';
+    const itemPropsMapper = ({ activeKey, isLast, itemKey, expanded, style, ...rest }) => {
+      const rootStyle = { ...style, border, borderBottom: 0 };
+
+      if (isLast || expanded || activeKey - itemKey === 1) {
+        rootStyle.borderBottom = border;
+      }
+
+      return {
+        ...rest,
+        isActive: expanded,
+        style: rootStyle,
+      };
+    };
+
     const Item = compose(
       asAccordionItem,
-      renameProp('expanded', 'isActive'),
+      mapProps(itemPropsMapper),
     )(Collapse.Panel);
+
 
     return (
       <div style={{ height: 'calc(100vh - 32px)' }}>
-        <Container accordion wide={wide}>
+        <Container style={{ border: 0 }} accordion wide={wide}>
           {list.map(value => (
             <Item
               key={value}

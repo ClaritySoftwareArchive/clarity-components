@@ -793,12 +793,31 @@ exports[`Storyshots Accordion antd 1`] = `
 >
   <div
     className="ant-collapse"
-    style={undefined}
+    style={
+      Object {
+        "alignItems": "center",
+        "border": 0,
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": 0,
+        "width": "100%",
+      }
+    }
   >
     <div
       className="ant-collapse-item"
       id={undefined}
-      style={undefined}
+      style={
+        Object {
+          "border": "1px solid #d9d9d9",
+          "borderBottom": 0,
+          "flex": 1,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+        }
+      }
     >
       <div
         aria-expanded={false}
@@ -815,7 +834,17 @@ exports[`Storyshots Accordion antd 1`] = `
     <div
       className="ant-collapse-item"
       id={undefined}
-      style={undefined}
+      style={
+        Object {
+          "border": "1px solid #d9d9d9",
+          "borderBottom": 0,
+          "flex": 1,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+        }
+      }
     >
       <div
         aria-expanded={false}
@@ -832,7 +861,17 @@ exports[`Storyshots Accordion antd 1`] = `
     <div
       className="ant-collapse-item"
       id={undefined}
-      style={undefined}
+      style={
+        Object {
+          "border": "1px solid #d9d9d9",
+          "borderBottom": 0,
+          "flex": 1,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+        }
+      }
     >
       <div
         aria-expanded={false}
@@ -849,7 +888,17 @@ exports[`Storyshots Accordion antd 1`] = `
     <div
       className="ant-collapse-item"
       id={undefined}
-      style={undefined}
+      style={
+        Object {
+          "border": "1px solid #d9d9d9",
+          "borderBottom": 0,
+          "flex": 1,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+        }
+      }
     >
       <div
         aria-expanded={false}
@@ -866,7 +915,17 @@ exports[`Storyshots Accordion antd 1`] = `
     <div
       className="ant-collapse-item"
       id={undefined}
-      style={undefined}
+      style={
+        Object {
+          "border": "1px solid #d9d9d9",
+          "borderBottom": "1px solid #d9d9d9",
+          "flex": 1,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+        }
+      }
     >
       <div
         aria-expanded={false}
