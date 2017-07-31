@@ -1,41 +1,20 @@
 import React from 'react';
 import T from 'prop-types';
+import { stylePropType } from './constants';
 
-const styles = {
-  list: {
-    padding: 0,
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    width: '100%',
-  },
-  expanded: {
-    height: '100%',
-  },
-  wide: {
-    width: '95%',
-    margin: '0 auto',
-  },
-};
-
-const AccordionList = ({ wide, expanded, children }) => (
-  <div style={{
-    ...styles.list,
-    ...(styles[expanded ? 'expanded' : 'list']),
-    ...(styles[wide ? 'wide' : 'list']),
-  }}
-  >
+const AccordionList = ({ style, children }) => (
+  <div style={style}>
     {children}
   </div>
 );
 
 AccordionList.propTypes = {
-  wide: T.bool.isRequired,
-  expanded: T.bool.isRequired,
+  style: stylePropType,
   children: T.node,
 };
 
 AccordionList.defaultProps = {
+  style: {},
   children: undefined,
 };
 

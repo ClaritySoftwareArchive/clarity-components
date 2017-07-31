@@ -4,6 +4,37 @@ import { compose, withState, withProps, withHandlers } from 'recompose';
 import { embedHandler } from 'react-render-counter/hocs';
 import asAccordionItem from './asAccordionItem';
 
+const rootStyles = {
+  default: {
+    padding: 0,
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    width: '100%',
+  },
+  expanded: {
+    height: '100%',
+  },
+  wide: {
+    width: '95%',
+    margin: '0 auto',
+  },
+};
+
+const stylesMapper = ({ wide, expanded, style }) => {
+  const rootStyle = { ...rootStyles.default };
+  if (wide) {
+    Object.assign(rootStyle, rootStyles.wide);
+  }
+  if (expanded) {
+    Object.assign(rootStyle, rootStyles.expanded);
+  }
+
+  return {
+    style: { ...rootStyle, ...style },
+  };
+};
+
 const propsMapper = ({ children, ...containerProps }) => {
   const toItem = (element, index) => {
     const Item = asAccordionItem(element.type);
@@ -17,7 +48,14 @@ const propsMapper = ({ children, ...containerProps }) => {
       combinedProps.itemKey = element.key == null ? index : element.key;
     }
 
-    return <Item key={combinedProps.itemKey} {...combinedProps} />;
+    return (
+      <Item
+        key={combinedProps.itemKey}
+        isFirst={!Array.isArray(children) || index === 0}
+        isLast={!Array.isArray(children) || index === children.length - 1}
+        {...combinedProps}
+      />
+    );
   };
 
   return {
@@ -38,4 +76,5 @@ export default compose(
   withHandlers({ onActivate }),
   embedHandler('onActivate', 'onChange'),
   withProps(propsMapper),
+  withProps(stylesMapper),
 );
