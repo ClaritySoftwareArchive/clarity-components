@@ -5,25 +5,27 @@ import asAccordion from '../asAccordion';
 
 describe('asAccordion(BaseComponent): NewComponent', () => {
   let props;
-  let children;
   beforeEach(() => {
-    children = [
-      <div key="1" />,
-      <div key="2" />,
-    ];
+    props = {
+      children: [
+        <div key={0} />,
+        <div />,
+        <div itemKey={2} />,
+      ],
+    };
   });
 
   afterEach(() => snapshotHocProps(asAccordion, props));
 
   describe('with narrow screen', () => {
-    test('with default props', () => {
-      props = { children };
+    test('with default props and single child', () => {
+      props.children = <div />;
     });
 
     test('set default activeKey', () => {
       props = {
-        defaultActiveKey: 1,
-        children,
+        ...props,
+        defaultActiveKey: '1',
       };
     });
   });
@@ -33,10 +35,14 @@ describe('asAccordion(BaseComponent): NewComponent', () => {
       props.wide = true;
     });
 
-    test('with default props', () => {
+    test('with default props and single child', () => {
+      props.children = <div />;
+    });
+
+    test('set default activeKey', () => {
       props = {
         ...props,
-        children,
+        defaultActiveKey: 1,
       };
     });
   });
