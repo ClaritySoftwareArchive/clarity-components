@@ -1,0 +1,196 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default activeKey 1`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    defaultActiveKey="1"
+  >
+    <div />
+    <div />
+    <div
+      itemKey={2}
+    />
+  </input-props>
+  <output-props
+    activateKey={[Function]}
+    activeKey="1"
+    defaultActiveKey="1"
+    expanded={true}
+    onActivate={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100%",
+        "padding": 0,
+        "width": "100%",
+      }
+    }
+  >
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      activeKey="1"
+      defaultActiveKey="1"
+      isFirst={true}
+      isLast={false}
+      itemKey="0"
+      onActivate={[Function]}
+    />
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      activeKey="1"
+      defaultActiveKey="1"
+      isFirst={false}
+      isLast={false}
+      itemKey={1}
+      onActivate={[Function]}
+    />
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      activeKey="1"
+      defaultActiveKey="1"
+      isFirst={false}
+      isLast={true}
+      itemKey={2}
+      onActivate={[Function]}
+    />
+  </output-props>
+</div>
+`;
+
+exports[`asAccordion(BaseComponent): NewComponent with narrow screen with default props and single child 1`] = `
+<div
+  name="props-displayer"
+>
+  <input-props>
+    <div />
+  </input-props>
+  <output-props
+    activateKey={[Function]}
+    expanded={false}
+    onActivate={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "padding": 0,
+        "width": "100%",
+      }
+    }
+  >
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      isFirst={true}
+      isLast={true}
+      onActivate={[Function]}
+    />
+  </output-props>
+</div>
+`;
+
+exports[`asAccordion(BaseComponent): NewComponent with wide screen set default activeKey 1`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    defaultActiveKey={1}
+    wide={true}
+  >
+    <div />
+    <div />
+    <div
+      itemKey={2}
+    />
+  </input-props>
+  <output-props
+    activateKey={[Function]}
+    activeKey={1}
+    defaultActiveKey={1}
+    expanded={true}
+    onActivate={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "100%",
+        "margin": "0 auto",
+        "padding": 0,
+        "width": "95%",
+      }
+    }
+    wide={true}
+  >
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      activeKey={1}
+      defaultActiveKey={1}
+      isFirst={true}
+      isLast={false}
+      itemKey="0"
+      onActivate={[Function]}
+      wide={true}
+    />
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      activeKey={1}
+      defaultActiveKey={1}
+      isFirst={false}
+      isLast={false}
+      itemKey={1}
+      onActivate={[Function]}
+      wide={true}
+    />
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      activeKey={1}
+      defaultActiveKey={1}
+      isFirst={false}
+      isLast={true}
+      itemKey={2}
+      onActivate={[Function]}
+      wide={true}
+    />
+  </output-props>
+</div>
+`;
+
+exports[`asAccordion(BaseComponent): NewComponent with wide screen with default props and single child 1`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    wide={true}
+  >
+    <div />
+  </input-props>
+  <output-props
+    activateKey={[Function]}
+    expanded={false}
+    onActivate={[Function]}
+    style={
+      Object {
+        "alignItems": "center",
+        "display": "flex",
+        "flexDirection": "column",
+        "margin": "0 auto",
+        "padding": 0,
+        "width": "95%",
+      }
+    }
+    wide={true}
+  >
+    <withHandlers(withHandlers(withProps(withProps(div))))
+      activateKey={[Function]}
+      isFirst={true}
+      isLast={true}
+      onActivate={[Function]}
+      wide={true}
+    />
+  </output-props>
+</div>
+`;

@@ -1,0 +1,413 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is collapsed 1`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    activeKey={0}
+    contentStyle={Object {}}
+    itemKey={1}
+    style={Object {}}
+    titleStyle={Object {}}
+  />
+  <output-props
+    activeKey={0}
+    collapsed={true}
+    contentStyle={
+      Object {
+        "maxHeight": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+        "padding": 0,
+        "transition": "all 0.2s ease-in",
+      }
+    }
+    expanded={false}
+    itemKey={1}
+    onActivate={[Function]}
+    onCollapse={[Function]}
+    onExpand={[Function]}
+    style={
+      Object {
+        "flex": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+        "transition": "all 0.2s ease-out",
+        "width": "100%",
+      }
+    }
+    titleStyle={
+      Object {
+        "padding": 0,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is collapsed 2`] = `
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "flex": 0,
+      "opacity": 0,
+      "overflow": "hidden",
+      "transition": "all 0.2s ease-out",
+      "width": "100%",
+    }
+  }
+>
+  <CardTitle
+    style={
+      Object {
+        "padding": 0,
+      }
+    }
+  >
+    <ListItem
+      autoGenerateNestedIndicator={true}
+      containerElement="span"
+      disableKeyboardFocus={false}
+      disabled={false}
+      initiallyOpen={false}
+      insetChildren={false}
+      leftIcon={null}
+      nestedItems={Array []}
+      nestedLevel={0}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onNestedListToggle={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      open={null}
+      primaryTogglesNestedList={false}
+      secondaryTextLines={1}
+    />
+  </CardTitle>
+  <CardText
+    style={
+      Object {
+        "maxHeight": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+        "padding": 0,
+        "transition": "all 0.2s ease-in",
+      }
+    }
+  />
+</Card>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is collapsed 3`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    activeKey={0}
+    contentStyle={Object {}}
+    itemKey={1}
+    style={Object {}}
+    titleStyle={Object {}}
+    wide={true}
+  />
+  <output-props
+    activeKey={0}
+    collapsed={true}
+    contentStyle={
+      Object {
+        "maxHeight": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+        "padding": 0,
+        "transition": "all 0.2s ease-in",
+      }
+    }
+    expanded={false}
+    itemKey={1}
+    onActivate={[Function]}
+    onCollapse={[Function]}
+    onExpand={[Function]}
+    style={
+      Object {
+        "margin": 0,
+        "transition": "all 0.2s ease-out",
+        "width": "100%",
+      }
+    }
+    titleStyle={
+      Object {
+        "padding": 0,
+      }
+    }
+    wide={true}
+  />
+</div>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is collapsed 4`] = `
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "margin": 0,
+      "transition": "all 0.2s ease-out",
+      "width": "100%",
+    }
+  }
+>
+  <CardTitle
+    style={
+      Object {
+        "padding": 0,
+      }
+    }
+  >
+    <ListItem
+      autoGenerateNestedIndicator={true}
+      containerElement="span"
+      disableKeyboardFocus={false}
+      disabled={false}
+      initiallyOpen={false}
+      insetChildren={false}
+      leftIcon={null}
+      nestedItems={Array []}
+      nestedLevel={0}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onNestedListToggle={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      open={null}
+      primaryTogglesNestedList={false}
+      secondaryTextLines={1}
+    />
+  </CardTitle>
+  <CardText
+    style={
+      Object {
+        "maxHeight": 0,
+        "opacity": 0,
+        "overflow": "hidden",
+        "padding": 0,
+        "transition": "all 0.2s ease-in",
+      }
+    }
+  />
+</Card>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is expanded 1`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    activeKey={1}
+    contentStyle={Object {}}
+    itemKey={1}
+    style={Object {}}
+    titleStyle={Object {}}
+  />
+  <output-props
+    activeKey={1}
+    collapsed={false}
+    contentStyle={
+      Object {
+        "maxHeight": "100vh",
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "all 0.2s ease-out",
+      }
+    }
+    expanded={true}
+    itemKey={1}
+    onActivate={[Function]}
+    onCollapse={[Function]}
+    onExpand={[Function]}
+    style={
+      Object {
+        "flex": 2,
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "all 0.2s ease-out",
+        "width": "100%",
+      }
+    }
+    titleStyle={
+      Object {
+        "padding": 0,
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is expanded 2`] = `
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "flex": 2,
+      "opacity": 1,
+      "overflow": "hidden",
+      "transition": "all 0.2s ease-out",
+      "width": "100%",
+    }
+  }
+>
+  <CardTitle
+    style={
+      Object {
+        "padding": 0,
+      }
+    }
+  >
+    <ListItem
+      autoGenerateNestedIndicator={true}
+      containerElement="span"
+      disableKeyboardFocus={false}
+      disabled={false}
+      initiallyOpen={false}
+      insetChildren={false}
+      leftIcon={
+        <NavigationClose
+          onTouchTap={[Function]}
+        />
+      }
+      nestedItems={Array []}
+      nestedLevel={0}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onNestedListToggle={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      open={null}
+      primaryTogglesNestedList={false}
+      secondaryTextLines={1}
+    />
+  </CardTitle>
+  <CardText
+    style={
+      Object {
+        "maxHeight": "100vh",
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "all 0.2s ease-out",
+      }
+    }
+  />
+</Card>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is expanded 3`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    activeKey={1}
+    contentStyle={Object {}}
+    itemKey={1}
+    style={Object {}}
+    titleStyle={Object {}}
+    wide={true}
+  />
+  <output-props
+    activeKey={1}
+    collapsed={false}
+    contentStyle={
+      Object {
+        "maxHeight": "100vh",
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "all 0.2s ease-out",
+      }
+    }
+    expanded={true}
+    itemKey={1}
+    onActivate={[Function]}
+    onCollapse={[Function]}
+    onExpand={[Function]}
+    style={
+      Object {
+        "margin": "50px 0",
+        "transition": "all 0.2s ease-in",
+        "width": "calc(100% + 40px)",
+      }
+    }
+    titleStyle={
+      Object {
+        "padding": 0,
+      }
+    }
+    wide={true}
+  />
+</div>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is expanded 4`] = `
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "margin": "50px 0",
+      "transition": "all 0.2s ease-in",
+      "width": "calc(100% + 40px)",
+    }
+  }
+>
+  <CardTitle
+    style={
+      Object {
+        "padding": 0,
+      }
+    }
+  >
+    <ListItem
+      autoGenerateNestedIndicator={true}
+      containerElement="span"
+      disableKeyboardFocus={false}
+      disabled={false}
+      initiallyOpen={false}
+      insetChildren={false}
+      leftIcon={null}
+      nestedItems={Array []}
+      nestedLevel={0}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onNestedListToggle={[Function]}
+      onTouchEnd={[Function]}
+      onTouchStart={[Function]}
+      onTouchTap={[Function]}
+      open={null}
+      primaryTogglesNestedList={false}
+      secondaryTextLines={1}
+    />
+  </CardTitle>
+  <CardText
+    style={
+      Object {
+        "maxHeight": "100vh",
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "all 0.2s ease-out",
+      }
+    }
+  />
+</Card>
+`;

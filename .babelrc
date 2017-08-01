@@ -18,7 +18,8 @@
       {
         "mode": "wrap"
       }
-    ]
+    ],
+    ["import", { "libraryName": "antd", "style": "css" }]
   ],
   "env": {
     "dev": {
