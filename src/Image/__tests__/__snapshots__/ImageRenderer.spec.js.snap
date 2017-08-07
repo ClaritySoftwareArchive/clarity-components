@@ -321,6 +321,19 @@ exports[`<ImageRenderer {...props} />: elements tree with uploaded props 1`] = `
       primary={true}
       secondary={false}
     />
+    <RaisedButton
+      disabled={false}
+      fullWidth={false}
+      label="Change"
+      labelPosition="before"
+      name="Select"
+      primary={true}
+      secondary={false}
+    >
+      <ImageSelector
+        setImage={[Function]}
+      />
+    </RaisedButton>
     <FlatButton
       disabled={false}
       fullWidth={false}

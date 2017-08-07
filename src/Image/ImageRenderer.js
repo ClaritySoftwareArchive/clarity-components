@@ -35,7 +35,7 @@ const ImageRenderer = ({
   retryActionLabel,
   selectActionLabel,
   setEditor,
-  setImage,
+  onSetImage,
   uploadActionLabel,
 }) => (
   <Card style={styles.root}>
@@ -58,16 +58,15 @@ const ImageRenderer = ({
       ) : null}
       {uploaded ? (
         <RaisedButton name="Crop" primary label={cropActionLabel} onTouchTap={openEditor} />
-      ) : (
-        <RaisedButton
-          name="Select"
-          primary
-          label={image ? changeActionLabel : selectActionLabel}
-          labelPosition="before"
-        >
-          <ImageSelector setImage={setImage} />
-        </RaisedButton>
-      )}
+      ) : null}
+      <RaisedButton
+        name="Select"
+        primary
+        label={image ? changeActionLabel : selectActionLabel}
+        labelPosition="before"
+      >
+        <ImageSelector setImage={onSetImage} />
+      </RaisedButton>
       <FlatButton
         style={styles.resetAction}
         disabled={!image}
@@ -96,7 +95,7 @@ ImageRenderer.propTypes = {
   retryActionLabel: T.string,
   selectActionLabel: T.string,
   setEditor: T.func,
-  setImage: T.func,
+  onSetImage: T.func,
   uploadActionLabel: T.string,
 };
 
@@ -116,7 +115,7 @@ ImageRenderer.defaultProps = {
   retryActionLabel: 'Retry',
   selectActionLabel: 'Select Image',
   setEditor: undefined,
-  setImage: undefined,
+  onSetImage: undefined,
   uploadActionLabel: 'Upload',
 };
 

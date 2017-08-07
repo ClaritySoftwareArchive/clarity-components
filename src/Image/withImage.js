@@ -31,7 +31,7 @@ export const createInitialState = ({ initialState, ...props }) => {
   return state;
 };
 
-export const onUpload = ({
+const onUpload = ({
   editor,
   uploadImage,
   onUploadFail,
@@ -44,6 +44,11 @@ export const onUpload = ({
   const dataUrl = editor.getDataUrl(adaptScale);
   onUploadStart();
   uploadImage(dataUrl).then(onUploadSucceed, onUploadFail);
+};
+
+const onSetImage = ({ setImage, openEditor }) => (image) => {
+  setImage(image);
+  openEditor();
 };
 
 const openEditor = ({ setState }) => () => setState({ uploaded: false });
@@ -68,8 +73,8 @@ export const handlers = [{
   onUploadStart,
   onUploadSucceed,
   reset,
-  onSetImage: 'setImage',
 }, {
+  onSetImage,
   onUpload,
 }];
 
@@ -106,7 +111,7 @@ const defaultProps = {
 const stateKeys = ['editor', 'image'];
 
 export default Component => compose(
-  omitPropTypes(['onUpload', 'setImage']),
+  omitPropTypes(['onUpload']),
   extendStatics({
     displayName: 'withImage',
     propTypes,
@@ -115,7 +120,7 @@ export default Component => compose(
   copyStatics(Component),
   withStates(createInitialState, { stateKeys }),
   embedHandlers(handlers),
-  omitProps(['editor', 'setState', 'resetState', 'initialState', 'adaptScale', 'onSetImage']),
+  omitProps(['editor', 'setState', 'resetState', 'initialState', 'adaptScale', 'setImage']),
   mapProps(propsMapper),
   pure,
 )(Component);

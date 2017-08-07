@@ -4231,27 +4231,16 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  uploadActionLabel
+                  onSetImage
                 </td>
                 <td>
-                  string
+                  func
                 </td>
                 <td>
                   no
                 </td>
                 <td>
-                  <span
-                    style={
-                      Object {
-                        "color": "#22a",
-                        "wordBreak": "break-word",
-                      }
-                    }
-                  >
-                    "
-                    Upload
-                    "
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
@@ -4384,6 +4373,32 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
+                  uploadActionLabel
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Upload
+                    "
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
                   onUploadStart
                 </td>
                 <td>
@@ -4485,21 +4500,6 @@ exports[`Storyshots Image presets 1`] = `
                       }
                     </span>
                   </span>
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onSetImage
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
                 </td>
                 <td />
               </tr>
