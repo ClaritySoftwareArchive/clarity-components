@@ -54,6 +54,12 @@ stories.addWithInfo('presets', description, () => {
           willFail: boolean('will fail', false),
           delay: number('delay', 1000),
         })}
+        selectActionLabel={text('selectActionLabel', 'Select')}
+        changeActionLabel={text('changeActionLabel', 'New')}
+        cropActionLabel={text('cropActionLabel', 'Edit')}
+        resetActionLabel={text('resetActionLabel', 'Clear')}
+        retryActionLabel={text('retryActionLabel', 'Retry')}
+        uploadActionLabel={text('uploadActionLabel', 'Submit')}
       />
     </div>
   );
