@@ -15,13 +15,15 @@ import ImagePreviewer from './ImagePreviewer';
 const styles = {
   root: { maxWidth: 300 },
   content: { maxHeight: 300, paddingBottom: 0 },
-  cancelButton: { marginRight: 0, minWidth: 85 },
+  resetAction: { marginRight: 0, minWidth: 85 },
   loader: { marginBottom: 5 },
 };
 
 const ImageRenderer = ({
   image,
   url,
+  changeActionLabel,
+  cropActionLabel,
   cropping,
   failed,
   uploaded,
@@ -29,8 +31,12 @@ const ImageRenderer = ({
   onUpload,
   openEditor,
   reset,
+  resetActionLabel,
+  retryActionLabel,
+  selectActionLabel,
   setEditor,
   setImage,
+  uploadActionLabel,
 }) => (
   <Card style={styles.root}>
     <CardText style={styles.content}>
@@ -46,23 +52,28 @@ const ImageRenderer = ({
           name="Upload"
           secondary
           disabled={uploading}
-          label={failed ? 'Retry' : 'Upload'}
+          label={failed ? retryActionLabel : uploadActionLabel}
           onTouchTap={onUpload}
         />
       ) : null}
       {uploaded ? (
-        <RaisedButton name="Crop" primary label="Crop" onTouchTap={openEditor} />
+        <RaisedButton name="Crop" primary label={cropActionLabel} onTouchTap={openEditor} />
       ) : (
         <RaisedButton
           name="Select"
           primary
-          label={image ? 'Change' : 'Select Image'}
+          label={image ? changeActionLabel : selectActionLabel}
           labelPosition="before"
         >
           <ImageSelector setImage={setImage} />
         </RaisedButton>
       )}
-      <FlatButton style={styles.cancelButton} disabled={!image} label="Reset" onTouchTap={reset} />
+      <FlatButton
+        style={styles.resetAction}
+        disabled={!image}
+        label={resetActionLabel}
+        onTouchTap={reset}
+      />
     </CardActions>
   </Card>
 );
@@ -72,6 +83,8 @@ ImageRenderer.propTypes = {
     preview: T.string.isRequired,
   }),
   url: T.string,
+  changeActionLabel: T.string,
+  cropActionLabel: T.string,
   cropping: T.bool,
   failed: T.bool,
   uploaded: T.bool,
@@ -79,13 +92,19 @@ ImageRenderer.propTypes = {
   onUpload: T.func,
   openEditor: T.func,
   reset: T.func,
+  resetActionLabel: T.string,
+  retryActionLabel: T.string,
+  selectActionLabel: T.string,
   setEditor: T.func,
   setImage: T.func,
+  uploadActionLabel: T.string,
 };
 
 ImageRenderer.defaultProps = {
   image: undefined,
   url: undefined,
+  changeActionLabel: 'Change',
+  cropActionLabel: 'Crop',
   cropping: undefined,
   failed: undefined,
   uploaded: undefined,
@@ -93,8 +112,12 @@ ImageRenderer.defaultProps = {
   onUpload: undefined,
   openEditor: undefined,
   reset: undefined,
+  resetActionLabel: 'Reset',
+  retryActionLabel: 'Retry',
+  selectActionLabel: 'Select Image',
   setEditor: undefined,
   setImage: undefined,
+  uploadActionLabel: 'Upload',
 };
 
 export default ImageRenderer;
