@@ -10,6 +10,7 @@ const [{
   reset,
 }, {
   onUpload,
+  onSetImage,
 }] = handlers;
 
 test('openEditor({ setState, ...props }):handler', () => {
@@ -169,4 +170,17 @@ describe('onUpload({ uploadImage }):handler', () => {
     expect(props.onUploadSucceed).not.toHaveBeenCalled();
     expect(props.onUploadFail).not.toHaveBeenCalled();
   });
+});
+
+test('onSetImage({ setImage, openEditor }):handler(image){...}', () => {
+  const props = {
+    setImage: jest.fn(),
+    openEditor: jest.fn(),
+  };
+
+  const image = _.stubObject();
+  onSetImage(props)(image);
+  expect(props.setImage).toHaveBeenCalled();
+  expect(props.setImage).toHaveBeenCalledWith(image);
+  expect(props.openEditor).toHaveBeenCalled();
 });

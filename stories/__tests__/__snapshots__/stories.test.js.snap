@@ -3526,7 +3526,7 @@ exports[`Storyshots Image presets 1`] = `
                           }
                         }
                       >
-                        Select Image
+                        Select
                       </span>
                       <input
                         accept="image/*"
@@ -3611,7 +3611,7 @@ exports[`Storyshots Image presets 1`] = `
                     }
                   }
                 >
-                  Reset
+                  Clear
                 </span>
               </button>
             </div>
@@ -3811,7 +3811,10 @@ exports[`Storyshots Image presets 1`] = `
               </span>
               <span>
                 <span>
-                   
+                  <span>
+                    <br />
+                      
+                  </span>
                   <span
                     style={Object {}}
                   >
@@ -3838,7 +3841,157 @@ exports[`Storyshots Image presets 1`] = `
                       </span>
                     </span>
                   </span>
-                   
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    selectActionLabel
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Select
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    changeActionLabel
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        New
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    cropActionLabel
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Edit
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    resetActionLabel
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Clear
+                        "
+                      </span>
+                    </span>
+                  </span>
+                </span>
+                <span>
+                  <span>
+                    <br />
+                      
+                  </span>
+                  <span
+                    style={Object {}}
+                  >
+                    uploadActionLabel
+                  </span>
+                  <span>
+                    =
+                    <span
+                      style={Object {}}
+                    >
+                      <span
+                        style={
+                          Object {
+                            "color": "#22a",
+                            "wordBreak": "break-word",
+                          }
+                        }
+                      >
+                        "
+                        Submit
+                        "
+                      </span>
+                    </span>
+                  </span>
+                  <br />
                 </span>
               </span>
               <span
@@ -3930,16 +4083,27 @@ exports[`Storyshots Image presets 1`] = `
             <tbody>
               <tr>
                 <td>
-                  setEditor
+                  retryActionLabel
                 </td>
                 <td>
-                  func
+                  string
                 </td>
                 <td>
                   no
                 </td>
                 <td>
-                  -
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Retry
+                    "
+                  </span>
                 </td>
                 <td />
               </tr>
@@ -3955,6 +4119,58 @@ exports[`Storyshots Image presets 1`] = `
                 </td>
                 <td>
                   -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  changeActionLabel
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Change
+                    "
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  cropActionLabel
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Crop
+                    "
+                  </span>
                 </td>
                 <td />
               </tr>
@@ -4010,6 +4226,189 @@ exports[`Storyshots Image presets 1`] = `
                       false
                     </span>
                   </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onSetImage
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploadImage
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  reset
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  resetActionLabel
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Reset
+                    "
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onUploadSucceed
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  selectActionLabel
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Select Image
+                    "
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  setEditor
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  openEditor
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploadActionLabel
+                </td>
+                <td>
+                  string
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Upload
+                    "
+                  </span>
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  onUploadStart
+                </td>
+                <td>
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
                 </td>
                 <td />
               </tr>
@@ -4101,96 +4500,6 @@ exports[`Storyshots Image presets 1`] = `
                       }
                     </span>
                   </span>
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  uploadImage
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  reset
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onUploadSucceed
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onUploadStart
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  openEditor
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onSetImage
-                </td>
-                <td>
-                  func
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
                 </td>
                 <td />
               </tr>

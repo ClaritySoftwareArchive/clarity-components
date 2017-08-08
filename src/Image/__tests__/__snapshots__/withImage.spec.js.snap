@@ -8,6 +8,7 @@ exports[`withImage(BaseComponent): NewComponent start with default props waiting
   <output-props
     cropping={false}
     failed={false}
+    onSetImage={[Function]}
     onUpload={[Function]}
     onUploadFail={[Function]}
     onUploadStart={[Function]}
@@ -15,7 +16,6 @@ exports[`withImage(BaseComponent): NewComponent start with default props waiting
     openEditor={[Function]}
     reset={[Function]}
     setEditor={[Function]}
-    setImage={[Function]}
     uploaded={false}
     uploading={false}
   />
@@ -41,6 +41,7 @@ exports[`withImage(BaseComponent): NewComponent start with image preset cropping
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onSetImage={[Function]}
     onUpload={[Function]}
     onUploadFail={[Function]}
     onUploadStart={[Function]}
@@ -48,7 +49,6 @@ exports[`withImage(BaseComponent): NewComponent start with image preset cropping
     openEditor={[Function]}
     reset={[Function]}
     setEditor={[Function]}
-    setImage={[Function]}
     uploaded={false}
     uploading={false}
   />
@@ -75,6 +75,7 @@ exports[`withImage(BaseComponent): NewComponent start with image preset failed t
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onSetImage={[Function]}
     onUpload={[Function]}
     onUploadFail={[Function]}
     onUploadStart={[Function]}
@@ -82,7 +83,6 @@ exports[`withImage(BaseComponent): NewComponent start with image preset failed t
     openEditor={[Function]}
     reset={[Function]}
     setEditor={[Function]}
-    setImage={[Function]}
     uploaded={false}
     uploading={false}
   />
@@ -109,6 +109,7 @@ exports[`withImage(BaseComponent): NewComponent start with image preset succeede
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onSetImage={[Function]}
     onUpload={[Function]}
     onUploadFail={[Function]}
     onUploadStart={[Function]}
@@ -116,7 +117,6 @@ exports[`withImage(BaseComponent): NewComponent start with image preset succeede
     openEditor={[Function]}
     reset={[Function]}
     setEditor={[Function]}
-    setImage={[Function]}
     uploaded={true}
     uploading={false}
     url="http://pic.example.com/200/200"
@@ -144,6 +144,7 @@ exports[`withImage(BaseComponent): NewComponent start with image preset uploadin
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onSetImage={[Function]}
     onUpload={[Function]}
     onUploadFail={[Function]}
     onUploadStart={[Function]}
@@ -151,7 +152,6 @@ exports[`withImage(BaseComponent): NewComponent start with image preset uploadin
     openEditor={[Function]}
     reset={[Function]}
     setEditor={[Function]}
-    setImage={[Function]}
     uploaded={false}
     uploading={true}
   />
@@ -174,6 +174,7 @@ exports[`withImage(BaseComponent): NewComponent start with url preset cropping u
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onSetImage={[Function]}
     onUpload={[Function]}
     onUploadFail={[Function]}
     onUploadStart={[Function]}
@@ -181,7 +182,6 @@ exports[`withImage(BaseComponent): NewComponent start with url preset cropping u
     openEditor={[Function]}
     reset={[Function]}
     setEditor={[Function]}
-    setImage={[Function]}
     uploaded={false}
     uploading={false}
     url="http://pic.example.com/200/200"
@@ -204,6 +204,7 @@ exports[`withImage(BaseComponent): NewComponent start with url preset previewing
         "preview": "http://pic.example.com/200/200",
       }
     }
+    onSetImage={[Function]}
     onUpload={[Function]}
     onUploadFail={[Function]}
     onUploadStart={[Function]}
@@ -211,7 +212,6 @@ exports[`withImage(BaseComponent): NewComponent start with url preset previewing
     openEditor={[Function]}
     reset={[Function]}
     setEditor={[Function]}
-    setImage={[Function]}
     uploaded={true}
     uploading={false}
     url="http://pic.example.com/200/200"

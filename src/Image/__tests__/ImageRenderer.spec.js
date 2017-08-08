@@ -10,7 +10,7 @@ const image = { preview: url };
 const onUpload = jest.fn();
 const openEditor = jest.fn();
 const reset = jest.fn();
-const setImage = jest.fn();
+const onSetImage = jest.fn();
 const setScale = jest.fn();
 const setEditor = jest.fn();
 
@@ -18,7 +18,7 @@ const defaultProps = {
   onUpload,
   openEditor,
   reset,
-  setImage,
+  onSetImage,
   setScale,
   setEditor,
 };
