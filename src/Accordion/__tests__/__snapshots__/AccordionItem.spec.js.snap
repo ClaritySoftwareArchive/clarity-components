@@ -90,13 +90,14 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
 </Card>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is wide when item is collapsed 1`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is collapsed and the last 1`] = `
 <div
   name="props-displayer"
 >
   <input-props
     activeKey={0}
     contentStyle={Object {}}
+    isLast={false}
     itemKey={1}
     style={Object {}}
     wide={true}
@@ -114,6 +115,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
       }
     }
     expanded={false}
+    isLast={false}
     itemKey={1}
     onActivate={[Function]}
     onCollapse={[Function]}
@@ -130,7 +132,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
 </div>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is wide when item is collapsed 2`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is collapsed and the last 2`] = `
 <Card
   expandable={false}
   expanded={null}
@@ -270,13 +272,14 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
 </Card>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is wide when item is expanded 1`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is expanded and the first 1`] = `
 <div
   name="props-displayer"
 >
   <input-props
     activeKey={1}
     contentStyle={Object {}}
+    isFirst={true}
     itemKey={1}
     style={Object {}}
     wide={true}
@@ -293,6 +296,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
       }
     }
     expanded={true}
+    isFirst={true}
     itemKey={1}
     onActivate={[Function]}
     onCollapse={[Function]}
@@ -300,7 +304,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
     style={
       Object {
         "marginBottom": 50,
-        "marginTop": 50,
         "transition": "all 0.2s ease-in",
         "width": "calc(100% + 40px)",
       }
@@ -310,7 +313,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
 </div>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is wide when item is expanded 2`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is expanded and the first 2`] = `
 <Card
   expandable={false}
   expanded={null}
@@ -318,7 +321,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
   style={
     Object {
       "marginBottom": 50,
-      "marginTop": 50,
       "transition": "all 0.2s ease-in",
       "width": "calc(100% + 40px)",
     }

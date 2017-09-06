@@ -42,17 +42,19 @@ describe('<AccordionItem {...props} />: elements tree', () => {
       props.wide = true;
     });
 
-    test('when item is expanded', () => {
+    test('when item is expanded and the first', () => {
       props = {
         ...props,
+        isFirst: true,
         itemKey: 1,
         activeKey: 1,
       };
     });
 
-    test('when item is collapsed', () => {
+    test('when item is collapsed and the last', () => {
       props = {
         ...props,
+        isLast: false,
         itemKey: 1,
         activeKey: 0,
       };
