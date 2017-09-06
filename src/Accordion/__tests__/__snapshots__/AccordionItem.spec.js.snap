@@ -299,7 +299,8 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     onExpand={[Function]}
     style={
       Object {
-        "margin": "50px 0",
+        "marginBottom": 50,
+        "marginTop": 50,
         "transition": "all 0.2s ease-in",
         "width": "calc(100% + 40px)",
       }
@@ -316,7 +317,8 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
   initiallyExpanded={false}
   style={
     Object {
-      "margin": "50px 0",
+      "marginBottom": 50,
+      "marginTop": 50,
       "transition": "all 0.2s ease-in",
       "width": "calc(100% + 40px)",
     }

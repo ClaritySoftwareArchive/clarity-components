@@ -31,7 +31,8 @@ const styles = {
       width: '100%',
     },
     expanded: {
-      margin: '50px 0',
+      marginTop: 50,
+      marginBottom: 50,
       width: 'calc(100% + 40px)',
       transition: 'all 0.2s ease-in',
     },
@@ -55,7 +56,7 @@ const contentStyles = {
   },
 };
 
-const stylesMapper = ({ wide, expanded, collapsed, style }) => {
+const stylesMapper = ({ wide, expanded, collapsed, style, isFirst }) => {
   const rootStyles = styles[wide ? 'wide' : 'narrow'];
   const rootStyle = { ...rootStyles.default };
   const contentStyle = {
@@ -65,6 +66,9 @@ const stylesMapper = ({ wide, expanded, collapsed, style }) => {
 
   if (expanded) {
     Object.assign(rootStyle, rootStyles.expanded);
+    if (isFirst) {
+      delete rootStyle.marginTop;
+    }
   }
   if (collapsed) {
     Object.assign(rootStyle, rootStyles.collapsed);
