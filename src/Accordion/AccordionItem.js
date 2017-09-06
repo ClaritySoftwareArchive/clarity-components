@@ -1,13 +1,12 @@
 import React from 'react';
 import T from 'prop-types';
-import { Card, CardTitle, CardText, ListItem } from 'material-ui';
+import { Card, CardText, ListItem } from 'material-ui';
 import CloseIcon from 'material-ui/svg-icons/navigation/close';
 import asAccordionItem from './asAccordionItem';
 import { stylePropType } from './constants';
 
 export const AccordionItemRenderer = ({
   style,
-  titleStyle,
   contentStyle,
   wide,
   expanded,
@@ -16,14 +15,12 @@ export const AccordionItemRenderer = ({
   title,
   children,
 }) => (
-  <Card style={style} >
-    <CardTitle style={titleStyle}>
-      <ListItem
-        primaryText={title}
-        onTouchTap={wide && expanded ? onCollapse : onExpand}
-        leftIcon={!wide && expanded ? <CloseIcon onTouchTap={onCollapse} /> : null}
-      />
-    </CardTitle>
+  <Card style={style}>
+    <ListItem
+      primaryText={title}
+      onTouchTap={wide && expanded ? onCollapse : onExpand}
+      leftIcon={!wide && expanded ? <CloseIcon onTouchTap={onCollapse} /> : null}
+    />
     <CardText style={contentStyle}>
       {children}
     </CardText>
@@ -32,7 +29,6 @@ export const AccordionItemRenderer = ({
 
 AccordionItemRenderer.propTypes = {
   style: stylePropType,
-  titleStyle: stylePropType,
   contentStyle: stylePropType,
   wide: T.bool,
   expanded: T.bool,
@@ -44,7 +40,6 @@ AccordionItemRenderer.propTypes = {
 
 AccordionItemRenderer.defaultProps = {
   style: {},
-  titleStyle: {},
   contentStyle: {},
   wide: undefined,
   expanded: undefined,

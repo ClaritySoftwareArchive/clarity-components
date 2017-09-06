@@ -9,7 +9,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     contentStyle={Object {}}
     itemKey={1}
     style={Object {}}
-    titleStyle={Object {}}
   />
   <output-props
     activeKey={0}
@@ -37,11 +36,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
         "width": "100%",
       }
     }
-    titleStyle={
-      Object {
-        "padding": 0,
-      }
-    }
   />
 </div>
 `;
@@ -61,35 +55,27 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     }
   }
 >
-  <CardTitle
-    style={
-      Object {
-        "padding": 0,
-      }
-    }
-  >
-    <ListItem
-      autoGenerateNestedIndicator={true}
-      containerElement="span"
-      disableKeyboardFocus={false}
-      disabled={false}
-      initiallyOpen={false}
-      insetChildren={false}
-      leftIcon={null}
-      nestedItems={Array []}
-      nestedLevel={0}
-      onKeyboardFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onNestedListToggle={[Function]}
-      onTouchEnd={[Function]}
-      onTouchStart={[Function]}
-      onTouchTap={[Function]}
-      open={null}
-      primaryTogglesNestedList={false}
-      secondaryTextLines={1}
-    />
-  </CardTitle>
+  <ListItem
+    autoGenerateNestedIndicator={true}
+    containerElement="span"
+    disableKeyboardFocus={false}
+    disabled={false}
+    initiallyOpen={false}
+    insetChildren={false}
+    leftIcon={null}
+    nestedItems={Array []}
+    nestedLevel={0}
+    onKeyboardFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onNestedListToggle={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    onTouchTap={[Function]}
+    open={null}
+    primaryTogglesNestedList={false}
+    secondaryTextLines={1}
+  />
   <CardText
     style={
       Object {
@@ -113,7 +99,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     contentStyle={Object {}}
     itemKey={1}
     style={Object {}}
-    titleStyle={Object {}}
     wide={true}
   />
   <output-props
@@ -140,11 +125,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
         "width": "100%",
       }
     }
-    titleStyle={
-      Object {
-        "padding": 0,
-      }
-    }
     wide={true}
   />
 </div>
@@ -163,35 +143,27 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     }
   }
 >
-  <CardTitle
-    style={
-      Object {
-        "padding": 0,
-      }
-    }
-  >
-    <ListItem
-      autoGenerateNestedIndicator={true}
-      containerElement="span"
-      disableKeyboardFocus={false}
-      disabled={false}
-      initiallyOpen={false}
-      insetChildren={false}
-      leftIcon={null}
-      nestedItems={Array []}
-      nestedLevel={0}
-      onKeyboardFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onNestedListToggle={[Function]}
-      onTouchEnd={[Function]}
-      onTouchStart={[Function]}
-      onTouchTap={[Function]}
-      open={null}
-      primaryTogglesNestedList={false}
-      secondaryTextLines={1}
-    />
-  </CardTitle>
+  <ListItem
+    autoGenerateNestedIndicator={true}
+    containerElement="span"
+    disableKeyboardFocus={false}
+    disabled={false}
+    initiallyOpen={false}
+    insetChildren={false}
+    leftIcon={null}
+    nestedItems={Array []}
+    nestedLevel={0}
+    onKeyboardFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onNestedListToggle={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    onTouchTap={[Function]}
+    open={null}
+    primaryTogglesNestedList={false}
+    secondaryTextLines={1}
+  />
   <CardText
     style={
       Object {
@@ -215,7 +187,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     contentStyle={Object {}}
     itemKey={1}
     style={Object {}}
-    titleStyle={Object {}}
   />
   <output-props
     activeKey={1}
@@ -242,11 +213,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
         "width": "100%",
       }
     }
-    titleStyle={
-      Object {
-        "padding": 0,
-      }
-    }
   />
 </div>
 `;
@@ -266,39 +232,31 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     }
   }
 >
-  <CardTitle
-    style={
-      Object {
-        "padding": 0,
-      }
+  <ListItem
+    autoGenerateNestedIndicator={true}
+    containerElement="span"
+    disableKeyboardFocus={false}
+    disabled={false}
+    initiallyOpen={false}
+    insetChildren={false}
+    leftIcon={
+      <NavigationClose
+        onTouchTap={[Function]}
+      />
     }
-  >
-    <ListItem
-      autoGenerateNestedIndicator={true}
-      containerElement="span"
-      disableKeyboardFocus={false}
-      disabled={false}
-      initiallyOpen={false}
-      insetChildren={false}
-      leftIcon={
-        <NavigationClose
-          onTouchTap={[Function]}
-        />
-      }
-      nestedItems={Array []}
-      nestedLevel={0}
-      onKeyboardFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onNestedListToggle={[Function]}
-      onTouchEnd={[Function]}
-      onTouchStart={[Function]}
-      onTouchTap={[Function]}
-      open={null}
-      primaryTogglesNestedList={false}
-      secondaryTextLines={1}
-    />
-  </CardTitle>
+    nestedItems={Array []}
+    nestedLevel={0}
+    onKeyboardFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onNestedListToggle={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    onTouchTap={[Function]}
+    open={null}
+    primaryTogglesNestedList={false}
+    secondaryTextLines={1}
+  />
   <CardText
     style={
       Object {
@@ -321,7 +279,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     contentStyle={Object {}}
     itemKey={1}
     style={Object {}}
-    titleStyle={Object {}}
     wide={true}
   />
   <output-props
@@ -347,11 +304,6 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
         "width": "calc(100% + 40px)",
       }
     }
-    titleStyle={
-      Object {
-        "padding": 0,
-      }
-    }
     wide={true}
   />
 </div>
@@ -370,35 +322,27 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     }
   }
 >
-  <CardTitle
-    style={
-      Object {
-        "padding": 0,
-      }
-    }
-  >
-    <ListItem
-      autoGenerateNestedIndicator={true}
-      containerElement="span"
-      disableKeyboardFocus={false}
-      disabled={false}
-      initiallyOpen={false}
-      insetChildren={false}
-      leftIcon={null}
-      nestedItems={Array []}
-      nestedLevel={0}
-      onKeyboardFocus={[Function]}
-      onMouseEnter={[Function]}
-      onMouseLeave={[Function]}
-      onNestedListToggle={[Function]}
-      onTouchEnd={[Function]}
-      onTouchStart={[Function]}
-      onTouchTap={[Function]}
-      open={null}
-      primaryTogglesNestedList={false}
-      secondaryTextLines={1}
-    />
-  </CardTitle>
+  <ListItem
+    autoGenerateNestedIndicator={true}
+    containerElement="span"
+    disableKeyboardFocus={false}
+    disabled={false}
+    initiallyOpen={false}
+    insetChildren={false}
+    leftIcon={null}
+    nestedItems={Array []}
+    nestedLevel={0}
+    onKeyboardFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onNestedListToggle={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    onTouchTap={[Function]}
+    open={null}
+    primaryTogglesNestedList={false}
+    secondaryTextLines={1}
+  />
   <CardText
     style={
       Object {

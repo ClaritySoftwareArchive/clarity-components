@@ -1,12 +1,6 @@
 import { compose, withProps, withHandlers } from 'recompose';
 import { embedHandler } from 'react-render-counter/hocs';
 
-const staticStyles = {
-  title: {
-    padding: 0,
-  },
-};
-
 const styles = {
   narrow: {
     default: {
@@ -79,7 +73,6 @@ const stylesMapper = ({ wide, expanded, collapsed, style }) => {
   return {
     style: { ...rootStyle, ...style },
     contentStyle,
-    titleStyle: staticStyles.title,
   };
 };
 
