@@ -90,7 +90,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
 </Card>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is collapsed 3`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is collapsed 1`] = `
 <div
   name="props-displayer"
 >
@@ -130,7 +130,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
 </div>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is collapsed 4`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is collapsed 2`] = `
 <Card
   expandable={false}
   expanded={null}
@@ -270,7 +270,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
 </Card>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is expanded 3`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is expanded 1`] = `
 <div
   name="props-displayer"
 >
@@ -310,7 +310,7 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
 </div>
 `;
 
-exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is expanded 4`] = `
+exports[`<AccordionItem {...props} />: elements tree when device is wide when item is expanded 2`] = `
 <Card
   expandable={false}
   expanded={null}

@@ -37,7 +37,7 @@ describe('<AccordionItem {...props} />: elements tree', () => {
     });
   });
 
-  describe('when device is narrow', () => {
+  describe('when device is wide', () => {
     beforeEach(() => {
       props.wide = true;
     });
