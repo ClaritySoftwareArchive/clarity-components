@@ -1,4 +1,4 @@
-import { compose, withProps, withHandlers } from 'recompose';
+import { compose, withProps, withHandlers, onlyUpdateForKeys } from 'recompose';
 import { embedHandler } from 'react-render-counter/hocs';
 
 const styles = {
@@ -87,9 +87,10 @@ export const handlers = {
 };
 
 const asAccordionItem = compose(
+  withProps(propsMapper),
+  onlyUpdateForKeys(['expanded', 'wide', 'collapsed', 'title', 'children']),
   embedHandler('onActivate', 'onToggle'),
   withHandlers(handlers),
-  withProps(propsMapper),
   withProps(stylesMapper),
 );
 
