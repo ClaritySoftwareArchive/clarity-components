@@ -48,7 +48,7 @@ const propsMapper = ({ children, ...containerProps }) => {
     const Item = asAccordionItem(element.type);
     const defaultProps = element.type.defaultProps || {};
     const combinedProps = {
-      ...containerProps,
+      ..._.omit(containerProps, ['style']),
       ..._.omitBy(element.props, (value, key) => value === defaultProps[key]),
     };
 
