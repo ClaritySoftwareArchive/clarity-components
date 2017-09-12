@@ -3,6 +3,7 @@ import React from 'react';
 import { storiesOf } from '@storybook/react';
 import { action } from '@storybook/addon-actions';
 import { object, select, number, text, boolean } from '@storybook/addon-knobs';
+import { withInfo } from '@storybook/addon-info';
 import { MuiThemeProvider } from 'material-ui';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
@@ -41,7 +42,10 @@ const stories = storiesOf('Image', module)
   .addDecorator(story => <MuiThemeProvider>{story()}</MuiThemeProvider>);
 
 const description = 'Control point to start from with knobs panel';
-stories.addWithInfo('presets', description, () => {
+stories.add('presets', withInfo({
+  text: description,
+  inline: true,
+})(() => {
   const startFrom = select('start-from', ['upload', 'cropping', 'preview'], 'upload');
   return (
     <div>
@@ -63,7 +67,7 @@ stories.addWithInfo('presets', description, () => {
       />
     </div>
   );
-}, { inline: true });
+}));
 
 stories.add('events', () => (
   <Image
@@ -87,7 +91,9 @@ stories.add('initialState', () => (
   />
 ));
 
-stories.addWithInfo('ImagePreviewer', '', () => {
+stories.add('ImagePreviewer', withInfo({
+  inline: false,
+})(() => {
   const src1 = text('src1', url);
   const src2 = text('src2', 'https://unsplash.it/600/600');
   const style = {
@@ -108,4 +114,4 @@ stories.addWithInfo('ImagePreviewer', '', () => {
       />
     </div>
   );
-}, { inline: false });
+}));
