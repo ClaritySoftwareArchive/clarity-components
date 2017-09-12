@@ -18,6 +18,7 @@ storiesOf('Accordion', module)
 
     return (
       <div style={{ height: 'calc(100vh - 32px)' }}>
+        <div>Accordion List</div>
         <Accordion wide={wide}>
           {list.map(value => (
             <AccordionItem

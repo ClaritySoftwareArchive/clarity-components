@@ -19,6 +19,11 @@ const rootStyles = {
     width: '95%',
     margin: '0 auto',
   },
+  fullScreen: {
+    position: 'fixed',
+    top: 0,
+    bottom: 0,
+  },
 };
 
 const stylesMapper = ({ wide, expanded, style }) => {
@@ -28,6 +33,9 @@ const stylesMapper = ({ wide, expanded, style }) => {
   }
   if (expanded) {
     Object.assign(rootStyle, rootStyles.expanded);
+  }
+  if (!wide && expanded) {
+    Object.assign(rootStyle, rootStyles.fullScreen);
   }
 
   return {

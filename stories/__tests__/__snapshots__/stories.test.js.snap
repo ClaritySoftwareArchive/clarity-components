@@ -8,6 +8,9 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
     }
   }
 >
+  <div>
+    Accordion List
+  </div>
   <div
     style={
       Object {
