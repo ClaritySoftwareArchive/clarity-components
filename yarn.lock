@@ -7004,13 +7004,13 @@ react-proxy@^1.1.7:
     lodash "^4.6.1"
     react-deep-force-update "^1.0.0"
 
-react-render-counter@^0.6.2:
-  version "0.6.2"
-  resolved "https://registry.npmjs.org/react-render-counter/-/react-render-counter-0.6.2.tgz#ff3dd3b140e669939bf70a454d0a90ebeb380bec"
+react-render-counter@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.npmjs.org/react-render-counter/-/react-render-counter-0.7.1.tgz#8683ed854ae87d6152acc111d82da331785f143d"
   dependencies:
     lodash "^4.17.4"
     prop-types "^15.5.10"
-    recompose "^0.23.4"
+    recompose "^0.25.0"
 
 react-simple-di@^1.2.0:
   version "1.2.0"
@@ -7220,15 +7220,6 @@ rechoir@^0.6.2:
 recompose@0.24.0:
   version "0.24.0"
   resolved "https://registry.npmjs.org/recompose/-/recompose-0.24.0.tgz#262e93f974439eb17e7779824d88cce90492a5dd"
-  dependencies:
-    change-emitter "^0.1.2"
-    fbjs "^0.8.1"
-    hoist-non-react-statics "^1.0.0"
-    symbol-observable "^1.0.4"
-
-recompose@^0.23.4:
-  version "0.23.5"
-  resolved "https://registry.npmjs.org/recompose/-/recompose-0.23.5.tgz#72ac8261246bec378235d187467d02a721e8b1de"
   dependencies:
     change-emitter "^0.1.2"
     fbjs "^0.8.1"
