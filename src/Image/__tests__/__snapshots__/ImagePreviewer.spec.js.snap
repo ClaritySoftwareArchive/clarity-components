@@ -78,17 +78,20 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
     animationDuration={300}
     animationOnKeyInput={false}
     clickOutsideToClose={true}
+    closeLabel="Close lightbox"
     discourageDownloads={false}
     enableZoom={true}
     imagePadding={10}
     keyRepeatKeyupBonus={40}
     keyRepeatLimit={180}
     mainSrc="http://pic.example.com/200/200"
+    nextLabel="Next image"
     onAfterOpen={[Function]}
     onCloseRequest={[Function]}
     onImageLoadError={[Function]}
     onMoveNextRequest={[Function]}
     onMovePrevRequest={[Function]}
+    prevLabel="Previous image"
     reactModalStyle={
       Object {
         "overlay": Object {
@@ -96,6 +99,9 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
         },
       }
     }
+    wrapperClassName=""
+    zoomInLabel="Zoom in"
+    zoomOutLabel="Zoom out"
   />
 </div>
 `;

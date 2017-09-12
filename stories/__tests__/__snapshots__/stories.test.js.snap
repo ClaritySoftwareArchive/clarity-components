@@ -26,7 +26,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
           "backgroundColor": "#ffffff",
           "borderRadius": 2,
           "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                 0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
           "boxSizing": "border-box",
           "color": "rgba(0, 0, 0, 0.87)",
           "flex": 1,
@@ -49,7 +49,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
       >
         <div>
           <span
-            disabled={undefined}
+            disabled={false}
             href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
@@ -147,7 +147,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
           "backgroundColor": "#ffffff",
           "borderRadius": 2,
           "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                 0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
           "boxSizing": "border-box",
           "color": "rgba(0, 0, 0, 0.87)",
           "flex": 1,
@@ -170,7 +170,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
       >
         <div>
           <span
-            disabled={undefined}
+            disabled={false}
             href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
@@ -268,7 +268,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
           "backgroundColor": "#ffffff",
           "borderRadius": 2,
           "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                 0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
           "boxSizing": "border-box",
           "color": "rgba(0, 0, 0, 0.87)",
           "flex": 1,
@@ -291,7 +291,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
       >
         <div>
           <span
-            disabled={undefined}
+            disabled={false}
             href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
@@ -389,7 +389,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
           "backgroundColor": "#ffffff",
           "borderRadius": 2,
           "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                 0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
           "boxSizing": "border-box",
           "color": "rgba(0, 0, 0, 0.87)",
           "flex": 1,
@@ -412,7 +412,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
       >
         <div>
           <span
-            disabled={undefined}
+            disabled={false}
             href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
@@ -510,7 +510,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
           "backgroundColor": "#ffffff",
           "borderRadius": 2,
           "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                 0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
           "boxSizing": "border-box",
           "color": "rgba(0, 0, 0, 0.87)",
           "flex": 1,
@@ -533,7 +533,7 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
       >
         <div>
           <span
-            disabled={undefined}
+            disabled={false}
             href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
@@ -621,6 +621,611 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
           }
         >
           content-5: blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bl
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 2,
+          "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+         0 1px 4px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "flex": 1,
+          "fontFamily": "Roboto, sans-serif",
+          "muiPrepared": true,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": 8,
+          }
+        }
+      >
+        <div>
+          <span
+            disabled={false}
+            href={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            onTouchTap={[Function]}
+            open={null}
+            style={
+              Object {
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                "background": "none",
+                "backgroundColor": null,
+                "border": 10,
+                "boxSizing": "border-box",
+                "color": "rgba(0, 0, 0, 0.87)",
+                "cursor": "pointer",
+                "display": "block",
+                "fontFamily": "Roboto, sans-serif",
+                "fontSize": 16,
+                "fontWeight": "inherit",
+                "lineHeight": "16px",
+                "margin": 0,
+                "muiPrepared": true,
+                "outline": "none",
+                "padding": 0,
+                "position": "relative",
+                "textDecoration": "none",
+                "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                "verticalAlign": null,
+                "zIndex": 1,
+              }
+            }
+            tabIndex={0}
+          >
+            <div
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "muiPrepared": true,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "muiPrepared": true,
+                    }
+                  }
+                >
+                  title-6
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 14,
+              "maxHeight": 0,
+              "muiPrepared": true,
+              "opacity": 0,
+              "overflow": "hidden",
+              "padding": 0,
+              "transition": "all 0.2s ease-in",
+            }
+          }
+        >
+          content-6: blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bl
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 2,
+          "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+         0 1px 4px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "flex": 1,
+          "fontFamily": "Roboto, sans-serif",
+          "muiPrepared": true,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": 8,
+          }
+        }
+      >
+        <div>
+          <span
+            disabled={false}
+            href={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            onTouchTap={[Function]}
+            open={null}
+            style={
+              Object {
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                "background": "none",
+                "backgroundColor": null,
+                "border": 10,
+                "boxSizing": "border-box",
+                "color": "rgba(0, 0, 0, 0.87)",
+                "cursor": "pointer",
+                "display": "block",
+                "fontFamily": "Roboto, sans-serif",
+                "fontSize": 16,
+                "fontWeight": "inherit",
+                "lineHeight": "16px",
+                "margin": 0,
+                "muiPrepared": true,
+                "outline": "none",
+                "padding": 0,
+                "position": "relative",
+                "textDecoration": "none",
+                "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                "verticalAlign": null,
+                "zIndex": 1,
+              }
+            }
+            tabIndex={0}
+          >
+            <div
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "muiPrepared": true,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "muiPrepared": true,
+                    }
+                  }
+                >
+                  title-7
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 14,
+              "maxHeight": 0,
+              "muiPrepared": true,
+              "opacity": 0,
+              "overflow": "hidden",
+              "padding": 0,
+              "transition": "all 0.2s ease-in",
+            }
+          }
+        >
+          content-7: blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bl
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 2,
+          "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+         0 1px 4px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "flex": 1,
+          "fontFamily": "Roboto, sans-serif",
+          "muiPrepared": true,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": 8,
+          }
+        }
+      >
+        <div>
+          <span
+            disabled={false}
+            href={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            onTouchTap={[Function]}
+            open={null}
+            style={
+              Object {
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                "background": "none",
+                "backgroundColor": null,
+                "border": 10,
+                "boxSizing": "border-box",
+                "color": "rgba(0, 0, 0, 0.87)",
+                "cursor": "pointer",
+                "display": "block",
+                "fontFamily": "Roboto, sans-serif",
+                "fontSize": 16,
+                "fontWeight": "inherit",
+                "lineHeight": "16px",
+                "margin": 0,
+                "muiPrepared": true,
+                "outline": "none",
+                "padding": 0,
+                "position": "relative",
+                "textDecoration": "none",
+                "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                "verticalAlign": null,
+                "zIndex": 1,
+              }
+            }
+            tabIndex={0}
+          >
+            <div
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "muiPrepared": true,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "muiPrepared": true,
+                    }
+                  }
+                >
+                  title-8
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 14,
+              "maxHeight": 0,
+              "muiPrepared": true,
+              "opacity": 0,
+              "overflow": "hidden",
+              "padding": 0,
+              "transition": "all 0.2s ease-in",
+            }
+          }
+        >
+          content-8: blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bl
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 2,
+          "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+         0 1px 4px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "flex": 1,
+          "fontFamily": "Roboto, sans-serif",
+          "muiPrepared": true,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": 8,
+          }
+        }
+      >
+        <div>
+          <span
+            disabled={false}
+            href={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            onTouchTap={[Function]}
+            open={null}
+            style={
+              Object {
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                "background": "none",
+                "backgroundColor": null,
+                "border": 10,
+                "boxSizing": "border-box",
+                "color": "rgba(0, 0, 0, 0.87)",
+                "cursor": "pointer",
+                "display": "block",
+                "fontFamily": "Roboto, sans-serif",
+                "fontSize": 16,
+                "fontWeight": "inherit",
+                "lineHeight": "16px",
+                "margin": 0,
+                "muiPrepared": true,
+                "outline": "none",
+                "padding": 0,
+                "position": "relative",
+                "textDecoration": "none",
+                "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                "verticalAlign": null,
+                "zIndex": 1,
+              }
+            }
+            tabIndex={0}
+          >
+            <div
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "muiPrepared": true,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "muiPrepared": true,
+                    }
+                  }
+                >
+                  title-9
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 14,
+              "maxHeight": 0,
+              "muiPrepared": true,
+              "opacity": 0,
+              "overflow": "hidden",
+              "padding": 0,
+              "transition": "all 0.2s ease-in",
+            }
+          }
+        >
+          content-9: blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla bl
+        </div>
+      </div>
+    </div>
+    <div
+      style={
+        Object {
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          "backgroundColor": "#ffffff",
+          "borderRadius": 2,
+          "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+         0 1px 4px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "flex": 1,
+          "fontFamily": "Roboto, sans-serif",
+          "muiPrepared": true,
+          "opacity": 1,
+          "overflow": "hidden",
+          "transition": "all 0.2s ease-in",
+          "width": "100%",
+          "zIndex": 1,
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "paddingBottom": 8,
+          }
+        }
+      >
+        <div>
+          <span
+            disabled={false}
+            href={undefined}
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            onTouchEnd={[Function]}
+            onTouchStart={[Function]}
+            onTouchTap={[Function]}
+            open={null}
+            style={
+              Object {
+                "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                "background": "none",
+                "backgroundColor": null,
+                "border": 10,
+                "boxSizing": "border-box",
+                "color": "rgba(0, 0, 0, 0.87)",
+                "cursor": "pointer",
+                "display": "block",
+                "fontFamily": "Roboto, sans-serif",
+                "fontSize": 16,
+                "fontWeight": "inherit",
+                "lineHeight": "16px",
+                "margin": 0,
+                "muiPrepared": true,
+                "outline": "none",
+                "padding": 0,
+                "position": "relative",
+                "textDecoration": "none",
+                "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                "verticalAlign": null,
+                "zIndex": 1,
+              }
+            }
+            tabIndex={0}
+          >
+            <div
+              onMouseDown={[Function]}
+              onMouseLeave={[Function]}
+              onMouseUp={[Function]}
+              onTouchEnd={[Function]}
+              onTouchStart={[Function]}
+            >
+              <div
+                style={
+                  Object {
+                    "marginLeft": 0,
+                    "muiPrepared": true,
+                    "paddingBottom": 16,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "paddingTop": 16,
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  style={
+                    Object {
+                      "muiPrepared": true,
+                    }
+                  }
+                >
+                  title-10
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+        <div
+          style={
+            Object {
+              "color": "rgba(0, 0, 0, 0.87)",
+              "fontSize": 14,
+              "maxHeight": 0,
+              "muiPrepared": true,
+              "opacity": 0,
+              "overflow": "hidden",
+              "padding": 0,
+              "transition": "all 0.2s ease-in",
+            }
+          }
+        >
+          content-10: blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla b
         </div>
       </div>
     </div>
@@ -1746,10 +2351,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
             "borderRadius": "2px",
             "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
             "color": "#444",
-            "fontFamily": "
-              -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
-              \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
-            ",
+            "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
             "fontSize": "15px",
             "fontWeight": 300,
             "lineHeight": 1.45,
@@ -2290,7 +2892,7 @@ exports[`Storyshots Image events 1`] = `
       "backgroundColor": "#ffffff",
       "borderRadius": 2,
       "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-             0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
       "boxSizing": "border-box",
       "color": "rgba(0, 0, 0, 0.87)",
       "fontFamily": "Roboto, sans-serif",
@@ -2337,7 +2939,7 @@ exports[`Storyshots Image events 1`] = `
             "backgroundColor": "#ffffff",
             "borderRadius": 2,
             "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                   0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
             "boxSizing": "border-box",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "inline-block",
@@ -2533,7 +3135,7 @@ exports[`Storyshots Image initialState 1`] = `
       "backgroundColor": "#ffffff",
       "borderRadius": 2,
       "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-             0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
       "boxSizing": "border-box",
       "color": "rgba(0, 0, 0, 0.87)",
       "fontFamily": "Roboto, sans-serif",
@@ -2959,7 +3561,7 @@ exports[`Storyshots Image initialState 1`] = `
             "backgroundColor": "#ffffff",
             "borderRadius": 2,
             "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                   0 1px 4px rgba(0, 0, 0, 0.12)",
+         0 1px 4px rgba(0, 0, 0, 0.12)",
             "boxSizing": "border-box",
             "color": "rgba(0, 0, 0, 0.87)",
             "display": "inline-block",
@@ -3169,10 +3771,7 @@ exports[`Storyshots Image presets 1`] = `
           "borderRadius": "2px",
           "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
           "color": "#444",
-          "fontFamily": "
-            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
-            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
-          ",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
           "fontSize": "15px",
           "fontWeight": 300,
           "lineHeight": 1.45,
@@ -3216,206 +3815,103 @@ exports[`Storyshots Image presets 1`] = `
       </div>
     </div>
   </div>
-  <div>
+  <div
+    style={Object {}}
+  >
     <div>
-      <div>
-        <h2>
-          Start from upload
-        </h2>
+      <h2>
+        Start from upload
+      </h2>
+      <div
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+            "backgroundColor": "#ffffff",
+            "borderRadius": 2,
+            "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+         0 1px 4px rgba(0, 0, 0, 0.12)",
+            "boxSizing": "border-box",
+            "color": "rgba(0, 0, 0, 0.87)",
+            "fontFamily": "Roboto, sans-serif",
+            "maxWidth": 300,
+            "muiPrepared": true,
+            "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+            "zIndex": 1,
+          }
+        }
+      >
         <div
           style={
             Object {
-              "WebkitTapHighlightColor": "rgba(0,0,0,0)",
-              "backgroundColor": "#ffffff",
-              "borderRadius": 2,
-              "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                     0 1px 4px rgba(0, 0, 0, 0.12)",
-              "boxSizing": "border-box",
-              "color": "rgba(0, 0, 0, 0.87)",
-              "fontFamily": "Roboto, sans-serif",
-              "maxWidth": 300,
-              "muiPrepared": true,
-              "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-              "zIndex": 1,
+              "paddingBottom": 0,
             }
           }
         >
           <div
             style={
               Object {
+                "color": "rgba(0, 0, 0, 0.87)",
+                "fontSize": 14,
+                "maxHeight": 300,
+                "muiPrepared": true,
+                "padding": 16,
                 "paddingBottom": 0,
+              }
+            }
+          />
+          <div
+            style={
+              Object {
+                "muiPrepared": true,
+                "padding": 8,
+                "position": "relative",
               }
             }
           >
             <div
+              className={undefined}
               style={
                 Object {
+                  "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+                  "backgroundColor": "#ffffff",
+                  "borderRadius": 2,
+                  "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+         0 1px 4px rgba(0, 0, 0, 0.12)",
+                  "boxSizing": "border-box",
                   "color": "rgba(0, 0, 0, 0.87)",
-                  "fontSize": 14,
-                  "maxHeight": 300,
+                  "display": "inline-block",
+                  "fontFamily": "Roboto, sans-serif",
+                  "marginRight": 8,
+                  "minWidth": 88,
                   "muiPrepared": true,
-                  "padding": 16,
-                  "paddingBottom": 0,
-                }
-              }
-            />
-            <div
-              style={
-                Object {
-                  "muiPrepared": true,
-                  "padding": 8,
-                  "position": "relative",
+                  "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 }
               }
             >
-              <div
-                className={undefined}
-                style={
-                  Object {
-                    "WebkitTapHighlightColor": "rgba(0,0,0,0)",
-                    "backgroundColor": "#ffffff",
-                    "borderRadius": 2,
-                    "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
-                           0 1px 4px rgba(0, 0, 0, 0.12)",
-                    "boxSizing": "border-box",
-                    "color": "rgba(0, 0, 0, 0.87)",
-                    "display": "inline-block",
-                    "fontFamily": "Roboto, sans-serif",
-                    "marginRight": 8,
-                    "minWidth": 88,
-                    "muiPrepared": true,
-                    "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                  }
-                }
-              >
-                <button
-                  disabled={false}
-                  href={undefined}
-                  name="Select"
-                  onBlur={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onKeyDown={[Function]}
-                  onKeyUp={[Function]}
-                  onMouseDown={[Function]}
-                  onMouseEnter={[Function]}
-                  onMouseLeave={[Function]}
-                  onMouseUp={[Function]}
-                  onTouchEnd={[Function]}
-                  onTouchStart={[Function]}
-                  onTouchTap={[Function]}
-                  style={
-                    Object {
-                      "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                      "backgroundColor": "#00bcd4",
-                      "border": 10,
-                      "borderRadius": 2,
-                      "boxSizing": "border-box",
-                      "cursor": "pointer",
-                      "display": "inline-block",
-                      "fontFamily": "Roboto, sans-serif",
-                      "fontSize": "inherit",
-                      "fontWeight": "inherit",
-                      "height": 36,
-                      "lineHeight": "36px",
-                      "margin": 0,
-                      "muiPrepared": true,
-                      "outline": "none",
-                      "padding": 0,
-                      "position": "relative",
-                      "textAlign": "center",
-                      "textDecoration": "none",
-                      "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                      "verticalAlign": null,
-                      "width": "100%",
-                      "zIndex": 1,
-                    }
-                  }
-                  tabIndex={0}
-                  type="button"
-                >
-                  <div
-                    onMouseDown={[Function]}
-                    onMouseLeave={[Function]}
-                    onMouseUp={[Function]}
-                    onTouchEnd={[Function]}
-                    onTouchStart={[Function]}
-                  >
-                    <div
-                      style={
-                        Object {
-                          "backgroundColor": false,
-                          "borderRadius": 2,
-                          "height": 36,
-                          "muiPrepared": true,
-                          "top": 0,
-                          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                        }
-                      }
-                    >
-                      <span
-                        style={
-                          Object {
-                            "color": "#ffffff",
-                            "fontSize": 14,
-                            "fontWeight": 500,
-                            "letterSpacing": 0,
-                            "margin": 0,
-                            "muiPrepared": true,
-                            "opacity": 1,
-                            "paddingLeft": 16,
-                            "paddingRight": 16,
-                            "position": "relative",
-                            "textTransform": "uppercase",
-                            "userSelect": "none",
-                          }
-                        }
-                      >
-                        Select
-                      </span>
-                      <input
-                        accept="image/*"
-                        multiple={false}
-                        onChange={[Function]}
-                        style={
-                          Object {
-                            "bottom": 0,
-                            "cursor": "pointer",
-                            "left": 0,
-                            "opacity": 0,
-                            "position": "absolute",
-                            "right": 0,
-                            "top": 0,
-                            "width": "100%",
-                          }
-                        }
-                        type="file"
-                      />
-                    </div>
-                  </div>
-                </button>
-              </div>
               <button
-                disabled={true}
+                disabled={false}
                 href={undefined}
+                name="Select"
                 onBlur={[Function]}
                 onClick={[Function]}
                 onFocus={[Function]}
                 onKeyDown={[Function]}
                 onKeyUp={[Function]}
+                onMouseDown={[Function]}
                 onMouseEnter={[Function]}
                 onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
                 onTouchStart={[Function]}
                 onTouchTap={[Function]}
                 style={
                   Object {
                     "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
-                    "backgroundColor": "rgba(0, 0, 0, 0)",
+                    "backgroundColor": "#00bcd4",
                     "border": 10,
                     "borderRadius": 2,
                     "boxSizing": "border-box",
-                    "color": "rgba(0, 0, 0, 0.3)",
-                    "cursor": "default",
+                    "cursor": "pointer",
                     "display": "inline-block",
                     "fontFamily": "Roboto, sans-serif",
                     "fontSize": "inherit",
@@ -3423,43 +3919,146 @@ exports[`Storyshots Image presets 1`] = `
                     "height": 36,
                     "lineHeight": "36px",
                     "margin": 0,
-                    "marginRight": 0,
-                    "minWidth": 85,
                     "muiPrepared": true,
                     "outline": "none",
-                    "overflow": "hidden",
                     "padding": 0,
                     "position": "relative",
                     "textAlign": "center",
                     "textDecoration": "none",
                     "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
-                    "userSelect": "none",
                     "verticalAlign": null,
+                    "width": "100%",
                     "zIndex": 1,
                   }
                 }
-                tabIndex={-1}
+                tabIndex={0}
                 type="button"
               >
-                <span
-                  style={
-                    Object {
-                      "fontSize": 14,
-                      "fontWeight": 500,
-                      "letterSpacing": 0,
-                      "muiPrepared": true,
-                      "paddingLeft": 16,
-                      "paddingRight": 16,
-                      "position": "relative",
-                      "textTransform": "uppercase",
-                      "verticalAlign": "middle",
-                    }
-                  }
+                <div
+                  onMouseDown={[Function]}
+                  onMouseLeave={[Function]}
+                  onMouseUp={[Function]}
+                  onTouchEnd={[Function]}
+                  onTouchStart={[Function]}
                 >
-                  Clear
-                </span>
+                  <div
+                    style={
+                      Object {
+                        "backgroundColor": false,
+                        "borderRadius": 2,
+                        "height": 36,
+                        "muiPrepared": true,
+                        "top": 0,
+                        "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                      }
+                    }
+                  >
+                    <span
+                      style={
+                        Object {
+                          "color": "#ffffff",
+                          "fontSize": 14,
+                          "fontWeight": 500,
+                          "letterSpacing": 0,
+                          "margin": 0,
+                          "muiPrepared": true,
+                          "opacity": 1,
+                          "paddingLeft": 16,
+                          "paddingRight": 16,
+                          "position": "relative",
+                          "textTransform": "uppercase",
+                          "userSelect": "none",
+                        }
+                      }
+                    >
+                      Select
+                    </span>
+                    <input
+                      accept="image/*"
+                      multiple={false}
+                      onChange={[Function]}
+                      style={
+                        Object {
+                          "bottom": 0,
+                          "cursor": "pointer",
+                          "left": 0,
+                          "opacity": 0,
+                          "position": "absolute",
+                          "right": 0,
+                          "top": 0,
+                          "width": "100%",
+                        }
+                      }
+                      type="file"
+                    />
+                  </div>
+                </div>
               </button>
             </div>
+            <button
+              disabled={true}
+              href={undefined}
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onKeyDown={[Function]}
+              onKeyUp={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+              onTouchStart={[Function]}
+              onTouchTap={[Function]}
+              style={
+                Object {
+                  "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+                  "backgroundColor": "rgba(0, 0, 0, 0)",
+                  "border": 10,
+                  "borderRadius": 2,
+                  "boxSizing": "border-box",
+                  "color": "rgba(0, 0, 0, 0.3)",
+                  "cursor": "default",
+                  "display": "inline-block",
+                  "fontFamily": "Roboto, sans-serif",
+                  "fontSize": "inherit",
+                  "fontWeight": "inherit",
+                  "height": 36,
+                  "lineHeight": "36px",
+                  "margin": 0,
+                  "marginRight": 0,
+                  "minWidth": 85,
+                  "muiPrepared": true,
+                  "outline": "none",
+                  "overflow": "hidden",
+                  "padding": 0,
+                  "position": "relative",
+                  "textAlign": "center",
+                  "textDecoration": "none",
+                  "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+                  "userSelect": "none",
+                  "verticalAlign": null,
+                  "zIndex": 1,
+                }
+              }
+              tabIndex={-1}
+              type="button"
+            >
+              <span
+                style={
+                  Object {
+                    "fontSize": 14,
+                    "fontWeight": 500,
+                    "letterSpacing": 0,
+                    "muiPrepared": true,
+                    "paddingLeft": 16,
+                    "paddingRight": 16,
+                    "position": "relative",
+                    "textTransform": "uppercase",
+                    "verticalAlign": "middle",
+                  }
+                }
+              >
+                Clear
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -3477,10 +4076,7 @@ exports[`Storyshots Image presets 1`] = `
           "borderRadius": "2px",
           "boxShadow": "0px 2px 3px rgba(0, 0, 0, 0.05)",
           "color": "#444",
-          "fontFamily": "
-            -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
-            \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
-          ",
+          "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
           "fontSize": "15px",
           "fontWeight": 300,
           "lineHeight": 1.45,
@@ -3501,10 +4097,7 @@ exports[`Storyshots Image presets 1`] = `
             Object {
               "WebkitFontSmoothing": "antialiased",
               "color": "#444",
-              "fontFamily": "
-                -apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", \\"Roboto\\",
-                \\"Segoe UI\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", sans-serif
-              ",
+              "fontFamily": "-apple-system, \\".SFNSText-Regular\\", \\"San Francisco\\", BlinkMacSystemFont, \\"Segoe UI\\", \\"Roboto\\", \\"Oxygen\\", \\"Ubuntu\\", \\"Cantarell\\", \\"Fira Sans\\", \\"Droid Sans\\", \\"Helvetica Neue\\", \\"Lucida Grande\\", \\"Arial\\", sans-serif",
               "fontSize": "15px",
             }
           }
@@ -3679,9 +4272,9 @@ exports[`Storyshots Image presets 1`] = `
                           }
                         >
                           function succeed(url) {return new Promise(function (resolve) {
-                                log(url);
-                                setTimeout(function () {return resolve({ url: url });}, delay);
-                              });}()
+      log(url);
+      setTimeout(function () {return resolve({ url: url });}, delay);
+    });}()
                         </span>
                       </span>
                     </span>
@@ -3928,36 +4521,25 @@ exports[`Storyshots Image presets 1`] = `
             <tbody>
               <tr>
                 <td>
-                  retryActionLabel
+                  image
                 </td>
                 <td>
-                  string
+                  other
                 </td>
                 <td>
                   no
                 </td>
                 <td>
-                  <span
-                    style={
-                      Object {
-                        "color": "#22a",
-                        "wordBreak": "break-word",
-                      }
-                    }
-                  >
-                    "
-                    Retry
-                    "
-                  </span>
+                  -
                 </td>
                 <td />
               </tr>
               <tr>
                 <td>
-                  image
+                  url
                 </td>
                 <td>
-                  other
+                  string
                 </td>
                 <td>
                   no
@@ -4051,35 +4633,10 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  adaptScale
+                  uploaded
                 </td>
                 <td>
                   bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  <span>
-                    <span
-                      style={
-                        Object {
-                          "color": "#a11",
-                        }
-                      }
-                    >
-                      false
-                    </span>
-                  </span>
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  onSetImage
-                </td>
-                <td>
-                  func
                 </td>
                 <td>
                   no
@@ -4091,7 +4648,22 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  uploadImage
+                  uploading
+                </td>
+                <td>
+                  bool
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  openEditor
                 </td>
                 <td>
                   func
@@ -4147,16 +4719,27 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  onUploadSucceed
+                  retryActionLabel
                 </td>
                 <td>
-                  func
+                  string
                 </td>
                 <td>
                   no
                 </td>
                 <td>
-                  -
+                  <span
+                    style={
+                      Object {
+                        "color": "#22a",
+                        "wordBreak": "break-word",
+                      }
+                    }
+                  >
+                    "
+                    Retry
+                    "
+                  </span>
                 </td>
                 <td />
               </tr>
@@ -4203,7 +4786,7 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  openEditor
+                  onSetImage
                 </td>
                 <td>
                   func
@@ -4244,16 +4827,26 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  onUploadStart
+                  adaptScale
                 </td>
                 <td>
-                  func
+                  bool
                 </td>
                 <td>
                   no
                 </td>
                 <td>
-                  -
+                  <span>
+                    <span
+                      style={
+                        Object {
+                          "color": "#a11",
+                        }
+                      }
+                    >
+                      false
+                    </span>
+                  </span>
                 </td>
                 <td />
               </tr>
@@ -4339,7 +4932,7 @@ exports[`Storyshots Image presets 1`] = `
                             }
                           }
                         >
-                          undefined
+                          null
                         </span>
                       </span>
                       }
@@ -4365,25 +4958,10 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  uploaded
+                  onUploadStart
                 </td>
                 <td>
-                  bool
-                </td>
-                <td>
-                  no
-                </td>
-                <td>
-                  -
-                </td>
-                <td />
-              </tr>
-              <tr>
-                <td>
-                  uploading
-                </td>
-                <td>
-                  bool
+                  func
                 </td>
                 <td>
                   no
@@ -4395,10 +4973,25 @@ exports[`Storyshots Image presets 1`] = `
               </tr>
               <tr>
                 <td>
-                  url
+                  onUploadSucceed
                 </td>
                 <td>
-                  string
+                  func
+                </td>
+                <td>
+                  no
+                </td>
+                <td>
+                  -
+                </td>
+                <td />
+              </tr>
+              <tr>
+                <td>
+                  uploadImage
+                </td>
+                <td>
+                  func
                 </td>
                 <td>
                   no
