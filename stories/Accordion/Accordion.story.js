@@ -3,7 +3,7 @@ import { compose, mapProps, withHandlers } from 'recompose';
 import _ from 'lodash';
 
 import { storiesOf } from '@storybook/react';
-import { boolean } from '@storybook/addon-knobs';
+import { boolean, number } from '@storybook/addon-knobs';
 import { MuiThemeProvider } from 'material-ui';
 import { Collapse } from 'antd';
 
@@ -13,7 +13,8 @@ storiesOf('Accordion', module)
   .addDecorator(story => <MuiThemeProvider>{story()}</MuiThemeProvider>)
   .add('Accordion(mui)', () => {
     const wide = boolean('wide screen', false);
-    const list = [1, 2, 3, 4, 5];
+    const listSize = number('list size', 10);
+    const list = _.fill(Array(listSize), '1').map((value, index) => index + 1);
 
     return (
       <div style={{ height: 'calc(100vh - 32px)' }}>
