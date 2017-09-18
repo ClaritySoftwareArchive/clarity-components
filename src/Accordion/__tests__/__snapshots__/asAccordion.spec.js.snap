@@ -30,6 +30,7 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default
         "position": "fixed",
         "top": 0,
         "width": "100%",
+        "zIndex": 99999,
       }
     }
   >
