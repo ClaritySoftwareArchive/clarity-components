@@ -56,7 +56,7 @@ const contentStyles = {
   },
 };
 
-const stylesMapper = ({ wide, expanded, collapsed, style, isFirst }) => {
+const stylesMapper = ({ wide, expanded, collapsed, style, isFirst, animation }) => {
   const rootStyles = styles[wide ? 'wide' : 'narrow'];
   const rootStyle = { ...rootStyles.default };
   const contentStyle = {
@@ -74,15 +74,21 @@ const stylesMapper = ({ wide, expanded, collapsed, style, isFirst }) => {
     Object.assign(rootStyle, rootStyles.collapsed);
   }
 
+  if (!animation) {
+    rootStyle.transition = 'unset';
+    contentStyle.transition = 'unset';
+  }
+
   return {
     style: { ...rootStyle, ...style },
     contentStyle,
   };
 };
 
-const propsMapper = ({ activeKey, itemKey }) => ({
+const propsMapper = ({ activeKey, itemKey, animation = true }) => ({
   expanded: activeKey === itemKey,
   collapsed: activeKey != null && activeKey !== itemKey,
+  animation,
 });
 
 export const handlers = {
