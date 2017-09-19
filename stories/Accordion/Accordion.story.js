@@ -14,6 +14,7 @@ storiesOf('Accordion', module)
   .add('Accordion(mui)', () => {
     const wide = boolean('wide screen', false);
     const listSize = number('list size', 10);
+    const animation = boolean('animation', true);
     const list = _.fill(Array(listSize), '1').map((value, index) => index + 1);
 
     return (
@@ -23,6 +24,7 @@ storiesOf('Accordion', module)
           {list.map(value => (
             <AccordionItem
               key={value}
+              animation={animation}
               title={`title-${value}`}
             >
               {_.padEnd(`content-${value}: `, 300, 'blabla ')}
@@ -34,6 +36,7 @@ storiesOf('Accordion', module)
   })
   .add('antd', () => {
     const wide = boolean('wide screen', false);
+    const animation = boolean('animation', true);
     const list = [1, 2, 3, 4, 5];
 
     const Container = compose(
@@ -68,6 +71,7 @@ storiesOf('Accordion', module)
           {list.map(value => (
             <Item
               key={value}
+              animation={animation}
               header={`title-${value}`}
             >
               {_.padEnd(`content-${value}: `, 300, 'blabla ')}
