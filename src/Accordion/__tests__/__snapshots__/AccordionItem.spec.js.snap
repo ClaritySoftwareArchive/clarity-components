@@ -1,5 +1,95 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when animation is off 1`] = `
+<div
+  name="props-displayer"
+>
+  <input-props
+    animation={false}
+    contentStyle={Object {}}
+    style={Object {}}
+  />
+  <output-props
+    animation={false}
+    collapsed={false}
+    contentStyle={
+      Object {
+        "maxHeight": "100vh",
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "unset",
+      }
+    }
+    expanded={true}
+    onActivate={[Function]}
+    onCollapse={[Function]}
+    onExpand={[Function]}
+    style={
+      Object {
+        "flex": 2,
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "unset",
+        "width": "100%",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`<AccordionItem {...props} />: elements tree when device is narrow when animation is off 2`] = `
+<Card
+  expandable={false}
+  expanded={null}
+  initiallyExpanded={false}
+  style={
+    Object {
+      "flex": 2,
+      "opacity": 1,
+      "overflow": "hidden",
+      "transition": "unset",
+      "width": "100%",
+    }
+  }
+>
+  <ListItem
+    autoGenerateNestedIndicator={true}
+    containerElement="span"
+    disableKeyboardFocus={false}
+    disabled={false}
+    initiallyOpen={false}
+    insetChildren={false}
+    leftIcon={
+      <NavigationClose
+        onTouchTap={[Function]}
+      />
+    }
+    nestedItems={Array []}
+    nestedLevel={0}
+    onKeyboardFocus={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    onNestedListToggle={[Function]}
+    onTouchEnd={[Function]}
+    onTouchStart={[Function]}
+    onTouchTap={[Function]}
+    open={null}
+    primaryTogglesNestedList={false}
+    secondaryTextLines={1}
+  />
+  <CardText
+    style={
+      Object {
+        "maxHeight": "100vh",
+        "opacity": 1,
+        "overflow": "hidden",
+        "transition": "unset",
+      }
+    }
+  />
+</Card>
+`;
+
 exports[`<AccordionItem {...props} />: elements tree when device is narrow when item is collapsed 1`] = `
 <div
   name="props-displayer"

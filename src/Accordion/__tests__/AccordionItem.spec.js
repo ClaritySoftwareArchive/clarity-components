@@ -35,6 +35,13 @@ describe('<AccordionItem {...props} />: elements tree', () => {
         activeKey: 0,
       };
     });
+
+    test('when animation is off', () => {
+      props = {
+        ...props,
+        animation: false,
+      };
+    });
   });
 
   describe('when device is wide', () => {
