@@ -92,7 +92,7 @@
     "chai": "^4.0.1",
     "css-loader": "^0.28.1",
     "editorconfig-tools": "^0.1.1",
-    "enzyme": "^2.8.2",
+    "enzyme": "^3.0.0",
     "enzyme-to-json": "^1.5.1",
     "eslint": "^4.6.1",
     "eslint-config-airbnb": "^15.1.0",
