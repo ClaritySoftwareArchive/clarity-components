@@ -116,7 +116,7 @@
     "react-markdown": "^2.5.0",
     "react-syntax-highlighter": "^5.6.2",
     "react-tap-event-plugin": "^2.0.1",
-    "react-test-renderer": "^15.5.4",
+    "react-test-renderer": "^16.0.0",
     "rimraf": "^2.6.1",
     "style-loader": "^0.18.1",
     "stylefmt": "^6.0.0",
