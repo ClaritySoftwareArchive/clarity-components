@@ -67,7 +67,7 @@
     "react-image-lightbox": "^4.1.0",
     "react-md-spinner": "^0.2.4",
     "react-render-counter": "^0.7.1",
-    "recompose": "^0.25.0"
+    "recompose": "^0.26.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.2.6",
