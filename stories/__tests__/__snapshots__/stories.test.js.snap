@@ -53,7 +53,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -87,7 +86,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -174,7 +172,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -208,7 +205,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -295,7 +291,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -329,7 +324,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -416,7 +410,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -450,7 +443,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -537,7 +529,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -571,7 +562,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -658,7 +648,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -692,7 +681,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -779,7 +767,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -813,7 +800,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -900,7 +886,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -934,7 +919,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -1021,7 +1005,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -1055,7 +1038,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -1142,7 +1124,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
         <div>
           <span
             disabled={false}
-            href={undefined}
             onBlur={[Function]}
             onClick={[Function]}
             onFocus={[Function]}
@@ -1176,7 +1157,6 @@ exports[`Storyshots Accordion Accordion(mui) 1`] = `
                 "textDecoration": "none",
                 "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                 "verticalAlign": null,
-                "zIndex": 1,
               }
             }
             tabIndex={0}
@@ -2455,6 +2435,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                         style={Object {}}
                       >
                         <span>
+                          {
                           <span
                             style={
                               Object {
@@ -2533,6 +2514,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                             </span>
                             }
                           </span>
+                          }
                         </span>
                       </span>
                     </span>
@@ -2614,6 +2596,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                         style={Object {}}
                       >
                         <span>
+                          {
                           <span
                             style={
                               Object {
@@ -2633,6 +2616,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                             </span>
                             : 
                             <span>
+                              {
                               <span
                                 style={
                                   Object {
@@ -2642,6 +2626,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                               >
                                 300
                               </span>
+                              }
                             </span>
                             , 
                             <span
@@ -2655,6 +2640,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                             </span>
                             : 
                             <span>
+                              {
                               <span
                                 style={
                                   Object {
@@ -2664,9 +2650,11 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                               >
                                 300
                               </span>
+                              }
                             </span>
                             }
                           </span>
+                          }
                         </span>
                       </span>
                     </span>
@@ -2759,6 +2747,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                         style={Object {}}
                       >
                         <span>
+                          {
                           <span
                             style={
                               Object {
@@ -2778,6 +2767,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                             </span>
                             : 
                             <span>
+                              {
                               <span
                                 style={
                                   Object {
@@ -2787,6 +2777,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                               >
                                 300
                               </span>
+                              }
                             </span>
                             , 
                             <span
@@ -2800,6 +2791,7 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                             </span>
                             : 
                             <span>
+                              {
                               <span
                                 style={
                                   Object {
@@ -2809,9 +2801,11 @@ exports[`Storyshots Image ImagePreviewer 1`] = `
                               >
                                 300
                               </span>
+                              }
                             </span>
                             }
                           </span>
+                          }
                         </span>
                       </span>
                     </span>
@@ -2956,7 +2950,6 @@ exports[`Storyshots Image events 1`] = `
       >
         <button
           disabled={false}
-          href={undefined}
           name="Select"
           onBlur={[Function]}
           onClick={[Function]}
@@ -2969,7 +2962,6 @@ exports[`Storyshots Image events 1`] = `
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchStart={[Function]}
-          onTouchTap={[Function]}
           style={
             Object {
               "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
@@ -2994,7 +2986,6 @@ exports[`Storyshots Image events 1`] = `
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": "100%",
-              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -3063,7 +3054,6 @@ exports[`Storyshots Image events 1`] = `
       </div>
       <button
         disabled={true}
-        href={undefined}
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -3101,7 +3091,6 @@ exports[`Storyshots Image events 1`] = `
             "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
             "userSelect": "none",
             "verticalAlign": null,
-            "zIndex": 1,
           }
         }
         tabIndex={-1}
@@ -3307,7 +3296,6 @@ exports[`Storyshots Image initialState 1`] = `
         </div>
         <button
           disabled={false}
-          href={undefined}
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -3342,7 +3330,6 @@ exports[`Storyshots Image initialState 1`] = `
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": 34,
-              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -3380,7 +3367,6 @@ exports[`Storyshots Image initialState 1`] = `
         </button>
         <button
           disabled={false}
-          href={undefined}
           onBlur={[Function]}
           onClick={[Function]}
           onFocus={[Function]}
@@ -3415,7 +3401,6 @@ exports[`Storyshots Image initialState 1`] = `
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": 34,
-              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -3483,7 +3468,6 @@ exports[`Storyshots Image initialState 1`] = `
       >
         <button
           disabled={true}
-          href={undefined}
           name="Upload"
           onBlur={[Function]}
           onClick={[Function]}
@@ -3515,7 +3499,6 @@ exports[`Storyshots Image initialState 1`] = `
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": "100%",
-              "zIndex": 1,
             }
           }
           tabIndex={-1}
@@ -3578,7 +3561,6 @@ exports[`Storyshots Image initialState 1`] = `
       >
         <button
           disabled={false}
-          href={undefined}
           name="Select"
           onBlur={[Function]}
           onClick={[Function]}
@@ -3591,7 +3573,6 @@ exports[`Storyshots Image initialState 1`] = `
           onMouseUp={[Function]}
           onTouchEnd={[Function]}
           onTouchStart={[Function]}
-          onTouchTap={[Function]}
           style={
             Object {
               "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
@@ -3616,7 +3597,6 @@ exports[`Storyshots Image initialState 1`] = `
               "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
               "verticalAlign": null,
               "width": "100%",
-              "zIndex": 1,
             }
           }
           tabIndex={0}
@@ -3685,7 +3665,6 @@ exports[`Storyshots Image initialState 1`] = `
       </div>
       <button
         disabled={false}
-        href={undefined}
         onBlur={[Function]}
         onClick={[Function]}
         onFocus={[Function]}
@@ -3723,7 +3702,6 @@ exports[`Storyshots Image initialState 1`] = `
             "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
             "userSelect": "none",
             "verticalAlign": null,
-            "zIndex": 1,
           }
         }
         tabIndex={0}
@@ -3893,7 +3871,6 @@ exports[`Storyshots Image presets 1`] = `
             >
               <button
                 disabled={false}
-                href={undefined}
                 name="Select"
                 onBlur={[Function]}
                 onClick={[Function]}
@@ -3906,7 +3883,6 @@ exports[`Storyshots Image presets 1`] = `
                 onMouseUp={[Function]}
                 onTouchEnd={[Function]}
                 onTouchStart={[Function]}
-                onTouchTap={[Function]}
                 style={
                   Object {
                     "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
@@ -3931,7 +3907,6 @@ exports[`Storyshots Image presets 1`] = `
                     "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                     "verticalAlign": null,
                     "width": "100%",
-                    "zIndex": 1,
                   }
                 }
                 tabIndex={0}
@@ -4000,7 +3975,6 @@ exports[`Storyshots Image presets 1`] = `
             </div>
             <button
               disabled={true}
-              href={undefined}
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
@@ -4038,7 +4012,6 @@ exports[`Storyshots Image presets 1`] = `
                   "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
                   "userSelect": "none",
                   "verticalAlign": null,
-                  "zIndex": 1,
                 }
               }
               tabIndex={-1}
@@ -4196,7 +4169,7 @@ exports[`Storyshots Image presets 1`] = `
               <div
                 style={
                   Object {
-                    "paddingLeft": 33,
+                    "paddingLeft": 48,
                     "paddingRight": 3,
                   }
                 }
@@ -4267,6 +4240,7 @@ exports[`Storyshots Image presets 1`] = `
                       style={Object {}}
                     >
                       <span>
+                        {
                         <span
                           style={
                             Object {
@@ -4279,6 +4253,7 @@ exports[`Storyshots Image presets 1`] = `
       setTimeout(function () {return resolve({ url: url });}, delay);
     });}()
                         </span>
+                        }
                       </span>
                     </span>
                   </span>
@@ -4840,6 +4815,7 @@ exports[`Storyshots Image presets 1`] = `
                 </td>
                 <td>
                   <span>
+                    {
                     <span
                       style={
                         Object {
@@ -4849,6 +4825,7 @@ exports[`Storyshots Image presets 1`] = `
                     >
                       false
                     </span>
+                    }
                   </span>
                 </td>
                 <td />
@@ -4865,6 +4842,7 @@ exports[`Storyshots Image presets 1`] = `
                 </td>
                 <td>
                   <span>
+                    {
                     <span
                       style={
                         Object {
@@ -4884,6 +4862,7 @@ exports[`Storyshots Image presets 1`] = `
                       </span>
                       : 
                       <span>
+                        {
                         <span
                           style={
                             Object {
@@ -4893,6 +4872,7 @@ exports[`Storyshots Image presets 1`] = `
                         >
                           false
                         </span>
+                        }
                       </span>
                       , 
                       <span
@@ -4906,6 +4886,7 @@ exports[`Storyshots Image presets 1`] = `
                       </span>
                       : 
                       <span>
+                        {
                         <span
                           style={
                             Object {
@@ -4915,6 +4896,7 @@ exports[`Storyshots Image presets 1`] = `
                         >
                           false
                         </span>
+                        }
                       </span>
                       , 
                       <span
@@ -4928,6 +4910,7 @@ exports[`Storyshots Image presets 1`] = `
                       </span>
                       : 
                       <span>
+                        {
                         <span
                           style={
                             Object {
@@ -4937,9 +4920,11 @@ exports[`Storyshots Image presets 1`] = `
                         >
                           null
                         </span>
+                        }
                       </span>
                       }
                     </span>
+                    }
                   </span>
                 </td>
                 <td />

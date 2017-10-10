@@ -45,7 +45,9 @@ storiesOf('Accordion', module)
     )(Collapse);
 
     const border = '1px solid #d9d9d9';
-    const itemPropsMapper = ({ activeKey, isLast, itemKey, expanded, style, ...rest }) => {
+    const itemPropsMapper = ({
+      activeKey, isLast, itemKey, expanded, style, ...rest
+    }) => {
       const rootStyle = { ...style, border, borderBottom: 0 };
 
       if (isLast || expanded || activeKey - itemKey === 1) {

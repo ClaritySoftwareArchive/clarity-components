@@ -11,9 +11,7 @@ const files = [
   'LICENSE',
 ];
 
-Promise.all(
-  files.map(file => copyFile(file)),
-)
+Promise.all(files.map(file => copyFile(file)))
   .then(() => createPackageFile());
 
 function copyFile(file) {

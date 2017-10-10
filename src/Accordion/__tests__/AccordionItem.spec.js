@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import React from 'react';
+import { shallow } from 'enzyme';
 import enzymeToJson from 'enzyme-to-json';
-import { shallowWithUntil as shallow } from 'react-render-counter/utils/testHelpers/until';
 import snapshotHocProps from 'react-render-counter/utils/testHelpers/snapshotHocProps';
 import AccordionItem, { AccordionItemRenderer } from '../AccordionItem';
 import asAccordionItem from '../asAccordionItem';

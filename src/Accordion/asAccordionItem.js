@@ -56,7 +56,9 @@ const contentStyles = {
   },
 };
 
-const stylesMapper = ({ wide, expanded, collapsed, style, isFirst, animation }) => {
+const stylesMapper = ({
+  wide, expanded, collapsed, style, isFirst, animation,
+}) => {
   const rootStyles = styles[wide ? 'wide' : 'narrow'];
   const rootStyle = { ...rootStyles.default };
   const contentStyle = {

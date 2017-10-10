@@ -7,7 +7,9 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default
   <input-props
     defaultActiveKey="1"
   >
-    <div />
+    <div
+      key="0"
+    />
     <div />
     <div
       itemKey={2}
@@ -41,6 +43,7 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default
       isFirst={true}
       isLast={false}
       itemKey="0"
+      key="0"
       onActivate={[Function]}
     />
     <withProps(onlyUpdateForKeys(withHandlers(withHandlers(withProps(div)))))
@@ -50,6 +53,7 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default
       isFirst={false}
       isLast={false}
       itemKey={1}
+      key="1"
       onActivate={[Function]}
     />
     <withProps(onlyUpdateForKeys(withHandlers(withHandlers(withProps(div)))))
@@ -59,6 +63,7 @@ exports[`asAccordion(BaseComponent): NewComponent with narrow screen set default
       isFirst={false}
       isLast={true}
       itemKey={2}
+      key="2"
       onActivate={[Function]}
     />
   </output-props>
@@ -104,7 +109,9 @@ exports[`asAccordion(BaseComponent): NewComponent with wide screen set default a
     defaultActiveKey={1}
     wide={true}
   >
-    <div />
+    <div
+      key="0"
+    />
     <div />
     <div
       itemKey={2}
@@ -136,6 +143,7 @@ exports[`asAccordion(BaseComponent): NewComponent with wide screen set default a
       isFirst={true}
       isLast={false}
       itemKey="0"
+      key="0"
       onActivate={[Function]}
       wide={true}
     />
@@ -146,6 +154,7 @@ exports[`asAccordion(BaseComponent): NewComponent with wide screen set default a
       isFirst={false}
       isLast={false}
       itemKey={1}
+      key="1"
       onActivate={[Function]}
       wide={true}
     />
@@ -156,6 +165,7 @@ exports[`asAccordion(BaseComponent): NewComponent with wide screen set default a
       isFirst={false}
       isLast={true}
       itemKey={2}
+      key="2"
       onActivate={[Function]}
       wide={true}
     />

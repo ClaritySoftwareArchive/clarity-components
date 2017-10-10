@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import React from 'react';
 import enzymeToJson from 'enzyme-to-json';
-import { shallowWithUntil as shallow } from 'react-render-counter/utils/testHelpers/until';
+import { shallow } from 'enzyme';
 import ImageCropper, { ImageCropperRenderer } from '../ImageCropper';
 
 const defaultProps = {

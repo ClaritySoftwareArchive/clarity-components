@@ -1,7 +1,7 @@
 /* eslint-env jest */
 import React from 'react';
 import enzymeToJson from 'enzyme-to-json';
-import { shallowWithUntil as shallow } from 'react-render-counter/utils/testHelpers/until';
+import { shallow } from 'enzyme';
 import ImagePreviewer, { ImagePreviewerRenderer } from '../ImagePreviewer';
 
 const defaultProps = {
@@ -36,21 +36,23 @@ describe('<ImagePreviewer {...props} />: elements tree', () => {
     const event = {
       stopPropagation: jest.fn(),
     };
-    const getWrapperProps = () => root.until(ImagePreviewerRenderer).instance().props;
+    const getWrapper = () => root.until(ImagePreviewerRenderer).floatUp();
 
     beforeEach(() => event.stopPropagation.mockClear());
 
     describe('with default props', () => {
       test('openLightBox && closeLightBox', () => {
         root = shallow(<ImagePreviewer {...defaultProps} />);
-        const { openLightBox, closeLightBox } = getWrapperProps();
+        const { openLightBox, closeLightBox } = getWrapper().props();
 
-        expect(getWrapperProps().open).toBe(false);
+        expect(getWrapper().prop('open')).toBe(false);
         openLightBox(event);
+        root.update();
         expect(event.stopPropagation).toHaveBeenCalledTimes(1);
-        expect(getWrapperProps().open).toBe(true);
+        expect(getWrapper().prop('open')).toBe(true);
         closeLightBox();
-        expect(getWrapperProps().open).toBe(false);
+        root.update();
+        expect(getWrapper().prop('open')).toBe(false);
       });
     });
 
@@ -58,7 +60,7 @@ describe('<ImagePreviewer {...props} />: elements tree', () => {
       test('openLightBox && closeLightBox', () => {
         const onSetOpen = jest.fn();
         root = shallow(<ImagePreviewer {...defaultProps} onSetOpen={onSetOpen} />);
-        const { openLightBox, closeLightBox } = getWrapperProps();
+        const { openLightBox, closeLightBox } = getWrapper().props();
 
         openLightBox(event);
         expect(event.stopPropagation).toHaveBeenCalledTimes(1);
