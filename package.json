@@ -57,7 +57,7 @@
   "module": "src",
   "jsnext:main": "src",
   "dependencies": {
-    "antd": "^2.12.2",
+    "antd": "^3.0.0",
     "attr-accept": "^1.1.0",
     "lodash": "^4.17.4",
     "material-ui": "^0.19.4",
