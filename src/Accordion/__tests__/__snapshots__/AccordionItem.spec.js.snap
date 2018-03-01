@@ -61,18 +61,18 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     insetChildren={false}
     leftIcon={
       <NavigationClose
-        onTouchTap={[Function]}
+        onClick={[Function]}
       />
     }
     nestedItems={Array []}
     nestedLevel={0}
+    onClick={[Function]}
     onKeyboardFocus={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     onNestedListToggle={[Function]}
     onTouchEnd={[Function]}
     onTouchStart={[Function]}
-    onTouchTap={[Function]}
     open={null}
     primaryTogglesNestedList={false}
     secondaryTextLines={1}
@@ -156,13 +156,13 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     leftIcon={null}
     nestedItems={Array []}
     nestedLevel={0}
+    onClick={[Function]}
     onKeyboardFocus={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     onNestedListToggle={[Function]}
     onTouchEnd={[Function]}
     onTouchStart={[Function]}
-    onTouchTap={[Function]}
     open={null}
     primaryTogglesNestedList={false}
     secondaryTextLines={1}
@@ -245,18 +245,18 @@ exports[`<AccordionItem {...props} />: elements tree when device is narrow when 
     insetChildren={false}
     leftIcon={
       <NavigationClose
-        onTouchTap={[Function]}
+        onClick={[Function]}
       />
     }
     nestedItems={Array []}
     nestedLevel={0}
+    onClick={[Function]}
     onKeyboardFocus={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     onNestedListToggle={[Function]}
     onTouchEnd={[Function]}
     onTouchStart={[Function]}
-    onTouchTap={[Function]}
     open={null}
     primaryTogglesNestedList={false}
     secondaryTextLines={1}
@@ -340,13 +340,13 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
     leftIcon={null}
     nestedItems={Array []}
     nestedLevel={0}
+    onClick={[Function]}
     onKeyboardFocus={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     onNestedListToggle={[Function]}
     onTouchEnd={[Function]}
     onTouchStart={[Function]}
-    onTouchTap={[Function]}
     open={null}
     primaryTogglesNestedList={false}
     secondaryTextLines={1}
@@ -430,13 +430,13 @@ exports[`<AccordionItem {...props} />: elements tree when device is wide when it
     leftIcon={null}
     nestedItems={Array []}
     nestedLevel={0}
+    onClick={[Function]}
     onKeyboardFocus={[Function]}
     onMouseEnter={[Function]}
     onMouseLeave={[Function]}
     onNestedListToggle={[Function]}
     onTouchEnd={[Function]}
     onTouchStart={[Function]}
-    onTouchTap={[Function]}
     open={null}
     primaryTogglesNestedList={false}
     secondaryTextLines={1}

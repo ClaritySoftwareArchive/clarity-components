@@ -59,7 +59,7 @@ exports[`<ImageCropper {...props} />: elements tree with default props 1`] = `
     disableTouchRipple={false}
     disabled={false}
     iconStyle={Object {}}
-    onTouchTap={[Function]}
+    onClick={[Function]}
     style={
       Object {
         "height": 34,
@@ -81,7 +81,7 @@ exports[`<ImageCropper {...props} />: elements tree with default props 1`] = `
     disableTouchRipple={false}
     disabled={false}
     iconStyle={Object {}}
-    onTouchTap={[Function]}
+    onClick={[Function]}
     style={
       Object {
         "height": 34,
@@ -161,7 +161,7 @@ exports[`<ImageCropper {...props} />: elements tree with scale controlled 1`] = 
     disableTouchRipple={false}
     disabled={false}
     iconStyle={Object {}}
-    onTouchTap={[Function]}
+    onClick={[Function]}
     style={
       Object {
         "height": 34,
@@ -183,7 +183,7 @@ exports[`<ImageCropper {...props} />: elements tree with scale controlled 1`] = 
     disableTouchRipple={false}
     disabled={false}
     iconStyle={Object {}}
-    onTouchTap={[Function]}
+    onClick={[Function]}
     style={
       Object {
         "height": 34,

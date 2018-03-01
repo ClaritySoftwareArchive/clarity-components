@@ -18,8 +18,8 @@ export const AccordionItemRenderer = ({
   <Card style={style}>
     <ListItem
       primaryText={title}
-      onTouchTap={wide && expanded ? onCollapse : onExpand}
-      leftIcon={!wide && expanded ? <CloseIcon onTouchTap={onCollapse} /> : null}
+      onClick={wide && expanded ? onCollapse : onExpand}
+      leftIcon={!wide && expanded ? <CloseIcon onClick={onCollapse} /> : null}
     />
     <CardText style={contentStyle}>
       {children}

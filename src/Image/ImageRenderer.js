@@ -53,11 +53,11 @@ const ImageRenderer = ({
           secondary
           disabled={uploading}
           label={failed ? retryActionLabel : uploadActionLabel}
-          onTouchTap={onUpload}
+          onClick={onUpload}
         />
       ) : null}
       {uploaded ? (
-        <RaisedButton name="Crop" primary label={cropActionLabel} onTouchTap={openEditor} />
+        <RaisedButton name="Crop" primary label={cropActionLabel} onClick={openEditor} />
       ) : null}
       <RaisedButton
         name="Select"
@@ -71,7 +71,7 @@ const ImageRenderer = ({
         style={styles.resetAction}
         disabled={!image}
         label={resetActionLabel}
-        onTouchTap={reset}
+        onClick={reset}
       />
     </CardActions>
   </Card>

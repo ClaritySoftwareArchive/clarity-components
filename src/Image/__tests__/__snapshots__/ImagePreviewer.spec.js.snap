@@ -14,6 +14,7 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with default pr
   }
 >
   <Img
+    decode={true}
     loader={
       <MDSpinner
         color1="rgb(66, 165, 245)"
@@ -24,7 +25,7 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with default pr
         size={28}
       />
     }
-    onTouchTap={[Function]}
+    onClick={[Function]}
     src="http://pic.example.com/200/200"
     style={
       Object {
@@ -52,6 +53,7 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
   }
 >
   <Img
+    decode={true}
     loader={
       <MDSpinner
         color1="rgb(66, 165, 245)"
@@ -62,7 +64,7 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
         size={28}
       />
     }
-    onTouchTap={[Function]}
+    onClick={[Function]}
     src="http://pic.example.com/200/200"
     style={
       Object {
@@ -81,17 +83,27 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
     closeLabel="Close lightbox"
     discourageDownloads={false}
     enableZoom={true}
+    imageCaption={null}
+    imageCrossOrigin={null}
+    imageLoadErrorMessage="This image failed to load"
     imagePadding={10}
+    imageTitle={null}
     keyRepeatKeyupBonus={40}
     keyRepeatLimit={180}
     mainSrc="http://pic.example.com/200/200"
+    mainSrcThumbnail={null}
     nextLabel="Next image"
+    nextSrc={null}
+    nextSrcThumbnail={null}
     onAfterOpen={[Function]}
     onCloseRequest={[Function]}
     onImageLoadError={[Function]}
     onMoveNextRequest={[Function]}
     onMovePrevRequest={[Function]}
     prevLabel="Previous image"
+    prevSrc={null}
+    prevSrcThumbnail={null}
+    reactModalProps={Object {}}
     reactModalStyle={
       Object {
         "overlay": Object {
@@ -99,6 +111,7 @@ exports[`<ImagePreviewer {...props} />: elements tree structures with initialOpe
         },
       }
     }
+    toolbarButtons={null}
     wrapperClassName=""
     zoomInLabel="Zoom in"
     zoomOutLabel="Zoom out"

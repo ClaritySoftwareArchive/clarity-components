@@ -30,7 +30,7 @@ const ImagePreviewerRenderer = ({
       {...rest}
       style={styles.image}
       src={src}
-      onTouchTap={openLightBox}
+      onClick={openLightBox}
       loader={<Spinner />}
     />
     {open ? (

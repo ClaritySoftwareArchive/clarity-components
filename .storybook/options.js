@@ -39,9 +39,9 @@ export const getOptionsFromUrl = () => {
 const defaultOptions = {
   name: pkg.name,
   url: pkg.repository.url,
-  showLeftPanel: true,
-  showDownPanel: true,
-  downPanelInRight: true,
+  showStoriesPanel: true,
+  showAddonPanel: true,
+  addonPanelInRight: true,
 };
 
 export default {

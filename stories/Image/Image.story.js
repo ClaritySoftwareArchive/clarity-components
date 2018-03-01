@@ -8,7 +8,7 @@ import { MuiThemeProvider } from 'material-ui';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import { Image, ImagePreviewer } from '../../src';
-// Needed for onTouchTap
+// Needed for onClick
 // http://stackoverflow.com/a/34015469/988941
 injectTapEventPlugin();
 

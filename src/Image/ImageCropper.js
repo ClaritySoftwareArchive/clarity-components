@@ -72,10 +72,10 @@ const ImageCropperRenderer = ({
       sliderStyle={styles.slider}
       onChange={onScaleChange}
     />
-    <IconButton style={styles.leftRotator} onTouchTap={onRotateLeft}>
+    <IconButton style={styles.leftRotator} onClick={onRotateLeft}>
       <ImageRotateLeft {...staticProps.icon} />
     </IconButton>
-    <IconButton style={styles.rightRotator} onTouchTap={onRotateRight}>
+    <IconButton style={styles.rightRotator} onClick={onRotateRight}>
       <ImageRotateRight {...staticProps.icon} />
     </IconButton>
   </div>

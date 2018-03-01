@@ -25,7 +25,7 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
           "preview": "https://pics.example.com/200/100",
         }
       }
-      setEditor={[Function]}
+      setEditor={[MockFunction]}
     />
   </CardText>
   <CardActions>
@@ -35,7 +35,7 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
       label="Upload"
       labelPosition="after"
       name="Upload"
-      onTouchTap={[Function]}
+      onClick={[MockFunction]}
       primary={false}
       secondary={true}
     />
@@ -49,7 +49,7 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
       secondary={false}
     >
       <ImageSelector
-        setImage={[Function]}
+        setImage={[MockFunction]}
       />
     </RaisedButton>
     <FlatButton
@@ -58,11 +58,11 @@ exports[`<ImageRenderer {...props} />: elements tree crop after upload succeed 1
       label="Reset"
       labelPosition="after"
       labelStyle={Object {}}
+      onClick={[MockFunction]}
       onKeyboardFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onTouchStart={[Function]}
-      onTouchTap={[Function]}
       primary={false}
       secondary={false}
       style={
@@ -101,7 +101,7 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
           "preview": "https://pics.example.com/200/100",
         }
       }
-      setEditor={[Function]}
+      setEditor={[MockFunction]}
     />
   </CardText>
   <CardActions>
@@ -111,7 +111,7 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
       label="Upload"
       labelPosition="after"
       name="Upload"
-      onTouchTap={[Function]}
+      onClick={[MockFunction]}
       primary={false}
       secondary={true}
     />
@@ -125,7 +125,7 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
       secondary={false}
     >
       <ImageSelector
-        setImage={[Function]}
+        setImage={[MockFunction]}
       />
     </RaisedButton>
     <FlatButton
@@ -134,11 +134,11 @@ exports[`<ImageRenderer {...props} />: elements tree with cropping props after s
       label="Reset"
       labelPosition="after"
       labelStyle={Object {}}
+      onClick={[MockFunction]}
       onKeyboardFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onTouchStart={[Function]}
-      onTouchTap={[Function]}
       primary={false}
       secondary={false}
       style={
@@ -182,7 +182,7 @@ exports[`<ImageRenderer {...props} />: elements tree with default props 1`] = `
       secondary={false}
     >
       <ImageSelector
-        setImage={[Function]}
+        setImage={[MockFunction]}
       />
     </RaisedButton>
     <FlatButton
@@ -191,11 +191,11 @@ exports[`<ImageRenderer {...props} />: elements tree with default props 1`] = `
       label="Reset"
       labelPosition="after"
       labelStyle={Object {}}
+      onClick={[MockFunction]}
       onKeyboardFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onTouchStart={[Function]}
-      onTouchTap={[Function]}
       primary={false}
       secondary={false}
       style={
@@ -234,7 +234,7 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
           "preview": "https://pics.example.com/200/100",
         }
       }
-      setEditor={[Function]}
+      setEditor={[MockFunction]}
     />
   </CardText>
   <CardActions>
@@ -244,7 +244,7 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
       label="Retry"
       labelPosition="after"
       name="Upload"
-      onTouchTap={[Function]}
+      onClick={[MockFunction]}
       primary={false}
       secondary={true}
     />
@@ -258,7 +258,7 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
       secondary={false}
     >
       <ImageSelector
-        setImage={[Function]}
+        setImage={[MockFunction]}
       />
     </RaisedButton>
     <FlatButton
@@ -267,11 +267,11 @@ exports[`<ImageRenderer {...props} />: elements tree with failed (to upload) pro
       label="Reset"
       labelPosition="after"
       labelStyle={Object {}}
+      onClick={[MockFunction]}
       onKeyboardFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onTouchStart={[Function]}
-      onTouchTap={[Function]}
       primary={false}
       secondary={false}
       style={
@@ -317,7 +317,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploaded props 1`] = `
       label="Crop"
       labelPosition="after"
       name="Crop"
-      onTouchTap={[Function]}
+      onClick={[MockFunction]}
       primary={true}
       secondary={false}
     />
@@ -331,7 +331,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploaded props 1`] = `
       secondary={false}
     >
       <ImageSelector
-        setImage={[Function]}
+        setImage={[MockFunction]}
       />
     </RaisedButton>
     <FlatButton
@@ -340,11 +340,11 @@ exports[`<ImageRenderer {...props} />: elements tree with uploaded props 1`] = `
       label="Reset"
       labelPosition="after"
       labelStyle={Object {}}
+      onClick={[MockFunction]}
       onKeyboardFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onTouchStart={[Function]}
-      onTouchTap={[Function]}
       primary={false}
       secondary={false}
       style={
@@ -394,7 +394,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
           "preview": "https://pics.example.com/200/100",
         }
       }
-      setEditor={[Function]}
+      setEditor={[MockFunction]}
     />
   </CardText>
   <CardActions>
@@ -404,7 +404,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
       label="Upload"
       labelPosition="after"
       name="Upload"
-      onTouchTap={[Function]}
+      onClick={[MockFunction]}
       primary={false}
       secondary={true}
     />
@@ -418,7 +418,7 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
       secondary={false}
     >
       <ImageSelector
-        setImage={[Function]}
+        setImage={[MockFunction]}
       />
     </RaisedButton>
     <FlatButton
@@ -427,11 +427,11 @@ exports[`<ImageRenderer {...props} />: elements tree with uploading props 1`] = 
       label="Reset"
       labelPosition="after"
       labelStyle={Object {}}
+      onClick={[MockFunction]}
       onKeyboardFocus={[Function]}
       onMouseEnter={[Function]}
       onMouseLeave={[Function]}
       onTouchStart={[Function]}
-      onTouchTap={[Function]}
       primary={false}
       secondary={false}
       style={
