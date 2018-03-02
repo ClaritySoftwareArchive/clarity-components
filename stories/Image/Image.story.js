@@ -5,12 +5,8 @@ import { action } from '@storybook/addon-actions';
 import { object, select, number, text, boolean } from '@storybook/addon-knobs';
 import { withInfo } from '@storybook/addon-info';
 import { MuiThemeProvider } from 'material-ui';
-import injectTapEventPlugin from 'react-tap-event-plugin';
 
 import { Image, ImagePreviewer } from '../../src';
-// Needed for onClick
-// http://stackoverflow.com/a/34015469/988941
-injectTapEventPlugin();
 
 const createUploadImage = ({
   log = action('upload image'),
