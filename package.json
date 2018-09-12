@@ -59,7 +59,7 @@
   "dependencies": {
     "antd": "^3.2.2",
     "attr-accept": "^1.1.0",
-    "lodash": "^4.17.5",
+    "lodash": "^4.17.11",
     "material-ui": "^0.20.0",
     "prop-types": "^15.6.1",
     "react-avatar-editor": "^9.1.1",
