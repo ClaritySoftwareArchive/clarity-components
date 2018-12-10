@@ -64,7 +64,7 @@
     "prop-types": "^15.6.1",
     "react-avatar-editor": "^9.1.1",
     "react-image": "^1.0.1",
-    "react-image-lightbox": "^4.1.0",
+    "react-image-lightbox": "^5.1.0",
     "react-md-spinner": "^0.2.4",
     "react-render-counter": "^1.0.1",
     "recompose": "^0.26.0"
